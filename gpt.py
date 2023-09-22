@@ -134,6 +134,7 @@ class Block(nn.Module):
         x = x + self.ffwd(self.ln2(x))
         return x
 
+"""Add constraints here: Physics"""
 class GPTLanguageModel(nn.Module):
 
     def __init__(self):

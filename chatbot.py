@@ -5,13 +5,19 @@ import os
 import math 
 import string 
 
+from nltk.stem import WordNetLemmatizer
+
 FILE_MATCHES = 1
 SENTENCE_MATCHES = 1
 
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('wordnet')
 
-""" nltk.download('wordnet')
+# Initialize the lemmatizer
+lemmatizer = WordNetLemmatizer()
+
+""" 
 nltk.download('omw-1.4') """
 
 """ Function to print text with a gradual appearance effect """
@@ -22,11 +28,12 @@ def print_with_appearance(text):
         time.sleep(0.03)  # Adjust the sleep duration to control the speed of appearance
     print()  # Move to the next line after printing the complete text
 
+""" Main program """
 def main():
 
-    # Check command-line arguments
+        # Check command-line arguments
     if len(sys.argv) != 2:
-        sys.exit("Usage: python questions.py corpus")
+        sys.exit("Usage: python chatbot.py corpus")
 
     # Calculate IDF values across files
     files = load_files(sys.argv[1])
@@ -34,10 +41,12 @@ def main():
         filename: tokenize(files[filename])
         for filename in files
     }
-    file_idfs = compute_idfs(file_words)
 
     # Prompt user for query
     query = set(tokenize(input("Query: ")))
+
+    # Calculate IDF values for words based on the query (with attention)
+    file_idfs = compute_idfs(file_words, query)
 
     # Determine top file matches according to TF-IDF
     filenames = top_files(query, file_words, file_idfs, n=FILE_MATCHES)
@@ -51,8 +60,8 @@ def main():
                 if tokens:
                     sentences[sentence] = tokens
 
-    # Compute IDF values across sentences
-    idfs = compute_idfs(sentences)
+    # Compute IDF values for sentences based on the query (with attention)
+    idfs = compute_idfs(sentences, query)
 
     # Determine top sentence matches
     matches = top_sentences(query, sentences, idfs, n=SENTENCE_MATCHES)
@@ -109,18 +118,19 @@ def tokenize(document):
                     break
 
             if not all_punct:
-                cleaned_tokens.append(token)
+                # Lemmatize the token
+                cleaned_tokens.append(lemmatizer.lemmatize(token))
 
     return cleaned_tokens
 
 
-def compute_idfs(documents):
+def compute_idfs(documents, query):
     """
     Given a dictionary of `documents` that maps names of documents to a list
     of words, return a dictionary that maps words to their IDF values.
 
     Any word that appears in at least one of the documents should be in the
-    resulting dictionary.
+    resulting dictionary. The IDF values will be influenced by the query.
     """
 
     # Number of documents for idf:
@@ -142,9 +152,33 @@ def compute_idfs(documents):
     # Calculate idfs for each word:
     word_idfs = dict()
     for word in docs_with_word:
-        word_idfs[word] = math.log((num_docs / docs_with_word[word]))
+        word_idfs[word] = math.log((num_docs / docs_with_word[word])) * query_attention(word, query)
 
     return word_idfs
+
+def query_attention(word, query):
+    """
+    Calculate the attention score for a word based on its relevance to the query.
+
+    Args:
+    word (str): The word to calculate attention for.
+    query (set): A set of words representing the query.
+
+    Returns:
+    float: The attention score for the word.
+    """
+
+    # Check for exact match with query
+    if word in query:
+        return 1.0
+
+    # Check for partial match with query
+    for query_word in query:
+        if query_word in word or word in query_word:
+            return 0.5
+
+    # Default attention score for non-matching words
+    return 0.01
 
 
 def top_files(query, files, idfs, n):
@@ -169,6 +203,7 @@ def top_files(query, files, idfs, n):
               file_scores[filename] += tf_idf
 
     sorted_files = sorted([filename for filename in files], key = lambda x : file_scores[x], reverse=True)
+    print("Sorted Files:", sorted_files)
 
     # Return best n files
     return sorted_files[:n]
@@ -179,31 +214,29 @@ def top_sentences(query, sentences, idfs, n):
     Given a `query` (a set of words), `sentences` (a dictionary mapping
     sentences to a list of their words), and `idfs` (a dictionary mapping words
     to their IDF values), return a list of the `n` top sentences that match
-    the query, ranked according to idf. If there are ties, preference should
-    be given to sentences that have a higher query term density.
+    the query, ranked according to idf and query attention.
     """
 
     # Dict to score sentences:
-    sentence_score = {sentence:{'idf_score': 0, 'length':0, 'query_words':0, 'qtd_score':0} for sentence in sentences}
+    sentence_score = {sentence: {'idf_score': 0, 'query_attention_score': 0} for sentence in sentences}
 
     # Iterate through sentences:
     for sentence in sentences:
         s = sentence_score[sentence]
-        s['length'] = len(nltk.word_tokenize(sentence))
-        # Iterate through query words:
-        for word in query:
-            # If query word is in sentence word list, update its score
-            if word in sentences[sentence]:
+        
+        # Calculate IDF score for the sentence
+        for word in sentences[sentence]:
+            if word in idfs:
                 s['idf_score'] += idfs[word]
-                s['query_words'] += sentences[sentence].count(word)
 
-        # Calculate query term density for each sentence:
-        s['qtd_score'] = s['query_words'] / s['length']
+        # Calculate query attention score for the sentence
+        for word in query:
+            s['query_attention_score'] += query_attention(word, query)
 
-    # Rank sentences by score and return n sentence
-    sorted_sentences = sorted([sentence for sentence in sentences], key= lambda x: (sentence_score[x]['idf_score'], sentence_score[x]['qtd_score']), reverse=True)
+    # Rank sentences by combined score (idf + query attention) and return n sentences
+    sorted_sentences = sorted([sentence for sentence in sentences], key=lambda x: (sentence_score[x]['idf_score'] + sentence_score[x]['query_attention_score']), reverse=True)
 
-    # Return n entries for sorted sentence:
+    # Return n entries for sorted sentences:
     return sorted_sentences[:n]
 
 

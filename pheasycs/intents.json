@@ -1,0 +1,1308 @@
+{
+    "intents": [
+    {
+     "tag": "greeting",
+     "patterns": ["Hi there", "How are you?", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello! Nice to meet you.", "Good to see you again.", "Hi there, how can I help?"],
+     "context": ["greet"]
+    },
+    {
+     "tag": "introduction",
+     "patterns": ["Who are you?"],
+     "responses": ["Hello, my name is PhEASYCS! I make Physics easier for you!", "Hi! I'm PhEASYCS. How can I help you?", "Bonjour! I'm PhEASYCS. How can I help you?"],
+     "context": ["introduction"]
+    },
+    {
+     "tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Feel free to chat with PhEASYCS again!"],
+     "context": ["goodbye"]
+    },
+    {
+     "tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["My pleasure. Feel free to ask me anytime.", "You're welcome. Feel free to ask me anytime."],
+     "context": ["thanks"]
+    },
+    {
+     "tag": "unknown",
+     "patterns": ["I don't know", "What do you think?", "Can you answer this?", "I'm not sure"],
+     "responses": ["That's a tough one. I don't have the answer. As an AI language model, I am limited by my own dataset, which is from DEPED Physics modules. I am specifically designed to teach anyone Physics.", "That's a tough one. I don't have the answer. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics.", "It's a bit beyond my knowledge. As an AI language model, I am limited by my own data sets which is from DEPED Physics modules. I am only designed to teach anyone Physics. ", "As a language model, I am only trained from the DEPED Physics modules only. I am only designed to teach anyone Physics."],
+     "context": ["unknown"]
+    }, 
+    {
+    "tag": "Forces_Definition",
+    "patterns": [
+        "Force can be operational defined based on observed effects.",
+        "Forces do not always cause motion.",
+        "What does force do?",
+        "Tell me about forces.",
+        "Explain the types of forces.",
+        "What is force?",
+        "Force?"
+    ],
+    "responses": ["Force can be operational defined based on observed effects, it can be described in terms of what it does. However, forces do not always cause motion. It does not necessarily follow that forces acting on an object will always cause it to move. But force can produce changes in motion. A girl sitting on a chair, a boy pushing a wall, and a woman throwing a ball are examples of force. There are also two types of force, contact forces and non-contact forces."], 
+    "context": ["Forces : Definition"]
+    },
+    {
+    "tag": "Forces_Magnitude",
+    "patterns": [
+        "What is magnitude of a force?",
+        "How is force magnitude measured?",
+        "Explain the strength of a force."
+    ],
+    "responses": ["Magnitude refers to the size or strength of the force. It is commonly expressed in Newton (N) for the International System of Units (SI)."],
+    "context": ["Force : Magnitude"]
+    },
+    {
+    "tag": "Forces_Direction",
+    "patterns": [
+        "How does the direction of force affect motion?",
+        "What happens when force is applied to an object?",
+        "Explain the direction of force."
+    ],
+    "responses": ["The direction of force points to where an object goes when force is applied."],
+    "context": ["Force : Direction"]
+    },
+    {
+    "tag": "Forces_Application",
+    "patterns": ["What is the point of application of force?", "Where is force applied?"],
+    "responses": ["The point of application is the location where the force is applied."],
+    "context": ["Force : Application"]
+    },
+    {
+    "tag": "Forces_Line_of_action",
+    "patterns": [
+        "What is the line of action of force?",
+        "Explain the line of action of force.",
+        "How is the line of action determined?"
+    ],
+    "responses": ["The line of action is a straight line that passes through the point of application and is parallel to the direction of force."],
+    "context": ["Force : Line of Action"]
+    },
+    {
+    "tag": "Forces_contact_force",
+    "patterns": [
+        "What are contact forces?",
+        "List examples of contact forces.",
+        "Explain contact force."
+    ],
+    "responses": ["Contact forces are forces where objects touch or contact with each other. Examples of contact forces include applied force, friction, normal force, and tension."], 
+    "context": ["Force : Contact Forces"]
+    },
+    {
+    "tag": "Forces_applied_force",
+    "patterns": [
+        "What is applied force?",
+        "Explain applied force symbol.",
+        "Explain applied force",
+        "Who applies force to an object?"
+    ],
+    "responses": ["Applied force is the force given to a person or object by another person or object. Its symbol is F, depending on who or what applies force to the object."], 
+    "context": ["Force : Applied Force"]
+    },
+    {
+    "tag": "Forces_Friction_force",
+    "patterns": [
+        "What is friction force?",
+        "How does friction force affect motion?",
+        "Explain friction force symbol."
+    ],
+    "responses": ["Friction force is the force that acts against or opposite an object in contact with it, causing the object to slow down. Friction always opposes the motion of an object. Its symbol is Fʄ."],
+    "context": ["Force : Friction Force"]
+    },
+    {
+    "tag": "Forces_normal_force",
+    "patterns": [
+        "What is normal force?",
+        "Explain normal force symbol.",
+        "In what direction does normal force act?"
+    ],
+    "responses": ["Normal force is the force that acts perpendicular to the surface of the object in contact with. Its symbol is Fɴ."],
+    "context": ["Force : Normal Force"]
+    },
+    {
+    "tag": "Forces_Tension_force",
+    "patterns": [
+        "What is tension force?",
+        "Explain tension force symbol.",
+        "Where is tension force applied?"
+    ],
+    "responses": ["Tension force is the force applied to a string, rope, chain, or cable. Its symbol is T."], 
+    "context": ["Force : Tension Force"]
+    },
+    {
+    "tag": "Forces_non-contact_force",
+    "patterns": [
+        "What are non-contact forces?",
+        "Explain non-contact forces.",
+        "How do non-contact forces act?"
+    ],
+    "responses": ["Non-contact forces are forces where objects do not touch or contact with each other. These forces act over a zone or area called a field."],
+    "context": ["Force : Non-contact Force"]
+    },
+    {
+    "tag": "Forces_gravitational_force",
+    "patterns": [
+        "What is gravitational force?",
+        "How does gravitational force work?",
+        "Explain the effects of gravitational force.",
+        "Gravitational force?"
+    ],
+    "responses": ["Gravitational Force is the force of attraction between two objects. It causes objects to fall down to the ground. Mass and distance of the objects affect the gravitational force."],
+    "context": ["Force : Gravitational Force"]
+    },
+    {
+    "tag": "Forces_magnetic_forces",
+    "patterns": [
+        "What are magnetic forces?",
+        "Explain magnetic forces.",
+        "How do magnets exert force?"
+    ],
+    "responses": ["Magnetic Forces are forces exerted on a field of attraction or repulsion, as in the case of magnets and other magnetic materials."],
+    "context": ["Force : Magnetic Force"]
+    },
+    {
+    "tag": "Forces_Balanced_force",
+    "patterns": [
+        "What are balanced forces?",
+        "Do balanced forces change motion?",
+        "Give an example of balanced forces.",
+        "Balanced forces?",
+        "Balanced force?"
+    ],
+    "responses": ["Balanced Forces do not cause a change in motion. They are equal in magnitude but opposite in direction. For example, in tug-of-war, each team pulls with equal magnitude but in opposite directions."],
+    "context": ["Force : Balanced Force"]
+    },
+    {
+    "tag": "Forces_Unbalanced_Force",
+    "patterns": [
+        "What are unbalanced forces?",
+        "How do unbalanced forces affect motion?",
+        "Give an example of unbalanced forces.",
+        "Unbalanced Force?",
+        "Unbalanced Forces?"
+    ],
+    "responses": ["Unbalanced Forces cause a change in the motion of an object. They are not equal and act in opposite directions. For example, in tug-of-war, if one team pulls with a greater magnitude of force, it's unbalanced."],
+    "context": ["Force : Unbalanced Force"]
+    },
+    {
+    "tag": "Forces_Net_Force",
+    "patterns": [
+        "What is net force?",
+        "How is net force calculated?",
+        "Explain the concept of net force.",
+        "Net force?"
+    ],
+    "responses": ["Net or resultant force is the sum of all forces acting on an object. It affects an object's motion. Net force can be calculated by adding or subtracting forces along the same line of action."],
+    "context": ["Force : Net Force"]
+    },
+    {
+    "tag": "Forces_Net_Force_formula_Explain",
+    "patterns": [
+        "How is net or resultant force determined?",
+        "Explain the formula for net force.",
+        "What is the symbol for net force?",
+        "Formula for net force?"
+    ],
+    "responses": ["In determining net or resultant force, forces are combined or added together. The algebraic signs + and - indicate the direction of forces. You cannot add forces that are not in the same line of action, you cannot add a vertical force to a horizontal force.", "Fɴet = Σ F"], 
+    "context": ["Force : Net Force Formula Explain"]
+    },
+    {
+    "tag": "Forces_net_force_formula",
+    "patterns": [
+        "Give an example of calculating net force.",
+        "How do you calculate net force?",
+        "Explain net force calculation."
+    ],
+    "responses": ["To calculate net force, you sum all the forces exerted in the same line of action. The symbol sigma, Σ, means you add all existing forces in the same line of action.", "Fɴet = Σ F"], 
+    "context": ["Force : Net Force Formula"]
+    },
+    {
+        "tag": "Heat",
+        "patterns": ["What is Heat?", "Explain Heat", "Heat definition"],
+        "responses": ["Heat is produced from molecules of matter that continuously vibrate. It is an energy form that transfers from a body of higher temperature to another body of lower temperature, affecting the internal energy of the body."],
+        "context": ["Heat : Definition"]
+    },
+    {
+        "tag": "Internal_Energy",
+        "patterns": ["What is internal energy?", "Explain internal energy", "Internal energy definition"],
+        "responses": ["Internal energy is the total energy in a body, including potential energy and kinetic energy of molecules or atoms in an object."],
+        "context": ["Internal_Energy : Definition"]
+    },
+    {
+        "tag": "Caloric_Theory",
+        "patterns": ["What is caloric theory?", "Explain caloric theory", "Caloric theory definition"],
+        "responses": ["Caloric theory is an early theory on heat that considered heat to consist of a fluid called caloric fluid, which flows from hotter objects to colder objects."],
+        "context": ["Caloric_Theory : Definition"]
+    },
+    {
+        "tag": "Joule",
+        "patterns": ["What is the SI unit of heat?", "Define joule", "Joule definition"],
+        "responses": ["The SI unit of heat is the joule (J), which is a measure of energy."],
+        "context": ["Joule : Definition"]
+    },
+    {
+        "tag": "Temperature",
+        "patterns": ["What is temperature?", "Explain temperature", "Temperature definition"],
+        "responses": ["Temperature is a measure of the hotness or coldness of an object. It is related to the average kinetic energy of molecules in a substance, with faster-moving molecules indicating higher temperatures."],
+        "context": ["Temperature : Definition"]
+    },
+    {
+        "tag": "Thermometer",
+        "patterns": ["What is a thermometer?", "How does a thermometer work?", "Thermometer definition"],
+        "responses": ["A thermometer is used to measure temperature. The common type is the liquid-in-glass thermometer, which contains mercury and uses its expansion or contraction to indicate temperature changes."],
+        "context": ["Thermometer : Definition"]
+    },
+    {
+        "tag": "Temperature_Scales",
+        "patterns": ["What are the common temperature scales?", "Explain temperature scales", "Temperature scales definition"],
+        "responses": ["The three common temperature scales are Celsius, Fahrenheit, and Kelvin, each with its own reference points and intervals for measuring temperature."],
+        "context": ["Temperature_Scales : Definition"]
+    },
+    {
+        "tag": "Thermal_Expansion",
+        "patterns": ["What is thermal expansion in solids?", "Explain thermal expansion", "Thermal expansion definition"],
+        "responses": ["Thermal expansion in solids occurs when materials expand or contract with changes in temperature. It's caused by the increased or decreased motion of molecules within the material."],
+        "context": ["Thermal_Expansion : Definition"]
+    },
+    {
+        "tag": "Heat_Capacity",
+        "patterns": ["What is heat capacity?", "Explain heat capacity", "Heat capacity definition"],
+        "responses": ["Heat capacity is the quantity of heat necessary to raise the temperature of a body by 1 °C. Different substances have different heat capacities, affecting how quickly they heat up or cool down."],
+        "context": ["Heat_Capacity : Definition"]
+    },
+    {
+        "tag": "Heat_Engine",
+        "patterns": ["What is a heat engine?", "Explain heat engine", "Heat engine definition"],
+        "responses": ["A heat engine is any device that converts heat into mechanical work. It requires a heat source, a heat sink, and must perform useful work by transferring heat from a high-temperature reservoir to a low-temperature reservoir."],
+        "context": ["Heat_Engine : Definition"]
+    },
+    {
+        "tag": "First_Law_Thermodynamics",
+        "patterns": ["What is the First Law of Thermodynamics?", "Explain the First Law", "First Law definition"],
+        "responses": ["The First Law of Thermodynamics states that the change in internal energy of a system equals the net heat transfer into the system minus the net work done by the system. It is based on the conservation of energy principle."],
+        "context": ["First_Law_Thermodynamics : Definition"]
+    },
+    {
+        "tag": "Second_Law_Thermodynamics",
+        "patterns": ["What is the Second Law of Thermodynamics?", "Explain the Second Law", "Second Law definition"],
+        "responses": ["The Second Law of Thermodynamics explains the directionality of thermodynamic processes. It states that heat generally cannot flow spontaneously from a material at a lower temperature to a material at a higher temperature. It also states that it's impossible to convert heat completely into work in a cyclic process, and natural systems tend to proceed toward a greater state of disorder, known as entropy."],
+        "context": ["Second_Law_Thermodynamics : Definition"]
+    },
+    {
+        "tag": "Thermodynamic_Process",
+        "patterns": ["What is a thermodynamic process?", "Explain thermodynamic process", "Thermodynamic process definition"],
+        "responses": ["A thermodynamic process is reversible if it can return to its original states, both for the system and the surroundings, with no other changes elsewhere in the universe. It means that both the system and surroundings return to their initial states at the end of the reverse process."],
+        "context": ["Thermodynamic_Process : Definition"]
+    },
+    {
+        "tag": "Irreversible_Process",
+        "patterns": ["What is an irreversible process?", "Explain irreversible process", "Irreversible process definition"],
+        "responses": ["An irreversible process occurs when a thermodynamic process departs from equilibrium, typically involving rapid and dramatic changes in pressure or volume that do not allow time for the system to reach equilibrium. Irreversible processes result in decreased overall work done."],
+        "context": ["Irreversible_Process : Definition"]
+    },
+    {
+        "tag": "Entropy",
+        "patterns": ["What is entropy?", "Explain entropy", "Entropy definition"],
+        "responses": ["Entropy is a measure of the degree of disorder in a system. It quantifies the quality of energy as it is transformed from one form to another. According to the Second Law of Thermodynamics, entropy always increases and depends on the amount of heat absorbed by a system and its absolute temperature."],
+        "context": ["Entropy : Definition"]
+    }, 
+    {
+        "tag": "Energy_Definiton",
+        "patterns": [
+            "What is energy?",
+            "Define energy.",
+            "What does energy mean?",
+            "What is the definition of energy?",
+            "What is the meaning of energy?"
+        ],
+        "responses": [
+            "Energy refers to the ability of a person or object to do work. In order for an object to do work, it needs energy."
+        ],
+        "context": ["Energy:Definiton"]
+    },
+    {
+        "tag": "Energy_Sample_Situation",
+        "patterns": [
+            "Give me an example of energy.",
+            "What is an example of energy?",
+            "Can you provide a sample situation for energy?"
+        ],
+        "responses": [
+            "EXAMPLE 1: Let us consider two objects: A and B. These objects are about to interact with each other. If object A is pushed, meaning an applied force is doing work on it. In this situation, object A has kinetic energy while moving towards object B which is not moving. If object A bumps on object B, then it means that object A loses its energy because it has transferred its energy to object B.\n\nEXAMPLE 2:  A fast-moving softball that hit a stationary (not moving) open door. If a fast-moving softball (which has kinetic energy) is moving towards the open door because an applied force is doing work on the softball, it will lose its energy once it interacts with the door, causing the softball to stop moving (because it has lost its energy) and the open door to move (because it has gained energy that was transferred from the softball)."
+        ],
+        "context": ["Energy:Sample Situation"]
+    },
+    {
+        "tag":"Unit_of_energy",
+        "patterns": [
+            "What is the unit of energy?",
+            "What is the standard unit of energy?",
+            "What are the units of energy?"
+        ],
+        "responses": [
+            "Energy’s unit is joule (J) in the standard unit system. It has the same unit as work. A larger unit of energy is called kilojoule (kJ), which is sometimes used."
+        ],
+        "context": ["Unit of energy : Definition"]
+    },
+    {
+        "tag": "Work_Definition",
+        "patterns": [
+            "What is work?",
+            "Define work.",
+            "What does work mean?",
+            "What is the definition of work?",
+            "What is the meaning of work?"
+        ],
+        "responses": [
+            "Work is the transfer of energy from one object to another."
+        ],
+        "context": ["Work:Definition"]
+    },
+    {
+        "tag": "Work_Formula",
+        "patterns": [
+            "How can I calculate work done against gravity?",
+            "What is the formula for calculating work done against gravity?",
+            "How can I calculate work done on an object against gravity?", 
+            "How can I calculate work done on an object?", 
+            "How can I calculate work in physics?", 
+            "How can I calculate work?", 
+            "What is the formula of work?"
+        ],
+        "responses": [
+            "The work done on an object is given by: Work = m x g x h  where m is the object’s mass in kilogram (kg), g is the acceleration due to gravity which is 9.8 m/s^2 , and h is displacement or the height."
+        ],
+        "context": ["Work:Formula"]
+    },
+    {
+        "tag": "Potential_Energy_Definition",
+        "patterns": [
+            "What is potential energy?",
+            "Define potential energy.",
+            "What does potential energy mean?",
+            "What is the definition of potential energy?",
+            "What is the meaning of potential energy?"
+        ],
+        "responses": [
+            "Potential energy is the energy that the body gains or loses depending on its position. For example, if an object is being lifted from the ground, it gains energy. But, if the object falls, it loses energy."
+        ],
+        "context": ["Potential Energy:Definition"]
+    },
+    {
+        "tag": "Potential_Energy_Formula",
+        "patterns": [
+            "What is the formula for potential energy?",
+            "How can I calculate potential energy?",
+            "What is the equation for potential energy?"
+        ],
+        "responses": [
+            "The formula of potential energy is the same as the formula of work which is given by:PE = m x g x h Where:PE is the Potential Energy which has the unit of joules (J).\nm is the object’s mass in kilogram (kg) is the acceleration due to gravity which is 9.8 ms^2 is displacement or the height."
+        ],
+        "context": ["Potential Energy:Formula"]
+    },
+    {
+        "tag": "Potential_Energy_Sample_situation",
+        "patterns": [
+            "Give me an example of potential energy.",
+            "What is an example of potential energy?",
+            "Can you provide a sample situation for potential energy?"
+        ],
+        "responses": [
+            "The potential energy of a 20-kg box is twice as much as the potential energy of a 10-kg box when both boxes are at the same height from the ground. The reason behind this is that the 20-kg box has twice as much mass as the 10-kg box. Since they have the same height, we can use the formula to find potential energy:\n\nPE = m x g x h\n= (2m) x g x h\n\nTherefore, the potential energy is doubled."
+        ],
+        "context": ["Potential Energy: Sample situation"]
+    },
+    {
+        "tag": "Kinetic_energy_Sample_situation",
+        "patterns": [
+            "Why is the kinetic energy of a 10,000-kg vehicle twice as much as the kinetic energy of a 5,000-kg vehicle when both are travelling at the same speed?",
+            "Explain why the kinetic energy of a 10,000-kg vehicle is twice as much as the kinetic energy of a 5,000-kg vehicle when both are travelling at the same speed.",
+            "Can you provide a sample situation where the kinetic energy of a 10,000-kg vehicle is twice as much as the kinetic energy of a 5,000-kg vehicle when both are travelling at the same speed?", 
+            "Give me an example of kinetic energy.",
+            "Can you provide a sample situation for potential energy?"
+        ],
+        "responses": [
+            "The kinetic energy of a 10,000-kg vehicle is twice as much as the kinetic energy of a 5,000-kg vehicle when both are travelling at the same speed. This is because kinetic energy depends on mass and velocity. The formula for kinetic energy is KE = 1/2 * m * v^2. Since both vehicles are travelling at the same speed, their velocities are equal. However, the 10,000-kg vehicle has twice the mass of the 5,000-kg vehicle. When we substitute these values into the formula, we get:\n\nKE_1 = 1/2 * (2m) * v^2\nKE_1 = 2 * (1/2 * m * v^2)\n\nTherefore, the kinetic energy of the 10,000-kg vehicle is twice as much as that of the 5,000-kg vehicle."
+        ],
+        "context": ["Kinetic energy: Sample situation"]
+  },
+  {
+    "tag": "Magnifying_glass_definition",
+    "patterns": [
+      "Magnifying glass",
+      "Magnifying glass?",  
+      "What is a magnifying glass?",
+      "Define magnifying glass.", 
+      "Tell me about magnifying glass.",
+      "What type of optical device is the magnifying glass?", 
+      "What optical device is a single positive lens that will add merging to the visual system?"
+  ],
+    "responses": [
+      "Magnifying glass is a single positive lens that will add merging to the visual system. The main function of a magnifying glass is to provide an image of an object that is bigger than that seen by the naked eye. There is a limit to this increase in size, however, in the sense that at a very short distance between the eye and the object, the rays will separate so much that a magnifying lens becomes necessary."
+    ],
+    "context": ["magnifying_glass : Definition"]
+  },
+  {
+    "tag": "Compound_Microscope_definition",
+    "patterns": [
+      "Compound microscope",
+      "Compound microscope?",
+      "What is a compound microscope?",  
+      "Define compound microscope.", 
+      "Tell me about compound microscope.",
+      "What type of optical device is the compound microscope?",
+      "What optical device combination of lenses for magnifying an object several hundred times?"
+  ],
+    "responses": [
+      "A compound microscope consists of a combination of lenses for magnifying an object several hundred times. It uses two merging lenses with short focal lengths. The lens near the object is the objective lens, while the one nearer the eye is the eyepiece. The objective lens forms a real and enlarged inverted image. The eyepiece, on the other hand, forms a further enlarged, erect, but virtual final image."
+    ],
+    "context": ["compound_microscope : Definition"]
+  },
+  {
+    "tag": "Binoculars_Definition",
+    "patterns": [
+      "Binoculars",
+      "Binoculars?",
+      "What are binoculars?",  
+      "Define binoculars.", 
+      "Tell me about binoculars.",
+      "What type of optical device is the binoculars?",
+      "What optical device consists of a pair of telescopes mounted together?"
+  ],
+    "responses": [
+      "Binoculars consist of a pair of telescopes mounted together, each having an objective lens and an eyepiece. The image formed by the objective lens of binoculars is upside-down, and the left and right sides are reversed. Binoculars use a system of prisms (types of prisms used in binoculars) to switch the image left to right and right to left. Then the eyepieces create enlarged, virtual, upright images."
+    ],
+    "context": ["binoculars : Definition"]
+  },
+  {
+    "tag": "Endoscope_definition",
+    "patterns": [
+      "Endoscope",
+      "Endoscope?",
+      "What is an endoscope?",  
+      "Define endoscope.", 
+      "Tell me about endoscope.",
+      "What type of optical device is the endoscope?",
+      "What optical device is a long flexible tube and is inserted in the body?"
+  ],
+    "responses": [
+      "Endoscope is a long flexible tube that is inserted in the body so that a doctor can observe internal passages such as a person’s esophagus or intestine. It has a merging lens and bunches of optical fibers that convey the image to the end of the tube, where the image can be observed through a computer monitor or screen. An endoscope uses the concept of total internal reflection."
+    ],
+    "context": ["Endoscope : Definition"]
+  },
+  {
+    "tag": "Spectrometer_Definition",
+    "patterns": [
+      "Spectrometer",
+      "Spectrometer?",
+      "What is a spectrometer?",  
+      "Define spectrometer.", 
+      "Tell me about spectrometer.",
+      "What type of optical device is the spectrometer?",
+      "What principle does the spectrometer use?"
+  ],
+    "responses": [
+      "Spectrometer uses the principle of diffraction where it separates the wavelength components of the light by directing each wavelength into a unique output angle. Through this principle, it creates a spectrum of colors emitted by a light source. This aids scientists and engineers in identifying different substances."
+    ],
+    "context": ["Spectrometer : Definition"]
+  },
+  {
+    "tag": "Overhead_projector_definition",
+    "patterns": [
+      "Overhead projector",
+      "Overhead projector?",
+      "What is an overhead projector?",  
+      "Define overhead projector.", 
+      "Tell me about overhead projector.",
+      "What type of optical device is the overhead projector?",
+      "What optical device has a mirror that focuses light from an intense source?"
+  ],
+    "responses": [
+      "An overhead projector has a mirror, which focuses light from an intense source onto a pair of merging lenses. These lenses direct the light through the slide to a projection lens. The lens is mounted on a sliding tube so that it can be adjusted to be able to focus the real image on the screen."
+    ],
+    "context": ["Overhead projector : Definition"]
+  },
+  {
+    "tag": "Periscope_definition",
+    "patterns": [
+      "Periscope",
+      "Periscope?",
+      "What is a periscope?",  
+      "Define periscope.", 
+      "Tell me about periscope.",
+      "What type of optical device is the periscope?",
+      "What optical device consists of a tube attached to a set of mirrors or prisms?"
+  ],
+    "responses": [
+      "Periscope is an optical device consisting of a tube attached to a set of mirrors or prisms, through which an observer (typically in a submerged submarine or behind a high obstacle) can see things that are otherwise out of sight."
+    ],
+    "context": ["Periscope : Definition"]
+  },
+  {
+    "tag": "Interferometer_definition",
+    "patterns": [      
+      "Interferometer",
+      "Interferometer?",
+      "What is an interferometer?",  
+      "Define interferometer.", 
+      "Tell me about interferometer.",
+      "What type of optical device is the interferometer?"
+  ],
+    "responses": [
+      "Interferometer is an optical device that uses the concepts of spreading of waves around obstacles and interference to make precise measurements of very small distances. It can also be used to measure changes in the index of refraction or the bending of light as it passes from one transparent substance into another."
+    ],
+    "context": ["Interferometer : Definition"]
+  },
+  {
+    "tag": "Converging_lens_definition",
+    "patterns": [
+      "Converging lens",
+      "Converging lens?", 
+      "What is a converging lens?", 
+      "Define converging lens.", 
+      "Tell me about converging lens.",
+      "What type of lens was used when Sun’s rays are observed to focus at a point behind a lens?"
+  ],
+    "responses": [
+      "Converging lens are a type of lens was used when Sun’s rays are observed to focus at a point behind a lens."
+    ],
+    "context": ["Converging lens : Definition"]
+  },
+  {
+    "tag": "Camera_definition",
+    "patterns": [
+      "Camera",
+      "Camera?", 
+      "What is a camera?", 
+      "Define camera.", 
+      "Tell me about camera.",
+      "What gives a permanent image of the object?"
+  ],
+    "responses": ["Camera gives a permanent image of the object."],
+    "context": ["Camera : Definition"]
+  },
+  {
+    "tag": "Pupil_definition",
+    "patterns": [
+      "Pupil",
+      "Pupil?", 
+      "What is a pupil?", 
+      "Define pupil.", 
+      "Tell me about pupil.",
+      "What part of the eye that it dilates in the dark while it constricts in bright light?"
+  ],
+    "responses": ["The pupil is a part of the eye that it dilates in the dark while it constricts in bright light."],
+    "context": ["Pupil : Definition"]
+  },
+  {
+    "tag": "Film_definition",
+    "patterns": [
+      "Film",
+      "Film?",
+      "What is a film?", 
+      "Define reflecting telescope.", 
+      "Tell me about films.",
+      "What is the part of the camera that serves as screen where the image is formed?"
+  ],
+    "responses": ["Film is the part of the camera that serves as screen where the image is formed."],
+    "context": ["Film : Definition"]
+  },
+  {
+    "tag": "Reflecting_Telescope_definition",
+    "patterns": [
+      "Reflecting Telescope",
+      "Reflecting Telescope?", 
+      "What is a reflecting telescope?", 
+      "Define reflecting telescope.", 
+      "Tell me about reflecting telescope.",
+      "What type of telescope where the objective lens is replaced by a concave mirror?"
+  ],
+    "responses": ["The reflecting telescope is a type of telescope where the objective lens is replaced by a concave mirror."],
+    "context": ["reflecting_telescope : Definition"]
+  }, 
+  {
+    "tag": "Plane_Mirror_definition",
+    "patterns": [
+    "What is a plane mirror?",
+    "Define a plane mirror.",
+    "Explain a plane mirror.",
+    "Plane Mirror?",
+    "What is the definition of a plane mirror?"
+    ],
+    "responses": ["A plane mirror makes an image of objects in front of the mirror; the image appears to be behind the plane in which the mirror lies. An image is formed by reflection when two or more reflected rays of a point meet at a single point. The image is formed at the point of intersection of the reflected rays."],
+    "context": ["Plane Mirror : Definition"]
+    },
+    {
+    "tag": "Plane_Mirror_six_important_points",
+    "patterns": [
+    "What are the six important points in locating the image formed in a curved mirror?"
+    ],
+    "responses": ["Center of Curvature, Focal Point, Vertex, Principal Axis, Focal Length, Radius of Curvature."],
+    "context": ["Six important points in locating the image formed in a curved mirror : Enumeration"]
+    },
+    {
+    "Tag":"Plane_Mirror_Center_of_curvature_definition_symbol",
+    "patterns": [
+    "What is the Center of Curvature.",
+    "Describe the Center of Curvature.",
+    "Define the Center of Curvature.",
+    "What is the definition of the Center of Curvature?",
+    "Explain the Center of Curvature.",
+    "What is the symbol for the Center of Curvature?"
+    ],
+    "responses": ["C - The center of the sphere whose surface forms the curved mirror."],
+    "context": ["Center of Curvature : Definition , Symbol"]
+    },
+    {
+    "tag":"Plane_Mirror_focal_point_definition_symbol",
+    "patterns": [
+    "What is Focal Point?",
+    "Define Focal Point.",
+    "What is the definition of Focal Point?",
+    "Explain Focal Point.",
+    "What is the symbol for Focal Point?"
+    ],
+    "responses": ["F – where the light rays meet."],
+    "context": ["Focal Point : Definition , Symbol"]
+    },
+    {
+    "tag":"Plane_Mirror_Vertex",
+    "patterns": [
+    "What is Vertex?",
+    "Define Vertex.",
+    "What is the definition of Vertex?",
+    "Explain vertex.",
+    "What is the symbol for Vertex?"
+    ],
+    "responses": ["V – the point where the principal axis meets the mirror."],
+    "context": ["Vertex : Definition"]
+    },
+    {
+    "tag":"Plane_Mirror_Principal_Axis_Definition",
+    "patterns": [
+    "What is Principal Axis?",
+    "Define Principal Axis.",
+    "What is the definition of Principal Axis?",
+    "Explain Principal Axis."
+    ],
+    "responses": ["The straight line passing through the center of curvature to the mirror."],
+    "context": ["Principal Axis : Definition"]
+    },
+    {
+    "tag":"Plane_Mirror_Focal_length_Definition",
+    "patterns": [
+    "What is Focal Length?",
+    "Define Focal Length.",
+    "What is the definition of Focal Length?",
+    "Explain Focal Length.",
+    "What is the symbol for Focal Length?"
+    ],
+    "responses": ["f – the distance from the focal point to the vertex."],
+    "context": ["Focal Length : Definition , Symbol"]
+    },
+    {
+    "tag":"Plane_Mirror_Radius_of_curvature",
+    "patterns": [
+    "What is Radius of Curvature?",
+    "Define Radius of Curvature.",
+    "What is the definition of the Radius of Curvature?",
+    "Explain Radius of Curvature.",
+    "What is the symbol for the Radius of Curvature?"
+    ],
+    "responses": ["R – the distance from the vertex to the center of the curvature."],
+    "context": ["Radius of Curvature : Definition"]
+    },
+    {
+    "tag":"Plane_Mirror_Focal_point_Definition",
+    "patterns": [
+    "What is Focal Point?",
+    "Define Focal Point.",
+    "What is the definition of Focal Point?",
+    "Explain Focal Point."
+    ],
+    "responses": ["The midpoint of the line segment adjoining the vertex and the center of curvature."],
+    "context": ["Focal Point : Definition"]
+    },
+    {
+    "tag":"Plane_Mirror_Focal_length_definition",
+    "patterns": [
+    "What is Focal Length?",
+    "Define Focal Length.",
+    "What is the definition of Focal Length?",
+    "Explain Focal Length."
+    ],
+    "responses": ["One-half the radius of curvature."],
+    "context": ["Focal Length : Definition"]
+    },
+    {
+    "tag":"Plane_Mirror_Convex_lens_definition",
+    "patterns": [
+    "What is a Convex Lens?",
+    "Define Convex Lens.",
+    "What is the definition of a Convex Lens?",
+    "Explain Convex Lens.",
+    "Describe a Convex Lens."
+    ],
+    "responses": ["Refers to the lens which merges the light rays at a particular point, that travels through it. Convex lenses curve outwards and converge light. Thicker at the center, as compared to its edges. It has a positive focal length and produces real and inverted images. Also produces virtual, erect and enlarged images in a magnifying glass. Objects appear closer and larger. It is used to correct hyperopia."],
+    "context": ["Convex Lens : Definition , Description"]
+    },
+    {
+    "tag":"Plane_Mirror_Concave_Lens_Definition",
+    "patterns": [
+    "What is a Concave Lens?",
+    "Define Concave Lens.",
+    "What is the definition of a Concave Lens?",
+    "Explain Concave Lens.",
+    "Describe a Concave Lens."
+    ],
+    "responses": ["Can be identified as the lens which disperses the light rays around, that hits the lenses. Concave lenses curve inwards and diverges light. Thinner at the center as compared to its edges. It has a negative focal length and produces virtual, erect and diminished images. Objects appear smaller and farther. It is used to correct myopia."],
+    "context": ["Concave Lens : Definition , Description"]
+    },
+    {
+        "tag": "Effect_of_the_temperature_Sound_Definition",
+        "patterns": [
+        "What are Sounds?",
+        "Define Sounds.",
+        "What is the definition of Sound?",
+        "Explain Sound.",
+        "What causes sound?"
+        ],
+        "responses": ["Are caused by vibrations, referring to the back-and-forth movement of objects. As you speak, vibrations are produced by the vocal cords inside the throat. You can hear the vibrations when sound waves reach your ear. When an object vibrates, it creates sound energy."],
+        "context": ["Sound : Definition"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Sound_Energy_Description",
+        "patterns": [
+        "How does Sound Energy travel?"
+        ],
+        "responses": ["Travels in the form of sound waves."],
+        "context": ["Sound Energy : Description"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Sound_Waves_Definition",
+        "patterns": [
+        "What are Sound Waves?",
+        "Define Sound Waves.",
+        "What is the definition of Sound Waves?",
+        "Explain Sound Waves."
+        ],
+        "responses": ["These waves are examples of longitudinal waves where the vibrations are parallel to the direction of the wave. They are also known as mechanical waves since sound waves need a medium inorder to propagate.These media can either be solids, liquids, or gasses. Sound waves travel fastest in solids and slowest in gasses. The speed of sound can be affected by the elasticity and density of the medium."],
+        "context": ["Sound Waves : Definition"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Elasticity_Definition",
+        "patterns": [
+        "What is Elasticity?",
+        "Define Elasticity.",
+        "What is the definition of Elasticity?",
+        "Explain Elasticity."
+        ],
+        "responses": ["Is the ability of a material to return to its original form after a certain amount of force has been applied to it. An example of an elastic material is steel. Steel has the ability to return to its original shape after it has been bent. Sound travels faster within more elastic objects. This is due to the atoms and molecules of the elastic materials having a relatively strong attraction towards each other and responding faster to each other’s movement. As a result, sound energy is transferred more quickly. Generally, solids are the most elastic, followed by liquids, and then by gases. Thus, sound travels fastest in solids and slowest in gases. Imagine talking to someone who is a hundred meters away, you would have to shout if you would use the air as the medium of the sound. However, if you allow the sound to travel through a solid, such as the string of improvised phones made from tin cans, you would be able to send the message across just by whispering."],
+        "context": ["Elasticity : Explanation"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Density_Definition",
+        "patterns": [
+        "What is Density?",
+        "Define Density.",
+        "What is the definition of Density?",
+        "Explain Density."
+        ],
+        "responses": ["Is an intrinsic property that is determined by the amount of mass per area of space or volume of the material. Recall that an intrinsic property is a property of the material itself which does not depend on how much material is present. Denser objects have more mass per volume, and they have more compact atoms and molecules. The neighboring atoms and molecules in denser objects are less responsive to each other’s motions and interactions, making the sound wave travel slower. This factor applies when comparing media of the same phase. For example, sound travels faster in helium than it does in air, as helium is less dense than the gases that make up air. You can observe that helium is less dense than air because balloons are filled with helium float, whereas those filled with air are not."],
+        "context": ["Density : Explanation"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Properties_of_Sound_Definition",
+        "patterns": [
+        "What are Properties of Sound?",
+        "Define Properties of Sound.",
+        "Explain Properties of Sound"
+        ],
+        "responses": ["Like any wave, a sound wave does not just stop when it reaches the end of the medium or when it encounters an obstacle in its path. Rather, a sound wave will undergo certain behavior when it encounters the end of the medium or an obstacle. Possible behavior includes reflection and refraction."],
+        "context": ["Properties of Sound : Definition"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Reflection_Definition",
+        "patterns": [
+        "What is Reflection?",
+        "Define Reflection.",
+        "What is the definition of Reflection?",
+        "Explain Reflection."
+        ],
+        "responses": ["Just like any other wave, sound also exhibits reflection. Reflection is usually described as the turning back of the wave as it hits a barrier. The echo is an example of a reflected sound."],
+        "context": ["Reflection : Definition"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Reverberation_Definition",
+        "patterns": [
+        "What is Reverberation?",
+        "Define Reverberation.",
+        "What is the definition of Reverberation?",
+        "Explain Reverberation."
+        ],
+        "responses": ["Refers to multiple reflections or echoes in a certain place. This best fits the bathroom which enhances the voice."],
+        "context": ["Reverberation : Definition"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Echo_Sounding_Definition",
+        "patterns": [
+        "What is Echo Sounding?",
+        "Define Echo Sounding.",
+        "What is the definition of Echo Sounding?",
+        "Explain Echo Sounding."
+        ],
+        "responses": ["Another application of sound reflection. This is used by scientists to map the seafloor and to determine the depth of the ocean or sea. This is just the same as how bats use sound to detect distances."],
+        "context": ["Echo Sounding : Definition"]
+        },
+        {
+        "tag": "Effect_of_the_temperature_Refraction_Definition",
+        "patterns": [
+        "What is Refraction?",
+        "Define Refraction.",
+        "What is the definition of Refraction?",
+        "How does Refraction work?",
+        "Explain Refraction."
+        ],
+        "responses": ["The refraction of sound waves involves a change in the direction of waves as they pass from one medium to another. Sound waves travel slower in cooler air than in warmer air. When a sound wave propagates in the air with temperature which changes with altitude, refraction happens. A sound wave travels from air of higher temperature to lower temperature. During the daytime, as illustrated in figure 1, sound travels faster at the earth’s surface since the air molecules are hotter due to the energy absorbed from the earth’s ground. The air molecules at the higher altitude are cooler than those at the earth’s surface, causing sound waves to refract upward. On the other hand, during nighttime, as illustrated in figure 2, the earth’s surface is cooler and the layer of air immediately above it is also cooler. As a result, sound travels faster at the higher altitude and is refracted or bent towards the ground."],
+        "context": ["Refraction : Explanation"]
+        },
+        {
+            "tag": "Aristotle",
+            "patterns": [
+               "Who was one of the famous men who developed an explanation for motion, which lasted for almost 2000 years?",
+               "His ideas were based on very common experiences.",
+               "Who formulated an idea that, for an object to move, a force must be exerted on it; but when this force is removed, the object comes to rest.",
+               "Who is Aristotle?",
+               "Aristotle?"
+            ],
+            "responses": ["Aristotle developed an explanation for motion based on common experiences. He proposed that an object requires a force to move and comes to rest when the force is removed."],
+            "context": ["Aristotle: Definition"]
+         },
+         {
+            "tag": "Galileo",
+            "patterns": [
+               "He let a perfectly round ball roll down an inclined surface and prepared three setups under ideal conditions (lack of friction and air resistance).",
+               "Who concluded that in the absence of lack of friction and air resistance, the ball would continue rolling up to a height above the base equal from where it was released?",
+               "On a flat surface, the ball would continue to move forever, since there would be no force to cause its state of motion to change.",
+               "Who was the first to suggest that uniform speed straight-line motion was just as natural as at-rest state of motion?",
+               "He called the tendency of an object to maintain its initial state of motion as inertia.",
+               "He took the first important step that completely changed the world’s view about motion of objects.",
+               "He greatly influenced other scientists, including Isaac Newton, who then formulated the three laws of motion."
+            ],
+            "responses": ["Galileo Galilei conducted experiments on motion under ideal conditions. He concluded that objects would continue to move without friction and air resistance. Galileo's work influenced the understanding of motion and inspired Isaac Newton's three laws of motion."],
+            "context": ["Galileo: Definition"]
+         },
+         {
+            "tag": "Law of Inertia",
+            "patterns": [
+               "What is the law of inertia?",
+               "First law of motion.",
+               "What is Newton's first law of motion?",
+               "Law of inertia.",
+               "State the first law of motion.",
+               "Define the law of inertia."
+            ],
+            "responses": ["Newton's first law of motion, the law of inertia, states that an object at rest stays at rest, and an object in motion remains in motion unless acted upon by an external force."],
+            "context": ["Law of Inertia: Definition"]
+         },
+         {
+            "tag": "Inertia",
+            "patterns": [
+               "The tendency of an object to maintain its state of rest or uniform velocity at a straight line is called what?",
+               "What is inertia?",
+               "Define inertia.",
+               "It is the tendency of an object to maintain its state of rest or uniform velocity at a straight line."
+            ],
+            "responses": ["Inertia is the tendency of an object to maintain its state of rest or uniform velocity in a straight line."],
+            "context": ["Inertia: Definition"]
+         },
+         {
+            "tag": "Mass",
+            "patterns": [
+               "It is the measure of inertia of an object.",
+               "What is mass?",
+               "Define mass."
+            ],
+            "responses": ["Mass is a measure of an object's inertia. Objects with greater mass are more difficult to move when at rest and harder to stop when in motion."],
+            "context": ["Mass: Definition"]
+         },
+         {
+         "tag": "Properties_of_Mirrors_and_Lenses_Used_in_Optical_Instruments_Basic_Elements_of_a_Camera", 
+         "patterns": [
+         	"The basic elements of a camera are: converging lens, light sensitive film, and shutter.",
+         	"What are the basic elements of a camera?",
+         	"Tell me the parts of a camera.",
+         	"Enumerate the basic elements of a camera.",
+         	"Elements of a camera?"
+         ],
+         "reponses": ["The real camera has lens instead of a pinhole and uses a film for a screen instead of a wax paper. The basic elements of a camera are, namely: a converging lens, a light sensitive film to record an image, and a shutter to let the light from the lens strike the film."],
+         "context": ["Basic Elements of a Camera"]
+         },
+        {
+        "tag": "Properties_of_Mirrors_and_Lenses_Used_in_Optical_Instruments_Camera_lens_process", 
+        "patterns": [
+        	"How does lenses in camera work?",
+        	"Explain the process of a camera lenses",
+        	"Tell me how camera lenses work.",
+        	"Camera lenses process?",
+        	"Lens process?"
+        ],
+        "reponses": ["When the camera is in proper focus, the position of the film coincides with the position of the real image formed by the lens. With a converging lens, the image distance increases as the object distance decreases. Hence in focusing the camera, the lens is moved closer to the film for a distant object and farther from the film for a nearby object. Often, this is done by turning the lens in a threaded mount."],
+        "context": ["Camera Lens: Process"]
+        },
+        {
+        "tag": "Properties_of_Mirrors_and_Lenses_Used_in_Optical_Instruments_Camera_lens_parts_and_functions", 
+        "patterns": [
+        	"A camera is similar to a human eye in several aspects.",
+        	"What are the parts of a camera lens?",
+        	"What are the functions of the parts of a camera lens?",
+        	"What are the part and functions of a camera lens?",
+        	"Explain the parts and functions of a camera lens.",
+        	"Parts and functions of camera lens?"
+        ],
+        "reponses": ["A camera is similar to a human eye in several aspects. The shutter of a camera excludes unnecessary light just as the eyelids do. The diaphragm regulates the amount of light that enters the camera through the aperture just as the iris regulates the amount of light that enters the eye through the pupil. In the dark, the pupil dilates, while it constricts in bright light. A camera has a simple converging lens or a system of lenses which forms images by refraction just like the lens of a human eye. The light sensitive film insides camera corresponds to the light sensitive retina in the back of the eye, and both receive an inverted, real image that is smaller than the object. In a camera, the lens is adjusted to form a sharp image, while our eyes have the power of accommodation to see near and distant objects. The camera gives a permanent image of the object, while the image in the eye lasts for only about 1/16 of a second before another distinct image is formed."],
+        "context": ["Camera Lens: Parts and Functions"]
+        },
+        {
+        "tag": "Properties_of_Mirrors_and_Lenses_Used_in_Optical_Instruments_Optical_system_definition", 
+        "patterns": [
+        	"Optical instruments are an arrangment of lenses.",
+        	"Optical instruments are a combination of lenses.",
+        	"What is an optical system?",
+        	"Explain optical system.",
+        	"Tell me about optical system or optical instruments.",
+        	"Optical system?",
+        	"Optical instruments?"
+        ],
+        "reponses": ["Most optical instruments are made up of a lens or an arrangement or combination of lenses. The function of the optical systems is determined by the focal lengths of the lenses and their relative positions."],
+        "context": ["Optical system: Definition"]
+        },
+        {
+        "tag": "Properties_of_Mirrors_and_Lenses_Used_in_Optical_Instruments_Telescope_definition", 
+        "patterns": [
+        	"Telescope makes distant objects look closer.",
+        	"What is a telescope?",
+        	"Tell me about a telescope.",
+        	"What is the function of a telescope?",
+        	"Telescope?"
+        ],
+        "reponses": ["A telescope is used to make distant objects look closer and appear bigger. It consists of two converging lenses: the objective lens is used to collect light from a distant object and to form the first image. The eyepiece lens is a magnifying lens which produces a final virtual image at a distance."],
+        "context": ["Telescope: Definition"]
+        },
+        {
+        "tag": "Properties_of_Mirrors_and_Lenses_Used_in_Optical_Instruments_Telescope_and_microscope_similarities_and_differences", 
+        "patterns": [
+        	"Similarities and differences of telescope and microscope.",
+        	"Explain the similarities and differences of a telescope and microscope.",
+        	"How is a telescope different from a microscope?",
+        	"How is a microscope similar with a telescope?",
+        	"Compare and contrast the optical system of telescope and microscope.",
+        	"Optical system of a telescope and microscope?"
+        ],
+        "reponses": ["The optical system of a telescope is similar to that of a compound microscope. In both instruments, the image formed by an objective lens is viewed through an eyepiece. The key difference is that the telescope that uses lens as an objective. It is called a “refracting telescope”. In the “reflecting telescope” the objective lens is replaced by a concave mirror. This is because large perfect lenses are more difficult to make than large mirrors."],
+        "context": ["Telescope and Microscope: Similarities and Differences"]
+        },
+        {
+            "tag": "Laws of Reflection",
+            "patterns": [
+               "The laws of reflection state that:",
+               "What are the laws of reflection?",
+               "State the laws of reflection?",
+               "Laws of reflection."
+            ],
+            "responses": ["The laws of reflection describe the behavior of light when it reflects off a surface. They state that the incident ray, reflected ray, and normal line all lie in the same plane, and the angle of incidence equals the angle of reflection."],
+            "context": ["Laws of Reflection"]
+         },
+         {
+            "tag": "Normal Line",
+            "patterns": [
+               "A line that is perpendicular to the surface.",
+               "Define normal line.",
+               "What is a normal line?",
+               "What is the definition of a normal line?"
+            ],
+            "responses": ["The normal line is a line perpendicular to the surface of reflection."],
+            "context": ["Normal Line"]
+         },
+         {
+            "tag": "Incident Ray",
+            "patterns": [
+               "The ray of light coming from the light source towards a surface.",
+               "The angle between the incident ray and normal line.",
+               "What is the incident ray?",
+               "Define incident ray.",
+               "What is the definition of an incident ray?"
+            ],
+            "responses": ["The incident ray is the ray of light coming from the light source toward a surface. Its angle with the normal line is important in reflection."],
+            "context": ["Incident Ray"]
+         },
+         {
+            "tag": "Reflected Ray",
+            "patterns": [
+               "The ray of light which leaves the mirror.",
+               "The angle between the reflected ray and normal line.",
+               "What is the reflected ray?",
+               "Define reflected ray.",
+               "What is the definition of an reflected ray?"
+            ],
+            "responses": ["The reflected ray is the ray of light that leaves the mirror after reflection. Its angle with the normal line is significant in reflection."],
+            "context": ["Reflected Ray"]
+         },
+         {
+            "tag": "Reflection in Plane Mirror",
+            "patterns": [
+               "When light hits an object, every part of that object reflects light in all directions.",
+               "Some of the reflected light reaches our eyes. Thus, we can see an object.",
+               "What is reflection in plane mirror?",
+               "Describe reflection in plane mirror."
+            ],
+            "responses": ["Reflection in a plane mirror occurs when light from an object is reflected in all directions, allowing us to see the object."],
+            "context": ["Reflection in Plane Mirror"]
+         },
+         {
+            "tag": "Characteristics of Images Formed by a Plane Mirror",
+            "patterns": [
+               "What are the characteristics of images formed by a plane mirror?",
+               "State the characteristics of images formed by a plane mirror.",
+               "The characteristics of images formed by a plane mirror.",
+               "What are the four characteristics of images formed by a plane mirror?"
+            ],
+            "responses": ["Images formed by a plane mirror are virtual, have the same size and orientation as the object, and are at the same distance from the mirror as the object."],
+            "context": ["Characteristics of Images Formed by a Plane Mirror"]
+         },
+         {
+            "tag": "Types of Reflection of Light",
+            "patterns": [
+               "Types of reflection of light.",
+               "What are the types of reflection of light?",
+               "State the types of reflection of light?",
+               "How many types of reflection of light are there?",
+               "What are the two types of reflection of light?"
+            ],
+            "responses": ["There are two types of reflection of light: specular/regular reflection, and diffused/irregular reflection."],
+            "context": ["Types of Reflection of Light"]
+         },
+         {
+            "tag": "Specular/Regular Reflection",
+            "patterns": [
+               "Specular/Regular Reflection.",
+               "What is specular/regular reflection?",
+               "What is specular reflection?",
+               "What is regular reflection?",
+               "Define specular reflection.",
+               "Define regular reflection.",
+               "Define specular/regular reflection."
+            ],
+            "responses": ["Specular/Regular Reflection occurs when light is reflected from a smooth surface at a specific angle."],
+            "context": ["Specular/Regular Reflection"]
+         },
+         {
+            "tag": "Diffused/Irregular Reflection",
+            "patterns": [
+               "What is produced by rough surfaces that tend to reflect light in all directions?",
+               "Diffused/irregular reflection.",
+               "What is diffused/irregular reflection?",
+               "What is diffused reflection?",
+               "What is irregular reflection?",
+               "Define diffused reflection.",
+               "Define irregular reflection.",
+               "Define diffused/irregular reflection."
+            ],
+            "responses": ["Diffused/Irregular Reflection happens when light is reflected by rough surfaces, scattering it in various directions."],
+            "context": ["Diffused/Irregular Reflection"]
+         },
+         {
+            "tag": "Reflection of Light",
+            "patterns": [
+               "It is the phenomenon by which a ray of light changes the direction of propagation when it strikes a boundary between different media through which it cannot pass.",
+               "What is the reflection of light?",
+               "Define reflection of light.",
+               "Reflection of light.",
+               "What is the phenomenon by which a ray of light changes the direction of propagation when it strikes a boundary between different media through which it cannot pass?"
+            ],
+            "responses": ["Reflection of light is the phenomenon where a ray of light changes direction when it encounters a boundary between different media it can't pass through."],
+            "context": ["Reflection of Light"]
+         },
+         {
+            "tag": "Mirror Left-Right Reversal Sample Situations",
+            "patterns": [
+               "If you view an image of yourself in a plane mirror, you will quickly notice that there is an apparent left-right reversal of the image.",
+               "That is, if you raise your left hand, you will notice that the image raises what would seem to be its right hand. If you raise your right hand, the image raises what would seem to be its left hand.",
+               "The letters in front of the ambulance are written laterally. This is because when seen in the rearview mirror by another vehicle, the image of the word would get inverted, letting the driver read the word properly so that he can provide way to the ambulance.",
+               "Give samples of mirror left-right reversal.",
+               "Examples of mirror left-right reversal."
+            ],
+            "responses": ["In a plane mirror, images are laterally reversed, causing apparent left-right reversals. This phenomenon is also seen in rearview mirrors when reading words like those on an ambulance."],
+            "context": ["Mirror Left-Right Reversal Sample Situations"]
+         },
+         {
+            "tag": "Reflection on Spherical Mirrors",
+            "patterns": [
+               "Their shape follows the surface of a sphere.",
+               "Describe spherical mirrors."
+            ],
+            "responses": ["Spherical mirrors are curved mirrors whose shape follows the surface of a sphere."],
+            "context": ["Reflection on Spherical Mirrors"]
+         },
+         {
+            "tag": "Two Kinds of Spherical Mirrors",
+            "patterns": [
+               "The two kinds of spherical mirrors.",
+               "What are the kinds of spherical mirrors?",
+               "State the two kinds of spherical mirrors.",
+               "Kinds of spherical mirrors."
+            ],
+            "responses": ["There are two kinds of spherical mirrors: the concave mirror and the convex mirror."],
+            "context": ["Two Kinds of Spherical Mirrors"]
+         },
+         {
+            "tag": "The Concave Mirror",
+            "patterns": [
+               "It reflects light inward to one focal point. It is used to focus light.",
+               "It is also known as a converging mirror.",
+               "It has a reflecting surface that is recessed inward (away from the incident light).",
+               "Describe a concave mirror.",
+               "What is a concave mirror?",
+               "What type of mirror reflects light inward to one focal point?"
+            ],
+            "responses": ["The concave mirror reflects light to a focal point, making it useful for focusing. It's also called a converging mirror and has a surface that curves inward."],
+            "context": ["The Concave Mirror"]
+         },
+         {
+            "tag": "The Convex Mirror",
+            "patterns": [
+               "This reflects light outwards; therefore, they are not used to focus light.",
+               "It is also known as a diverging mirror.",
+               "It is a curved mirror in which the reflective surface bulges towards the light source.",
+               "Describe a convex mirror.",
+               "What is a convex mirror?",
+               "What type of mirror reflects light outwards?"
+            ],
+            "responses": ["The convex mirror reflects light outward and is not suitable for focusing. It's also referred to as a diverging mirror and has a surface that bulges toward the light source."],
+            "context": ["The Convex Mirror"]
+         },
+         {
+            "tag": "Two Types of Images Formed by Reflecting Surfaces",
+            "patterns": [
+               "What are the two types of images formed by reflecting surfaces?",
+               "State the two types of images formed by reflecting surfaces.",
+               "Two types of images formed by reflecting surfaces."
+            ],
+            "responses": ["There are two types of images formed by reflecting surfaces: real images and virtual images."],
+            "context": ["Two Types of Images Formed by Reflecting Surfaces"]
+         },
+         {
+            "tag": "Real Image",
+            "patterns": [
+               "This is formed when light rays actually meet after reflection.",
+               "It can be formed on a screen.",
+               "It is inverted with respect to the object.",
+               "What is real image?",
+               "Define real image.",
+               "Describe real image.",
+               "What is a real image?",
+               "Real image?"
+            ],
+            "responses": ["A real image is created when light rays converge after reflection. It can be projected onto a screen and is inverted compared to the object."],
+            "context": ["Real Image"]
+         },
+         {
+            "tag": "Virtual Image",
+            "patterns": [
+               "This is formed when light rays do not actually intersect after reflection, but they appear to diverge from the mirror.",
+               "It cannot be formed on a screen.",
+               "It is erect with respect to the object.",
+               "What is virtual image?",
+               "Define virtual image.",
+               "Describe virtual image.",
+               "What is a virtual image?",
+               "Virtual image?"
+            ],
+            "responses": ["A virtual image is produced when light rays appear to diverge after reflection. It cannot be projected onto a screen and is upright compared to the object."],
+            "context": ["Virtual Image"]
+         },         
+         {
+         "tag": "Laws_Of_Motion_Law_of_Acceleration", 
+          "patterns": [
+          	"The second law of motion?",
+          	"Law of acceleration?" ,
+          	"What is the second law of motion?",
+          	"Tell me about the second law of motion.",
+          	"Exaplain the second law of motion."
+          ],
+          "reponses": ["The law of acceleration states that the acceleration of an object is directly proportional to the net force acting on it and is inversely proportional to the object's mass. The direction of the acceleration is in the direction of the net force acting on the object."],
+          "context": ["Law of acceleration: Definition"]
+          },
+          {
+          "tag": "Laws_Of_Motion_Law_of_Acceleration_Formula", 
+          "patterns": [
+          	"What is the formula for law of acceleration?",
+          	"How is Newton's second law of motion expressed?",
+          	"Law of acceleration formula?"
+          ],
+          "reponses": ["Netwon’s second law of motion is expressed through the equation: ∑F as-a-vector = m multiplied by a as-a-vector. Sigma (∑) stands for the algebraic sum. ∑F as-a-vector stands for the net force acting on the object, m for mass of the object and a as-a-vector for its acceleration. The arrow above the letters F and a indicated that both have magnitude and direction."],
+          "context": ["Law of acceleration: Formula"]
+          },
+          {
+          "tag": "Laws_Of_Motion_Units_of_Mass_Acceleration_and_Force", 
+          "patterns": [
+          	"What are the units of mass, acceleration and force involved in the second law of motion?",
+            "Units of mass, acceleration, and force involved in 2nd law of motion?"
+          ],
+          "reponses": ["If system is in MKS then mass is in kg, acceleration in m/s² and force in N= kg. m/s². If system is in CGS then mass is in g, acceleration: cm/ s² and force in Dyne= g.cm/s². If system is in FPS then mass is in slug, acceleration in ft/s² and force in pounds (lbs)= slug. ft/s²."],
+          "context": ["Units of mass, acceleration and force involved in the second law of motion"]
+          },
+          {
+          "tag": "Laws_Of_Motion_Units_of_Mass_Acceleration_and_Force_Presidential_Degree_no_187", 
+          "patterns": [
+          	"What is stated in the Presidential Degree No. 187?",
+            "Presidential Degree No. 187?",
+            "May 10, 1973?"
+          ],
+          "reponses": ["In the Philippines, Presidential Degree No. 187 dated May 10, 1973, prescribes the use of the metric system of weights and measures as the standard measurement for all products may it be commodities, materials, utilities, services as well as in all business and legal transactions."],
+          "context": ["Presidential Degree No. 187"]
+          },
+          {
+          "tag": "Laws_Of_Motion_Law_of_Interaction_Definition", 
+          "patterns": [
+          	"The third law of motion?",
+          	"Law of interaction?",
+          	"What is the third law of motion?",
+          	"Tell me about the third law of motion.",
+          	"Exaplain the third law of motion."
+          ],
+          "reponses": ["Law of interaction state that “for every action, there is always an equal and opposite reaction.” This law tells us that a force exerted on any object is always exerted back by an equal magnitude of force but in opposite direction. Always remember that in this law, forces always come in pairs. These are called “action” and “reaction” forces, and they do not act on the same body. In determining the action and reacted forces, be able to identify first the action that requires force, and then identify the reaction force that counteracts the action force."],
+          "context": ["Law of Interaction: Definition"]
+          },
+          {
+          "tag": "Laws_Of_Motion_Law_of_Interaction_Example", 
+          "patterns": [
+          	"What is an example of law of interaction?",
+          	"Give an example of the third law of motion.", 
+            "Give example of law of interaction"
+          ],
+          "reponses": ["An example of this is a boy pushing a wall. When the boy pushes the wall (Action), the wall exerts an equal and opposite magnitude of force to the boy (reaction). Another example is a horse pulling a calesa (action). The calesa pulls an equal and opposite magnitude of force towards the horse (reaction). Some more examples include hammering a nail, pushing a grocery cart, and attracting a paper clip using a magnet."],
+          "context": ["Law of Interaction: Example"]
+          },
+          {
+          "tag": "Laws_Of_Motion_The_Force_Of_Gravity", 
+          "patterns": [
+          	"What is the weight of gravity?",
+          	"Force of gravity?"
+          ],
+          "reponses": ["In one of Galileo’s experiments, objects dropped near the surface of the Earth would fall with the same acceleration, if air resistance is neglected. This acceleration is denoted by g ⃗  with an approximate value of 9.8m/s² or 980cm/s² or 32 ft/s². The force that causes this acceleration is called the force of gravity or gravitational force. The force acts vertically downward toward the centre of the Earth."],
+          "context": ["The Force of Gravity or Weight"]
+          },
+          {
+          "tag": "Laws_Of_Motion_Gravitational_Force_Formula", 
+          "patterns": [
+          	"How is gravitational force expressed?",
+          	"Gravitational Force Formula?"
+          ],
+          "reponses": ["F as a vector sub g = m multiplied by g as a vector. Where F as a vector sub g is for gravitational force, m for mass and g as a vector for acceleration due to gravity. The direction of this force is always down toward the center of the Earth. The magnitude of the force of gravity on an object, mg, is called the object’s weight, symbolized by the letter W. When a person’s mass is 40 kg, the computed weight is 392 N (multiply the mass to g = 9.8 m/s²) on Earth. His weight differs when he is on other planets and satellites like the Moon."],
+          "context": ["Gravitational Force Formula"]
+          }        
+]
+}

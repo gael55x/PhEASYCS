@@ -421,7 +421,7 @@
             "Explain why the kinetic energy of a 10,000-kg vehicle is twice as much as the kinetic energy of a 5,000-kg vehicle when both are travelling at the same speed.",
             "Can you provide a sample situation where the kinetic energy of a 10,000-kg vehicle is twice as much as the kinetic energy of a 5,000-kg vehicle when both are travelling at the same speed?", 
             "Give me an example of kinetic energy.",
-            "Can you provide a sample situation for potential energy?"
+            "Can you provide a sample situation for kinetic energy?"
         ],
         "responses": [
             "The kinetic energy of a 10,000-kg vehicle is twice as much as the kinetic energy of a 5,000-kg vehicle when both are travelling at the same speed. This is because kinetic energy depends on mass and velocity. The formula for kinetic energy is KE = 1/2 * m * v^2. Since both vehicles are travelling at the same speed, their velocities are equal. However, the 10,000-kg vehicle has twice the mass of the 5,000-kg vehicle. When we substitute these values into the formula, we get:\n\nKE_1 = 1/2 * (2m) * v^2\nKE_1 = 2 * (1/2 * m * v^2)\n\nTherefore, the kinetic energy of the 10,000-kg vehicle is twice as much as that of the 5,000-kg vehicle."
@@ -895,6 +895,17 @@
             "context": ["Galileo: Definition"]
          },
          {
+          "tag": "Galileo_man",
+          "patterns": [
+             "Who is Galileo Gallilei?",
+             "Galileo Gallilei?",
+             "Gallilei?",
+             "What did Galileo Gallilei do?"
+          ],
+          "responses": ["Galileo Galilei was the first to suggest that uniform speed straight-line motion was just as natural as at-rest state of motion. Galileo's work influenced the understanding of motion and inspired Isaac Newton's three laws of motion."],
+          "context": ["Galileo: Person"]
+       },
+         {
             "tag": "Law of Inertia",
             "patterns": [
                "What is the law of inertia?",
@@ -1001,7 +1012,7 @@
         	"Compare and contrast the optical system of telescope and microscope.",
         	"Optical system of a telescope and microscope?"
         ],
-        "reponses": ["The optical system of a telescope is similar to that of a compound microscope. In both instruments, the image formed by an objective lens is viewed through an eyepiece. The key difference is that the telescope that uses lens as an objective. It is called a “refracting telescope”. In the “reflecting telescope” the objective lens is replaced by a concave mirror. This is because large perfect lenses are more difficult to make than large mirrors."],
+        "reponses": ["The optical system of a telescope is similar to that of a compound microscope. In both instruments, the image formed by an objective lens is viewed through an eyepiece. The key difference is that the telescope that uses lens as an objective. It is called a 'refracting telescope'. In the 'reflecting telescope' the objective lens is replaced by a concave mirror. This is because large perfect lenses are more difficult to make than large mirrors."],
         "context": ["Telescope and Microscope: Similarities and Differences"]
         },
         {
@@ -1273,7 +1284,7 @@
           	"Tell me about the third law of motion.",
           	"Exaplain the third law of motion."
           ],
-          "reponses": ["Law of interaction state that “for every action, there is always an equal and opposite reaction.” This law tells us that a force exerted on any object is always exerted back by an equal magnitude of force but in opposite direction. Always remember that in this law, forces always come in pairs. These are called “action” and “reaction” forces, and they do not act on the same body. In determining the action and reacted forces, be able to identify first the action that requires force, and then identify the reaction force that counteracts the action force."],
+          "reponses": ["Law of interaction state that 'for every action, there is always an equal and opposite reaction.' This law tells us that a force exerted on any object is always exerted back by an equal magnitude of force but in opposite direction. Always remember that in this law, forces always come in pairs. These are called 'action' and 'reaction' forces, and they do not act on the same body. In determining the action and reacted forces, be able to identify first the action that requires force, and then identify the reaction force that counteracts the action force."],
           "context": ["Law of Interaction: Definition"]
           },
           {
@@ -1303,6 +1314,1094 @@
           ],
           "reponses": ["F as a vector sub g = m multiplied by g as a vector. Where F as a vector sub g is for gravitational force, m for mass and g as a vector for acceleration due to gravity. The direction of this force is always down toward the center of the Earth. The magnitude of the force of gravity on an object, mg, is called the object’s weight, symbolized by the letter W. When a person’s mass is 40 kg, the computed weight is 392 N (multiply the mass to g = 9.8 m/s²) on Earth. His weight differs when he is on other planets and satellites like the Moon."],
           "context": ["Gravitational Force Formula"]
-          }        
+          },
+          {
+            "Tag": "Heat Transfer and Energy Transformation on Heat Engines", 
+            "patterns": [
+            "What is Heat Engine?",
+            "Define Heat Engine.",
+            "What is the definition of Heat Engine?",
+            "Explain Heat Engine."
+            ], 
+            "responses": ["A device that changes thermal energy into mechanical work. It consists of a gas confined by a piston in a chamber. When gas is heated, it expands making the piston move. This will be operated through cycles. The piston moves back and forth. If the gas is heated the pistons move up. When the gas is cooled the piston moves down."], 
+            "context": ["Heat Engine : Definition"]
+            },
+            {
+            "Tag": "On Heat Engines, Heat Transfer and Energy Transformation",
+            "patterns": [
+            "What is Thermodynamics?",
+            "Define Thermodynamics.",
+            "What is the definition of Thermodynamics?",
+            "Explain Thermodynamics."
+            ], 
+            "responses": ["It is the study of heat and its transformation into work."], 
+            "context": ["Thermodynamics : Definition"]
+            },
+            {
+            "Tag": "Heat Transfer and Energy Conversion in Heat Engines", 
+            "patterns": [
+            "What is Heat energy?",
+            "Define Heat energy.",
+            "What is the definition of Heat energy?",
+            "Explain Heat Energy."
+            ], 
+            "responses": ["It is also known as thermal energy. It can produce work in many ways. Like for example a heat engine in the vehicles. If you rub hands vigorously, they become warm because the work done by the muscles in your arms is converted to thermal energy caused by friction as you rub your hands together."], 
+            "context": ["Heat Energy : Definition"]
+            },
+            {
+            "tag": "Heat Engine, Heat Transfer and Energy Transformation", 
+            "patterns": [
+            "What is Heat Process?",
+            "Define Heat Process.",
+            "What is the definition of Heat Process?",
+            "Explain Heat Process."
+            ], 
+            "responses": ["Heat is taken in by the engine from a high temperature reservoir. The energy absorbed by the heat engine is used to perform useful work, not all heat absorbed by the engine can be converted to useful work. There will always be a portion that will be expelled as waste heat. These waste heat goes to the low temperature reservoir or the heat sink. Heat engine does work by transferring heat from high temperature reservoir into the low temperature reservoir then can be transformed into useful mechanical work:  W = QH - QC where: Q H = heat at higher temperature reservoir and Q c = heat at low temperature reservoir. The greater the difference between the heat input and heat output, more work can be produced. All heat engines follow the cycle of repeated sequences of heating (compressing ) and pressurizing the working fluid and rejecting unused or waste heat to a heat sink."], 
+            "context": ["Heat Process : Definition"]
+            },
+            {
+            "Tag": "The Transfer Of Heat And Transformation of Energy on Heat Engines", 
+            "patterns": [
+            "What is Carnot Engine?",
+            "Define Carnot Engine.",
+            "What is the definition of Carnot Engine?",
+            "Explain Carnot Engine."
+            ], 
+            "responses": ["It is an ideal heat engine with highest possible efficiency named right after Sadi Carnot. An imaginary heat engine that uses only isothermal and adiabatic processes. Consist of a cylinder that is filled with an ideal gas and has a movable piston at one end. The amount of useful work, under ideal conditions, depends on the temperature difference between the hot and the cold temperature. The Carnot engine works on the same principle as that of the cyclic engines. All cyclic heat engines absorb some quantity of heat from source, convert a part of heat energy to work and reject the remaining part of the heat to sink."], 
+            "context": ["Carnot Engine : Definition"]
+            },
+            {
+            "Tag": "On Heat Engines, The Transformation of Energy and Heat Transfer", 
+            "patterns": [
+            "What is Heat Efficiency?",
+            "Define Heat Efficiency.",
+            "What is the definition of Heat Efficiency?",
+            "Explain Heat Efficiency."
+            ], 
+            "responses": ["It is an important measure of heat engines which refers to the ratio of the useful work done to the heat provided multiplied by 100%."], 
+            "context": ["Heat Efficiency : Definition"]
+            },
+            {
+            "Tag": "The Heat Transfer and Energy Transformation on Heat Engines ", 
+            "patterns": [
+            "What are Internal Combustion Engines?",
+            "Define Internal Combustion Engines.",
+            "What is the definition of Internal Combustion Engines?",
+            "Explain Internal Combustion Engines."
+            ], 
+            "responses": ["These refer to engines where combustion takes place inside the engine chamber. Like gasoline, diesel engines and our human body."], 
+            "context": ["Internal Combustion Engines : Definition"]
+            },
+            {
+            "Tag": "The Transformation of Energy and Transfer of Heat on Heat Engines", 
+            "patterns": [
+            "What is External Combustion Engine?",
+            "Define External combustion engine.",
+            "What is the definition of External combustion engine?",
+            "Explain External combustion engine."
+            ], 
+            "responses": ["It is where the fuel combustion takes place outside the engine. Steam, piston engines and the atmosphere are examples of external combustion engines."], 
+            "context": ["External combustion engine : Definition"]
+            },
+            {
+              "tag": "Generation, Transmission, and Distribution of Electrical Energy",
+              "patterns": [
+              "What is Hydro power?",
+              "Define Hydro power.",
+              "What is the definition of Hydro power?",
+              "Explain Hydro power."
+              ],
+              "responses": ["In a hydroelectric power plant, the energy is produced by falling water from the reservoir is used by a water turbine to rotate large generators. As the water falls from the reservoir, its kinetic energy increases, and it flows very fast and enters the control gate. It travels to penstock and pushes the turbine blade to spin. The turbine which is connected to the generator’s shaft converts the kinetic energy of falling water into mechanical energy. As the turbines spin, it also causes the generator to spin. In this process, the mechanical energy from the turbine is converted to electrical energy in the generator. The rotation of the generator’s shaft turns powerful electromagnets that are surrounded by the coil of copper wires. The coil is connected to the step-up transformer that sends high-voltage current to power lines."],
+              "context": ["Hydro power : Definition"] 
+              },
+              {
+              "tag": "Electrical energy generation, transmission, and distribution",
+              "patterns": [
+              "What is Transmission of Electricity?",
+              "Define Transmission of Electricity.",
+              "What is the definition of Transmission of Electricity?",
+              "Explain Transmission of Electricity."
+              ],
+              "responses": ["Electric Power Transmission is the bulk movement of electrical energy from a generating site, such as a power plant, to an electrical substation. The interconnected lines which facilitate this movement are transmission lines or networks. Transmission lines are commonly put up between transmission substations which are regulated by the National Power Corporation. Transmission lines may either be constructed overhead on towers, underground or they may be sub transmission lines. Overhead lines are very high voltage and do most of the long-distance transmission. They must be high voltage to minimize power losses of resistance. Underground lines are used to transport electricity to populated areas, underwater, or anywhere that overhead lines cannot be used. They are less common than overhead lines due to heat-related losses and higher costs. Sub transmission lines carry lower voltages to distribution stations and can be overhead or underground. Electrical transmission usually delivers generated electricity over a long distance to the distribution grid located in populated areas. An important part of this process includes the transformers which are used to increase voltage levels to make a long-distance transmission feasible. Electrical Grid is the electrical transmission system combined with power plants, distribution systems, and sub-stations. This grid meets society’s electrical needs and is what gets the electrical power from generation to its end-user. The power lines, on the other hand, transport electricity from place to place, usually, alternating current is used, so the step-up transformers can increase the voltage. This increases voltage allows efficient transmission and sends large amounts of electrical power and is extended over considerable distances."],
+              "context": ["Transmission of Electricity : Definition"] 
+              },
+              {
+              "tag": "Electricity generation, transmission, and distribution",
+              "patterns": [
+              "What is Electric Power Distribution?",
+              "Define Electric Power Distribution.",
+              "What is the definition of Electric Power Distribution?",
+              "Explain Electric Power Distribution."
+              ],
+              "responses": ["Electric power distribution is the final stage in the delivery of electric power; it carries electricity from the transmission system to individual consumers. Often several consumers are supplied from one transformer through secondary distribution lines."],
+              "context": ["Electric Power Distribution : Definition"] 
+              },
+              {
+              "tag": "Conservation of Momentum", 
+                "patterns": [
+                  "initial momentum of the system was zero",
+                  "The system's initial momentum was indeed zero.",
+                  "air inside the balloon out, the balloon moves",
+                  "Releasing the air inside the balloon causes the balloon to move.",
+                  "force that causes the balloon to move",
+                  "The balloon moves due to the force from the air inside it moving in opposite directions.",
+                  "no external force involved",
+                  "There was no external force involved, so the total momentum was conserved."
+                ],
+                "reponses": ["At the start, the system which consists of the balloon and the air inside were not moving so the initial momentum of the system was zero. If we let the air inside the balloon out, the balloon moves. The force that causes the balloon to move comes from the air inside the balloon, moving at opposite directions. There was no external force involved, thus the total momentum was conserved and remained zero."],
+                "context": ["Conservation of Momentum: Balloon Example"]
+                },
+                {
+                "tag": "Conservation of Momentum", 
+                "patterns": [
+                  "Conservation of momentum",
+                  "Total momentum before collision is equal to total momentum after collision",
+                  "This statement is a consequence of the conservation of momentum.",
+                  "total momentum in the system was conserved",
+                  "Conservation of momentum ensures that the total momentum remains constant in an isolated system.",
+                  "Conserved means that the momentum can be",
+                  "In a closed system, momentum can be transferred between objects without being lost.",
+                  "Momentum is transferred when there is collision"
+                ],
+                "reponses": ["Conservation of momentum stated that the total momentum of an isolated system stays constant. So total momentum before collision is equal to total momentum after collision. Therefore, the total momentum in the system was conserved. Conserved means that the momentum can be transformed from one object to another but does not lost the system. In a closed system, there were no other factors like forces that play significant roles in the interactions. Momentum is transferred when there is collision."],
+                "context": ["Conservation of Momentum: Definition"]
+                },
+                {
+                "tag": "Conservation of Momentum", 
+                "patterns": [
+                  "initial total momentum is zero",
+                  "momentum is negative",
+                  "momentum is positive",
+                  "How does conservation of momentum formula work?",
+                  "Explain the formula of conservation of momentum.",
+                  "What happens to momentum if object moves to the left?",
+                  "What happens to momentum if object moves to the right?",
+                  "When is total momentum conserved?"
+                ],
+                "reponses": ["Most often, we started from rest, so the initial total momentum is zero. When it starts to move these two bodies are in opposite directions, as it moves to the left, momentum is negative and when it moves to the right, momentum is positive. Thus, the total momentum of the system was conserved."],
+                "context": ["Conservation of Momentum: Formula"]
+                },
+                {
+                "tag": "Heat and Work", 
+"patterns": [
+	"What happens to internal energy of a body when the temperature increases?",
+	"temperature difference",
+	"changes from solid to liquid or from liquid to gas",
+	"What is heat?",
+	"Tell me about heat.",
+	"How does heat work?"
+],
+"reponses": ["Heat is the energy transferred from one body to another as a results of temperature difference. The internal energy of a body increases when the temperature increases and changes from solid to liquid or from liquid to gas. Normally heat flows spontaneously from a higher temperature to a lower temperature by doing work or by heating, internal energy can be increased. Heating is the process in which heat is transferred from one body to another as a result of temperature difference."],
+"context": ["Heat: Definition"]
+},
+{
+"tag": "Heat and Work", 
+"patterns": [
+	"What does the first law of thermodynamics state?",
+	"heat taken in by the system",
+	"work done by the system",
+	"internal energy of the substances is the sum of"
+],
+"reponses": ["The first law of thermodynamic states that the change in internal energy of a system equals to the difference between the heat taken in by the system and the work done by the system internal energy of the substances is the sum of molecular kinetic energy( due to random motion of the molecules) , the molecular potential energy ( due to forces that acts between atoms of a molecule and between molecules) and other kinds of molecular energy."],
+"context": ["Thermodynamic: First Law"]
+},
+{
+"tag": "Heat and Work", 
+"patterns": [
+	"How is the first law of thermodynamics mathematically expressed?",
+	"First law of Thermodynamics formula",
+	"What does Q represent in first law of thermodynamics formula?",
+	"What does W represent in first law of thermodynamics formula?",
+	"What does ∆U represent in first law of thermodynamics formula?"
+],
+"reponses": ["Mathematically, the law is expressed as ∆U = Q - W. Where: Q = amount of heat flowing into the system during a given process. W = net work done by the system. ∆U = change in the system internal energy. Q = W + ∆U"],
+"context": ["Thermodynamics First Law: Formula"]
+},
+{
+"tag": "Heat and Work", 
+"patterns": [
+	"When is an object considered hot?",
+	"What happens to heat flow when two objects are in contact?",
+	"Why are objects hot when touched?",
+	"Spontaneous process",
+	"Non-spontaneous process",
+	"Does not require any externel energy to occur",
+	"What does heat flow need to happen?"
+],
+"reponses": ["An object with high temperature is said to be hot. Remember heat flows from hotter objects to a cooler one when two objects are in contact. This is the reasons when we touch them; it feels hot since the temperature is greater than our normal body temperature of 37° celsius. This is a natural phenomenon and is said to be a spontaneous process. It does not require any external energy to occur. When heat flow from lower temperature to a higher temperature, it needs mechanical energy to happen and said to be a non- spontaneous process."],
+"context": ["Spontaneous and Non-spontaneous process"]
+},
+{
+  "tag": "Charge",
+  "patterns": ["What is charge?", "Explain charge", "Charge definition"],
+  "responses": ["Charge is the fundamental property that allows particles to attract or repulse each other."],
+  "context": ["Charge : Definition"]
+},
+{
+  "tag": "Coulombs",
+  "patterns": ["How is charge measured?", "What are Coulombs?", "Coulombs definition"],
+  "responses": ["Charge is measured in Coulombs. One proton has 1.602X10-19 Coulombs of charge, and one electron is equal to -1.602X10-19 Coulombs."],
+  "context": ["Coulombs : Definition"]
+},
+{
+  "tag": "Proton",
+  "patterns": ["What is a proton?", "Explain proton", "Proton definition"],
+  "responses": ["A proton is known as a positive charge."],
+  "context": ["Proton : Definition"]
+},
+{
+  "tag": "Neutron",
+  "patterns": ["What is a neutron?", "Explain neutron", "Neutron definition"],
+  "responses": ["A neutron is known as a neutral charge."],
+  "context": ["Neutron : Definition"]
+},
+{
+  "tag": "Electric_Field",
+  "patterns": ["What is an electric field?", "Explain electric field", "Electric field definition"],
+  "responses": ["An electric charge experiences force when placed in an electric field. An electric field is the electric force per unit of charge. It goes outward from a positive charge and inward to a negative charge."],
+  "context": ["Electric_Field : Definition"]
+},
+{
+  "tag": "Electric_Current",
+  "patterns": ["What is electric current?", "Explain electric current", "Electric current definition"],
+  "responses": ["Electric current (I) is the rate of flow of electric charges from one point to another in a circuit. It is measured in Amperes (A), with one ampere being equal to 1 coulomb of charge per second. It is given by I= q/t, where I is current in Amperes (A), q = charge in coulombs (C), t = time in seconds (s)"],
+  "context": ["Electric_Current : Definition"]
+},
+{
+  "tag": "Voltage",
+  "patterns": ["What is voltage?", "Explain voltage", "Voltage definition"],
+  "responses": ["Voltage (V) is what makes a current move. It is given by V = W/q, where V is voltage in volts, W is work in Joules (J), and q is charge in Coulombs (C)."],
+  "context": ["Voltage : Definition"]
+},
+{
+  "tag": "Electrical_Resistance",
+  "patterns": ["What is electrical resistance?", "Explain electrical resistance", "Electrical resistance definition"],
+  "responses": ["Electrical resistance (R) is the opposition to the flow of current by the conducting wire. It depends on factors like thickness, length, conductivity, and temperature of the wire."],
+  "context": ["Electrical_Resistance : Definition"]
+},
+{
+  "tag": "Conductivity",
+  "patterns": ["What is conductivity?", "Explain conductivity", "Conductivity definition"],
+  "responses": ["Conductivity is the property of matter that allows current to flow. Materials with higher conductivity allow more current to flow."],
+  "context": ["Conductivity : Definition"]
+},
+{
+  "tag": "Ohms",
+  "patterns": ["What are Ohms?", "Explain Ohms", "Ohms definition"],
+  "responses": ["Electrical resistance is measured in Ohms (Ω), named after Georg Simon Ohm."],
+  "context": ["Ohms : Definition"]
+},
+{
+  "tag": "ohms_law",
+  "patterns": ["What is Ohm's Law?", "Explain Ohm's Law", "Ohm's Law definition"],
+  "responses": ["Ohm's Law summarizes the relationship among voltage, current, and resistance. It states that I = V/R, where I is current in Amperes, V is voltage in volts, and R is resistance in ohms."],
+  "context": ["Ohms_law : Definition"]
+},
+{
+  "tag": "Momentum",
+  "patterns": ["What is momentum?", "Explain momentum", "Momentum definition"],
+  "responses": ["Momentum is defined as the product of mass and velocity. Its value depends on the mass and velocity of the moving object. The equation for momentum is p = mv, where p is momentum, m is mass, and v is velocity."],
+  "context": ["Momentum : Definition"]
+},
+{
+  "tag": "Impulse",
+  "patterns": ["What is impulse?", "Explain impulse", "Impulse definition"],
+  "responses": ["Impulse is a force when multiplied by the duration (time) applied to the object. It requires a force to change the momentum of an object. The equation for impulse is I = Ft, where I is impulse (N.s), F is force (N=kg.m/s²), and t is time (s)."],
+  "context": ["Impulse : Definition"]
+},
+{
+  "tag": "Collision",
+  "patterns": ["What is collision?", "Explain collision", "Collision definition"],
+  "responses": ["Collision is an encounter between two or more objects resulting in a change of impulse and momentum. The time of impact is usually short, and therefore, the momentum of the body is approximately conserved. Collisions are categorized as elastic or inelastic based on whether the total kinetic energy of the system changes."],
+  "context": ["Collision : Definition"]
+},
+{
+  "tag": "Elastic_Collisions",
+  "patterns": ["What are elastic collisions?", "Explain elastic collisions", "Elastic collisions definition"],
+  "responses": ["Elastic collisions are those in which the total kinetic energy of the system does not change, and colliding objects bounce off each other after the collision. They separate from each other without deforming or damaging each other, similar to a ball bouncing. The objects remain separated after the collision."],
+  "context": ["Elastic_Collisions : Definition"]
+},
+{
+  "tag": "Inelastic_Collisions",
+  "patterns": ["What are inelastic collisions?", "Explain inelastic collisions", "Inelastic collisions definition"],
+  "responses": ["Inelastic collisions are those in which the total energy of the system changes, and objects are deformed by the collision. The objects may stick together after the collision and move at a common velocity."],
+  "context": ["Inelastic_Collisions  : Definition"]
+},
+{
+  "tag": "Perfectly_Inelastic_Collisions",
+  "patterns": ["What are perfectly inelastic collisions?", "Explain perfectly inelastic collisions", "Perfectly inelastic collisions definition"],
+  "responses": ["Perfectly inelastic collisions are collisions in which both objects stick together and move at a common velocity after colliding. They do not separate after the collision."],
+  "context": ["Perfectly_Inelastic_Collisions : Definition"]
+},
+{ 
+       "tag": "Safety Electricity Application: Definition",
+        "patterns": [
+            "What is Electrical Hazard", 
+            "Define Electrical Hazard", 
+            "What is the definition of Hazard", 
+            "What is the meaning of Hazard", 
+            "Give me the meaning of Hazard", 
+            "Give me the definition of Hazard"
+        ],
+        "responses": [
+            "Electrical hazard or electric shock is a condition due to direct or indirect electrical contact with energized conductor or equipment, and from which a person may sustain electrical injury from shock or damage to property or both."
+        ],
+        "context": ["Electrical Hazard:Definiton"]
+    },
+    {
+        "tag": "Safety Electricity Application: Situation", 
+        "patterns":[
+            "What are following situations that cause the current to go through the body?", 
+            "Electric shock situations.", 
+            "What are situatons that cause elecrtric shocks?", 
+            "What are situations that cause arc flash?"
+         ], 
+        "responses": [
+            "Direct contact with live parts of the installation.",  
+            "Accidental contact with damaged wires that are seemingly not live.",
+            "Direct contact with a grounded surface." 
+         ], 
+        "context": ["Situation"]
+    },
+    {
+        "tag": "Safety Electricity Application: Fatal Current", 
+        "patterns": [
+            "How can electric current damage our bodies?",
+            "How can electric current hurt me?", 
+            "How can eletric current damage me?",
+            "How dangerous is a current?", 
+            "Can current kill us?"
+         ], 
+        "responses" : [
+           "It can cause improper function of the brain and heart.",
+           "May lead to cardiac arrest or death.", 
+           "The body will experience intense heat that can cause skin burning.",
+           "Muscles will involuntarily contract which will be hard to control.", 
+           "A current traveling from finger to elbow through the arm may produce only a painful shock, but that same current traveling from hand to foot or through the chest from hand to hand may well be dangerous."
+         ], 
+        "conext": ["Fatal Current"] 
+    }, 
+    {
+        "tag": "Safety Electricity Application: Safety Situation", 
+        "patterns": [
+            "How can I be safe when handling high voltage?", 
+            "What to do when dealing with high-voltage circuits?",
+            "How to deal with current?" 
+          ], 
+        "responses": [
+            "The practice of using only one hand (keeping one hand behind your back) while working on high-voltage circuits is a good safety habit. Even better would be to disconnect all sources of power from the equipment you are about to repair." 
+          ], 
+         "context": ["Safety Situation"] 
+    }, 
+    {
+        "tag": "Safety Electricity Application: Direct Current", 
+        "patterns": [
+            "What is Direct Current?",
+            "Give the definition of Direct current.",
+            "What is the meaning of direct current?", 
+            "What does Direct current mean?"
+           ], 
+         "responses": ["is a current that travels from negative to the positive terminal. It does not change its direction. It is the current we can get from a battery."
+            ], 
+         "context": ["Direct Current: Definition"]
+    },
+    {
+         "tag": "Electric Circuit: Simple explanation", 
+         "patterns": [
+              "Give a simple explanation of an electric circuit."
+            ], 
+         "responses": ["A circuit provides a path for electrons to flow. This path can be in a single direction or can be a branched path. If you were an electron and were given a single path, you do not have another option but to proceed and take that path. If you were given more paths to take, then you can choose from among these paths."],
+         "context":  ["Electric circuit: Simple explanation"] 
+    },
+    {
+         "tag": "Safety Electricity Application: Direct Current_More information",
+         "patterns": [
+             "What is Direct Current (D.C.)?",
+             "Tell me about D.C.",
+             "How does Direct Current work?"
+      ],
+         "responses": [
+            "Direct Current, often abbreviated as D.C., is an electric current that flows consistently in one direction, from positive to negative terminals. It does not change direction like Alternating Current (A.C.) and is commonly used in batteries and electronic devices."
+      ],
+      "context": ["Direct current: More information"]
+    },
+    {
+      "tag": "Safety Electricity Application: Direct Current_Damage", 
+      "patterns": [
+         "What happens when direct current passes through our body?", 
+         "What happens when we encounter direct current?" 
+      ], 
+      "responses": [
+         "D.C. passing your body can not cause electric shock but can cause burning if the positive and negative wire can come into contact." 
+      ], 
+      "context": ["Damage of Direct Current"] 
+    },
+    { 
+      "tag": "Safety Electricity Application: Alternating Current_Definition",
+      "patterns": [
+        "Explain Alternating Current (A.C.)",
+        "Tell me more about A.C."
+      ],
+      "responses": [
+        "Alternating Current, known as A.C., is an electric current that constantly changes direction. In many countries, it reverses direction 60 times per second at a frequency of 60 Hz. A.C. can be dangerous to the human body, with as little as 25 volts having the potential to cause harm. It is crucial to disconnect a victim from A.C. contact quickly to prevent cardiac arrest."
+      ],
+      "context": ["Alternating current: Definition"]
+    },
+    {
+      "tag": "Safety Electricity Application: Fire_Leading Cause",
+      "patterns": [
+        "What are the signs of faulty electrical wiring?",
+        "How can I identify faulty electrical wiring?",
+        "Tell me about the leading causes of electrical fires."
+      ],
+      "responses": [
+        "Faulty electrical wiring can be identified through various signs such as dimming or flickering lights when appliances are turned on, the absence of permanent outlets for appliances, the excessive use of extension cords, and frequent blowing of fuses or tripping of circuit breakers. Faulty wiring is a leading cause of electrical fires."
+      ],
+      "context": ["Fire: Leading Cause"]
+    },
+    {
+      "tag": "Safety Electricity Application: Fire Prevention",
+      "patterns": [
+        "How can I prevent electrical fires?",
+        "Give me tips on fire prevention.",
+        "What should I do to ensure electrical safety?"
+      ],
+      "responses": [
+        "To prevent electrical fires, it is advisable to contact a qualified electrician to repair faulty electrical wiring. This can help eliminate potential fire hazards in your home."
+      ],
+      "context": ["Fire prevention"]
+    },
+    {
+      "tag": "Safety Electricity Application: Types of Electrical Safety Devices",
+      "patterns": [
+        "Explain electrical safety devices.",
+        "What are the different types of electrical safety devices?"
+      ],
+      "responses": [
+        "There are several types of electrical safety devices, including circuit breakers, fuses, Automatic Voltage Regulators (AVR), and Uninterruptible Power Supplies (UPS). These devices are designed to protect electrical systems and appliances from damage and ensure safe operation."
+      ],
+      "context": ["Types of Electrical Safety Devices"]
+    },
+    {
+      "tag": "Electric circuit: Circuit",
+      "patterns": [
+        "What is an electric circuit?",
+        "Tell me about the components of an electric circuit."
+      ],
+      "responses": [
+        "An electric circuit is a closed loop through which current can flow. It consists of several components, including a voltage source, conducting wires, electrical switches, and electrical loads. These components work together to create a functional electrical system."
+      ],
+      "context": ["Circuit"]
+    },
+    {
+      "tag": "Electric circuit: Series Circuit",
+      "patterns": [
+        "Explain what a series circuit is.",
+        "What is a series circuit",
+        "series circuit?"
+    
+      ],
+      "responses": [
+        "A series circuit is a type of electrical circuit that consists of one loop. If the circuit is interrupted at any point in the loop, no current can flow, and the loads in the circuit won't work. In a series circuit, the total resistance is the sum of all resistances, and the voltage source equals the sum of all voltages in each load. However, if one load is damaged or removed, it can disrupt the entire circuit, and the brightness of bulbs decreases with more bulbs added."
+      ],
+      "context": ["Series circuit"]
+    },
+    {
+      "tag": "Electric circuit: Current",
+      "patterns": [
+        "What is the formula for current?",
+        "How do we calculate current?."
+      ],
+      "responses": [
+        "Current in electrical circuits can be calculated using the formula I = V / R, where I represents current, V is voltage, and R is resistance. This formula helps determine the flow of electric charge in a circuit."
+      ],
+      "context": ["Current"]
+    },
+    {
+      "tag": "Safety Electricity Application: Faulty Electrical Wiring_Repair",
+      "patterns": [
+        "How do I repair faulty electrical wiring?",
+        "What are the signs of faulty electrical wiring?",
+        "Tell me about fixing electrical wiring issues."
+      ],
+      "responses": [
+        "Faulty electrical wiring can exhibit various signs such as dimming or flickering lights when appliances are turned on, the absence of permanent outlets for appliances, the use of many extension cords, and frequent blowing of fuses or tripping of circuit breakers. It's essential to consult a qualified electrician to repair these issues."
+      ],
+      "context": ["Faulty electrical wiring: repair"]
+    },
+    {
+      "tag": "Safety Electricity Application: Circuit Conditions",
+      "patterns": [
+        "What are the conditions of faulty circuits?",
+        "Explain short circuits and grounded circuits.",
+        "Tell me about circuit problems."
+      ],
+      "responses": [
+        "There are two conditions of circuits with faulty electrical wiring: short circuits and grounded circuits. A short circuit occurs when current takes the path of least resistance, causing wires to overheat and potentially melt insulators. Grounded circuits happen when current bypasses the negative wire and flows through an appliance's metal casing."
+      ],
+      "context": ["Circuit conditions"]
+    },
+    {
+      "tag": "Safety Electricity Application: Short Circuit",
+      "patterns": [
+        "What is a short circuit?",
+        "Explain short circuits.",
+        "Tell me about electrical short circuits."
+      ],
+      "responses": [
+        "A short circuit refers to a circuit condition in which current takes a path of minimal resistance, leading to overheating and potential insulator melting. This can result from current overloading and can be dangerous."
+      ],
+      "context": ["Short circuit"]
+    },
+    {
+      "tag": "Safety Electricity Application: Grounded Circuit",
+      "patterns": [
+        "What is a grounded circuit?",
+        "Explain grounded circuits.",
+        "Tell me about circuits with grounding issues."
+      ],
+      "responses": [
+        "A grounded circuit refers to a condition where current bypasses the negative wire and flows through an appliance's metal casing. This can pose safety hazards and damage appliances."
+      ],
+      "context": ["Grounded circuit"]
+    },
+    {
+      "tag": "Safety Electricity Application: Electrical Safety Devices",
+      "patterns": [
+        "What are electrical safety devices?",
+        "Tell me about circuit breakers, fuses, AVR, and UPS.",
+        "Explain safety devices in electrical systems."
+      ],
+      "responses": [
+        "Electrical safety devices include circuit breakers, fuses, Automatic Voltage Regulators (AVR), and Uninterruptible Power Supplies (UPS). These devices are designed to protect electrical systems and appliances from damage and ensure safe operation."
+      ],
+      "context": ["Electrical Safety Devices"]
+    },
+    {
+      "tag": "Safety Electricity Application: Circuit Breaker",
+      "patterns": [
+        "What is a circuit breaker?",
+        "Explain how circuit breakers work.",
+        "Tell me about circuit breaker functions."
+      ],
+      "responses": [
+        "A circuit breaker uses electromagnets and bimetallic strips to open a switch in cases of overloading. It automatically shuts down in the event of overloading due to a short circuit and cannot be turned on until the short circuit is fixed."
+      ],
+      "context": ["Circuit breaker"]
+    },
+    {
+      "tag": "Safety Electricity Application: Fuse",
+      "patterns": [
+        "What is a fuse?",
+        "Explain how fuses function.",
+        "Tell me about the purpose of fuses."
+      ],
+      "responses": [
+        "A fuse is made of a metal ribbon that heats up and melts if the current exceeds its rating. Once a fuse blows out, it should be replaced with a new one after identifying and repairing the source of overloading. Using a jumper wire is unsafe, as it may not melt during current overloading."
+      ],
+      "context": ["Fuse"]
+    },
+    {
+      "tag": "Safety Electricity Application: Automatic Voltage Regulator",
+      "patterns": [
+        "What is an Automatic Voltage Regulator (AVR)?",
+        "Explain how AVR works.",
+        "Tell me about voltage regulation with AVR."
+      ],
+      "responses": [
+        "An Automatic Voltage Regulator (AVR) is a device designed to protect home appliances by automatically regulating voltage levels. It stabilizes fluctuating voltage and maintains a constant level."
+      ],
+      "context": ["Automatic Voltage Regulator"]
+    },
+    {
+      "tag": "Safety Electricity Application: Uninterruptible Power Supply",
+      "patterns": [
+        "What is an Uninterruptible Power Supply (UPS)?",
+        "Explain how UPS functions.",
+        "Tell me about the role of UPS during power disruptions."
+      ],
+      "responses": [
+        "An Uninterruptible Power Supply (UPS) is an electrical safety device that provides emergency power to connected loads during unexpected power disruptions. It also functions similarly to an AVR, stabilizing voltage."
+      ],
+      "context": ["Uninterruptible Power Supply"]
+    },
+    {
+      "tag": "Safety Electricity Application: Electrical Safety Measures",
+      "patterns": [
+        "What are electrical safety measures?",
+        "Explain Earthing or Grounding and Double Insulation."
+      ],
+      "responses": [
+        "Electrical safety measures include Earthing or Grounding and Double Insulation. Earthing connects the metal casing of appliances to the earth, preventing grounding issues and protecting users. Double Insulation is a safety measure by appliance manufacturers to prevent electric shock by isolating live wires within appliances."
+      ],
+      "context": ["Electrical safety measures"]
+    },
+    {
+      "tag": "Electric circuit: Electric Circuit",
+      "patterns": [
+        "What is an electric circuit?",
+        "Explain the components of an electric circuit.",
+        "Tell me about electrical circuits."
+      ],
+      "responses": [
+        "An electric circuit is a closed loop through which current can flow. Its components include a voltage source, conducting wires, electrical switches, and electrical loads. Every electric circuit has at least these three components, with additional parts such as switches in some cases."
+      ],
+      "context": ["Electric circuit"]
+    },
+    {
+      "tag": "Electric circuit: Voltage Source",
+      "patterns": [
+        "What is a voltage source in an electric circuit?",
+        "Explain voltage sources in circuits.",
+        "Tell me about the role of voltage sources."
+      ],
+      "responses": [
+        "A voltage source in an electric circuit is a device that maintains a constant amount of voltage. It provides the electrical potential necessary for current flow within the circuit."
+      ],
+      "context": ["Voltage source"]
+      },
+      {
+
+      "tag": "Electric circuit: Voltage Source_Examples",
+      "patterns": [
+        "Give me examples of voltage sources.",
+        "What are common voltage sources at home?"
+      ],
+      "responses": [
+        "Common voltage sources used at home include batteries, generators, wall sockets, and electric outlets."
+      ],
+      "context": ["Voltage source:examples"]
+    },
+    {
+      "tag": "Electric circuit: Conducting Wires_Definition",
+      "patterns": [
+        "Define conducting wires.",
+        "What are conducting wires in electrical circuits?"
+      ],
+      "responses": [
+        "Conducting wires are a special kind of conductors that allow current to pass through easily. The size, thickness, or cross-sectional area of a conducting wire determines the safe amount of current it can handle. It's important to consider wire dimensions when connecting loads in a circuit."
+      ],
+      "context": ["Conducting wires: Definition"]
+    },
+    {
+      "tag": "Electric circuit: Electrical Switch_Definition",
+      "patterns": [
+        "Explain electrical switches.",
+        "Define electrical switches in circuits."
+      ],
+      "responses": [
+        "Electrical switches are special conductors that enable current to pass through easily. Like conducting wires, there's a safe current limit based on the size, thickness, or cross-sectional area of the switch. Considering these dimensions is crucial when connecting loads in a circuit."
+      ],
+      "context": ["Electrical switch: definition"]
+    },
+    {
+      "tag": "Electric circuit: Electrical Load_Definition",
+      "patterns": [
+        "What is an electrical load?",
+        "Explain the concept of electrical loads."
+      ],
+      "responses": [
+        "An electrical load is an electrical device that converts electrical energy into another form, such as heat (e.g., an electric iron) or light and heat (e.g., a light bulb)."
+      ],
+      "context": ["Electrical Load: Definition"]
+    },
+    {
+      "tag": "Electric circuit: Series Circuit_Simple Explanation",
+      "patterns": [
+        "Can you provide a simple explanation of a series circuit?",
+        "Explain what a series circuit is in simple terms."
+      ],
+      "responses": [
+        "A series circuit consists of a single loop. If a series circuit is interrupted at any point in its loop, no current can flow through the circuit, and none of the loads in the circuit will work. In series circuits, if one light bulb burns out, the other light bulbs won't work because they won't receive any current."
+      ],
+      "context": ["Series Circuit: Simple explanation"]
+    },
+    {
+      "tag": "Electric circuit: Properties of a Series Circuit",
+      "patterns": [
+        "What are the properties of a series circuit?",
+        "Explain the characteristics of series circuits."
+      ],
+      "responses": [
+        "Properties of a series circuit include: 1. The total resistance is the sum of all resistances in the circuit, always greater than individual resistances. 2. The voltage source equals the sum of all voltages in each load. 3. The current is constant across each load."
+      ],
+      "context": ["Properties of a series circuit"]
+    },
+    {
+      "tag": "Electric circuit: Advantages of Series Connection Circuits",
+      "patterns": [
+        "What are the advantages of using series connection circuits?",
+        "Explain the benefits of series circuits."
+      ],
+      "responses": [
+        "Advantages of series connection circuits include: 1. They don't overheat easily as current passing through each load is constant. 2. Adding more loads doesn't change the current in all loads. 3. There's only one path for current to flow, making it easy to connect and disconnect new loads. 4. Thick wires aren't required since series circuits are less likely to overheat."
+      ],
+      "context": ["Advantages of series connection circuits"]
+    },
+    {
+      "tag": "Electric circuit: Disadvantages of Series Circuits",
+      "patterns": [
+        "What are the disadvantages of series circuits?",
+        "Explain the drawbacks of using series circuits."
+      ],
+      "responses": [
+        "Disadvantages of series circuits include: 1. If one of the light bulbs is damaged or removed in a series connection, all other light bulbs in the circuit will not light too. This is because the point where the bulb is damaged or removed causes the circuit to open, resulting in discontinuation of the flow of current in the circuit 2. The addition of more light bulbs in series circuits causes a decrease in the brightness of the bulbs. Given a fixed amount of voltage supplied by the voltage source, the more bulbs are added would mean more bulbs will share the available electrical energy to be converted to light energy. 3. It's challenging to control individual loads, as they won't function when the switch is off. 4. Identifying the damaged bulb in the circuit is difficult."
+      ],
+      "context": ["Disadvantages of series circuits"]
+    },
+    {
+      "tag": "Electricity",
+      "patterns": [
+         "What is one of the major tools of technological advancement?",
+         "It is one of the major tools of technological advancement.",
+         "It has important uses in daily life, not only for recreation purposes but also in economic development, industrialization, businesses, and other big institutions.",
+         "Even in individual households, electrical devices can be found and used for our work and comfort.",
+         "What is electricity?",
+         "Define electricity."
+      ],
+      "responses": ["Electricity is a crucial tool for technological advancement, with diverse applications in daily life, economics, industry, and individual households."],
+      "context": ["Electricity: Definition"]
+   },
+   {
+      "tag": "Three Phases of Electric Power Supply",
+      "patterns": [
+         "What are the three phases of electric power supply?",
+         "What are the phases of electric power supply?",
+         "State the three phases of electric power supply."
+      ],
+      "responses": ["The three phases of electric power supply are generation, transmission, and distribution."],
+      "context": ["Electric Power Supply: Phases"]
+   },
+   {
+      "tag": "Generation of Electricity",
+      "patterns": [
+         "It is the process of producing electricity by different sources of energy at different power plants.",
+         "What is the process of producing electricity by different sources of energy at different power plants?",
+         "The power plant produces or generates electricity.",
+         "In power plants, the chemical energy within the fuel is converted into electrical energy, which can be used for various domestic purposes.",
+         "What is generation of electricity?",
+         "Define the generation of electricity."
+      ],
+      "responses": ["Generation of electricity is the process of producing electrical energy using various energy sources in power plants, where chemical energy from fuel is converted into electricity for various domestic purposes."],
+      "context": ["Generation of Electricity: Definition"]
+   },
+   {
+    "tag": "Energy",
+    "patterns": [
+       "It is the capacity to do work.",
+       "What is the capacity to do work?",
+       "What is energy?",
+       "Define energy."
+    ],
+    "responses": ["Energy is the capacity to do work."],
+    "context": ["Energy: Definition"]
+ },
+ {
+    "tag": "Mechanical Energy",
+    "patterns": [
+       "The energy possessed by the body due to its state of rest or state of motion.",
+       "What is mechanical energy?",
+       "Define mechanical energy."
+    ],
+    "responses": ["Mechanical energy is the energy possessed by a body due to its state of rest or motion."],
+    "context": ["Mechanical Energy: Definition"]
+ },
+ {
+    "tag": "Two Forms of Mechanical Energy",
+    "patterns": [
+       "What are the two forms of mechanical energy?",
+       "What are the forms of mechanical energy?",
+       "State the forms of mechanical energy."
+    ],
+    "responses": ["There are two forms of mechanical energy: potential energy and kinetic energy."],
+    "context": ["Mechanical Energy: Forms"]
+ },
+ {
+    "tag": "Joule (J)",
+    "patterns": [
+       "The SI unit for work and energy.",
+       "What is the unit for work?",
+       "What is the unit for energy?",
+       "What is the unit for work and energy?",
+       "What is Joule?",
+       "Define Joule."
+    ],
+    "responses": ["The joule (J) is the SI unit for work and energy."],
+    "context": ["Joule (J): Unit"]
+ },
+ {
+    "tag": "Potential Energy",
+    "patterns": [
+       "It is an energy in matter due to arrangements of its parts, composition, location, and structure.",
+       "What is an energy in matter due to arrangements of its parts, composition, location, and structure?",
+       "It is commonly considered as stored energy having the potential to do mechanical work.",
+       "is commonly considered as stored energy having the potential to do mechanical work?",
+       "Gravitational potential energy and elastic potential energy are the two various forms of this energy.",
+       "Gravitational potential energy and elastic potential energy are the two various forms of what energy?",
+       "What is potential energy?",
+       "Define potential energy."
+    ],
+    "responses": ["Potential energy is energy stored in matter due to its structure, composition, and location. It can be used to do mechanical work. There are two forms: gravitational potential energy and elastic potential energy."],
+    "context": ["Potential Energy: Definition"]
+ },
+ {
+    "tag": "Gravitational Potential Energy",
+    "patterns": [
+       "It is an energy stored when an object is lifted above the surface of the earth.",
+       "What is an energy stored when an object is lifted above the surface of the earth?",
+       "What refers to the position of an object above the ground?",
+       "It refers to the position of an object above the ground.",
+       "What is gravitational potential energy?",
+       "Define gravitational potential energy."
+    ],
+    "responses": ["Gravitational Potential Energy is stored when an object is elevated above the earth's surface, representing its height above the ground."],
+    "context": ["Gravitational Potential Energy: Definition"]
+ },
+ {
+    "tag": "Elastic Potential Energy",
+    "patterns": [
+       "It is an energy stored when an object is stretched, compressed, or bent.",
+       "What is an energy stored when an object is stretched, compressed, or bent.",
+       "What is elastic potential energy?",
+       "Define elastic potential energy."
+    ],
+    "responses": ["Elastic Potential Energy is stored when an object is stretched, compressed, or bent."],
+    "context": ["Elastic Potential Energy: Definition"]
+ },
+ {
+    "tag": "Kinetic Energy",
+    "patterns": [
+       "It is an energy in moving matter and waves, or the energy possessed by objects due to their motion.",
+       "Examples of its forms include motion, radiant, sound, thermal, and wave energies.",
+       "What is an energy in moving matter and waves, or the energy possessed by objects due to their motion?",
+       "What is kinetic energy?",
+       "Define kinetic energy."
+    ],
+    "responses": ["Kinetic Energy is the energy associated with moving matter and waves, as well as the energy possessed by objects due to their motion. It includes various forms such as motion, radiant, sound, thermal, and wave energies."],
+    "context": ["Kinetic Energy: Definition"]
+ },
+ {
+    "tag": "Energy Transformation",
+    "patterns": [
+       "Energy is simply transformed from one form to another or transferred from one system to another.",
+       "What is energy transformation?",
+       "Define energy transformation."
+    ],
+    "responses": ["Energy can be transformed from one form to another or transferred from one system to another."],
+    "context": ["Energy Transformation: Definition"]
+ },
+ {
+    "tag": "Law of Conservation of Energy",
+    "patterns": [
+       "Energy cannot be created nor destroyed, only converted from one form to another.",
+       "What is the law of conservation of energy?",
+       "State the law of conservation of energy.",
+       "Define the law of conservation of energy.",
+       "Explain the law of conservation of energy."
+    ],
+    "responses": ["The Law of Conservation of Energy states that energy cannot be created or destroyed; it can only be converted from one form to another."],
+    "context": ["Law of Conservation of Energy: Definition"]
+ },
+ {
+    "tag": "Law of Conservation of Mechanical Energy",
+    "patterns": [
+       "What is the law of conservation of mechanical energy?",
+       "Define the law of conservation of mechanical energy.",
+       "What does the law of conservation of mechanical energy state?",
+       "Explain the law of conservation of mechanical energy."
+    ],
+    "responses": ["The Law of Conservation of Mechanical Energy states that the total mechanical energy (the sum of kinetic and potential energies) in a closed system remains constant when dissipative forces are absent. This means that potential energy can become kinetic energy or vice versa, and energy is conserved but changes form."],
+    "context": ["Law of Conservation of Mechanical Energy: Definition"]
+ },
+ {
+  "tag": "Uniformly Accelerated Motion",
+  "patterns": [
+    "Uniformly Accelerated Motion",
+    "Uniformly Accelerated Motion?",  
+    "What is uniformly accelerated motion?",
+    "Define uniformly accelerated motion.", 
+    "Tell me about uniformly accelerated motion.",
+    "Explain straight-line motion with constant acceleration.",
+    "What are the three types of uniformly accelerated motion?"
+],
+  "responses": [
+    "Uniformly accelerated motion (UAM) means motion with constant acceleration. The simplest kind of accelerated motion is straight-line motion with constant acceleration. There are three types of uniformly accelerated motion: horizontal motion, free-fall, and projectile motion."
+  ],
+  "context": ["uniformly_accelerated_motion"]
+},
+{
+  "tag": "horizontal motion",
+  "patterns": [
+    "Horizontal motion",
+    "Horizontal motion?",
+    "What is horizontal motion?",  
+    "Define horizontal motion.", 
+    "Tell me about horizontal motion."
+],
+  "responses": [
+    "Horizontal motion is where a body maintains a constant change in its velocity in a given time interval along a straight line."
+  ],
+  "context": ["horizontal_motion"]
+},
+{
+  "tag": "Equation_UAM-Horizontal Motion",
+  "patterns": [
+    "Equations of motion for UAM-Horizontal Motion",
+    "Equations of motion for UAM-Horizontal Motion?",
+    "Equations of motion for Uniform Accelerated Motion-Horizontal Motion",
+    "Equations of motion for Uniform Accelerated Motion-Horizontal Motion?",
+    "Equations involving Uniform Accelerated Motion-Horizontal Motion.",
+    "Equations involving UAM-Horizontal Motion.",
+    "What are equations of motion for UAM-Horizontal Motion?",
+    "What are equations of motion for Uniform Accelerated Motion-Horizontal Motion?",
+    "Give equations of motion for UAM-Horizontal Motion.",
+    "Give equations of motion for Uniform Accelerated Motion-Horizontal Motion." 
+],
+  "responses": [
+    "There are five equations for : vf = vi + at, vavg = ½ (vf+vi), d = ½ (vf+vi) t, d = vit + ½ at², vi² = vi² + 2ad, where d is the displacement (∆d) and assume ti = 0. "
+  ],
+  "context": ["equation_horizontal_motion"]
+},
+{
+  "tag": "Solving_UAM-Horizontal Motion",
+  "patterns": [
+    "How to solve motion for UAM-Horizontal Motion?",
+    "How to solve motion for Uniform Accelerated Motion-Horizontal Motion?",
+    "Solve motion for Uniform Accelerated Motion-Horizontal Motion.",  
+    "solve motion for UAM-Horizontal Motion.", 
+    "Explain how to solve motion for UAM-Horizontal Motion.",
+    "Explain how to solve motion for Uniform Accelerated Motion-Horizontal Motion.",
+    "Solving for Uniform Accelerated Motion-Horizontal Motion."
+],
+  "responses": [
+    "First step is to identify the given of the problem. Second, identify the unknown or what is being asked. Third, study the equations of of motion for UAM-Horizontal Motion and analyze what equation is applicable based on the given problem. Lastly, substitute the given values to the equation and do the mathematical calculation. Always remember to include the units when substituting the given values."
+  ],
+  "context": ["solve_horizontal_motion"]
+},
+{
+  "tag": "Free fall",
+  "patterns": [
+    "Free fall",
+    "Free fall?",
+    "What is free fall?",
+    "Define free fall.",
+    "Explain free fall.", 
+    "Tell me about free fall."
+],
+  "responses": [
+    "Free-fall motion is a Uniformly Accelerated Motion that takes place in a vertical direction. Objects that are said to be undergoing free fall, are not encountering a significant force of air resistance; they are falling under the sole influence of gravity. When objects fall, they constantly accelerate and if we can ignore air resistance, all objects accelerate at the same rate at 9.8 m/s2 which is equal to g."
+  ],
+  "context": ["free_fall"]
+},
+{
+  "tag": "Equation_UAM-Free fall",
+  "patterns": [
+    "Equations for UAM-Free fall",
+    "Equations for UAM-Free fall?",
+    "Equations for Uniform Accelerated Motion-Free fall",
+    "Equations for Uniform Accelerated Motion-Free fall?",
+    "Equations involving Uniform Accelerated Motion-Free fall.",
+    "Equations involving UAM-Free fall.",
+    "What are equations for UAM-Free fall?",
+    "What are equations for Uniform Accelerated Motion-Free fall?",
+    "Give equations of motion for UAM-Free fall.",
+    "Give equations of motion for Uniform Accelerated Motion-Free fall." 
+],
+  "responses": [
+    "There are five equations for : vf = vi +gt, vavg = ½ (vf+vi), h = ½ (vf+vi) t, h = vit + ½ gt², vi² = vi² + 2gh, where h is the height of the fall and assume ti = 0. "
+  ],
+  "context": ["equation_free_fall"]
+},
+{
+  "tag": "Solving_UAM-Free fall",
+  "patterns": [
+    "How to solve motion for UAM-Free fall?",
+    "How to solve motion for Uniform Accelerated Motion-Free fall?",
+    "Solve motion for Uniform Accelerated Motion-Free fall.",  
+    "solve motion for UAM-Free fall.", 
+    "Explain how to solve motion for UAM-Free fall.",
+    "Explain how to solve motion for Uniform Accelerated Motion-Free fall.",
+    "Solving for Uniform Accelerated Motion-Free fall."
+],
+  "responses": [
+    "First step is to identify the given of the problem. Second, identify the unknown or what is being asked. Third, study the equations of of motion for UAM-Horizontal Motion and analyze what equation is applicable based on the given problem. Lastly, substitute the given values to the equation and do the mathematical calculation. Always remember to include the units when substituting the given values. Note that when an object thrown upward reaches its maximum height, it momentarily stops, thus its velocity at this point is zero."
+  ],
+  "context": ["solve_free_fall"]
+},
+{
+  "tag": "Projectile motion",
+  "patterns": [
+    "Projectile motion",
+    "Projectile motion?",
+    "What is projectile motion?",  
+    "Define projectile motion.",
+    "Explain projectile motion.", 
+    "Tell me about projectile motion."
+],
+  "responses": [
+    "Projectile motion refers to the motion of an object that is thrown or projected into the air at an angle. It's a combination of horizontal and vertical motion. The motion of a projectile is determined only by the object's final velocity and gravity. The horizontal motion of a projectile is constant and its vertical motion is nothing more than free fall with a constant downward acceleration due to gravity."
+  ],
+  "context": ["projectile_motion"]
+},
+{
+  "tag": "Curved",
+  "patterns": [
+    "Curved path",
+    "Curved path?", 
+    "What results in a curved path?", 
+    "When a projectile moves horizontally with constant velocity while being accelerated vertically, what happens?", 
+    "Tell me about curved paths."
+],
+  "responses": [
+    "A projectile moves horizontally with constant velocity while being accelerated vertically results in a motion in a curved path."
+  ],
+  "context": ["curved_path"]
+},
+{
+  "tag": "Trajectory",
+  "patterns": [
+    "Trajectory",
+    "Trajectory?", 
+    "What is a trajectory?", 
+    "Define trajectory.", 
+    "Tell me about trajectory.",
+    "Tell me about trajectory in a free fall.",
+    "What is the path of a projectile called?"
+],
+  "responses": ["Trajectory is the path of a projectile. The trajectory of a projectile in free fall is a parabola."],
+  "context": ["trajectory"]
+},
+{
+  "tag": "Once",
+  "patterns": [
+    "A projectile that is once projected",
+    "A projectile that is once projected?", 
+    "What happens to a projectile that is once projected?" 
+],
+  "responses": ["A  projectile that is once projected, continues in motion by its own inertia and is influenced only by the downward force of gravity. An object projected horizontally will reach the ground at the same time as an object dropped vertically. No matter how large the horizontal velocity is, the downward pull of gravity is always the same."],
+  "context": ["once"]
+},
+{
+  "tag": "Launching",
+  "patterns": [
+    "What happens in launching a projectile horizontally?",
+    "Explain what happens in launching a projectile horizontally.",
+    "Tell me about launching a projectile horizontally."
+],
+  "responses": ["Film is the part of the camera that serves as screen where the image is formed."],
+  "context": ["launching"]
+},
+{
+  "tag": "Kinematic Equation",
+  "patterns": [
+    "Kinematic equations for projectile motion",
+    "Kinematic equations for projectile motion?",
+    "Kinematic equations involving projectile motion.",
+    "What are kinematic equations for projectile motion?",
+    "Give kinematic equations of motion for projectile motion."
+],
+  "responses": ["Kinematic equations for projectile motions can be divided into two components, horizontal and vertical motion. Horizontal motion consists of: ax = 0, vx = constant, vfx = vix, xf = xi - vixt. While vertical motion consists of: ay = -ag = constant, vfy = viy - agt, yf = yi + viyt -  /2 1 agt², vfy2 = viy2 - 2ag (yf-yi). Wherein: vfx = is the final velocity along x-axis, vfy = is the final velocity along y-axis, vix = is the initial velocity along x-axis, viy = is the initial velocity along y-axis, xf = is the final range of the projectile, xi = is the initial range of the projectile, yi = is the initial height of the projectile, yf = is the final height of the projectile, ag = is the acceleration due to gravity, and t = is the time taken."],
+  "context": ["Kinematic Equation"]
+}
 ]
 }

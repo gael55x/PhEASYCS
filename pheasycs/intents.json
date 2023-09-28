@@ -106,7 +106,9 @@
     "patterns": [
         "What is friction force?",
         "How does friction force affect motion?",
-        "Explain friction force symbol."
+        "Explain friction force symbol.",
+        "Friction force?",
+        "Friction?"
     ],
     "responses": ["Friction force is the force that acts against or opposite an object in contact with it, causing the object to slow down. Friction always opposes the motion of an object. Its symbol is Fʄ."],
     "context": ["Force : Friction Force"]
@@ -267,7 +269,7 @@
         "context": ["Thermal_Expansion : Definition"]
     },
     {
-        "tag": "Heat_Capacity",
+        "tag": "Heat_Capacity_definition",
         "patterns": ["What is heat capacity?", "Explain heat capacity", "Heat capacity definition"],
         "responses": ["Heat capacity is the quantity of heat necessary to raise the temperature of a body by 1 °C. Different substances have different heat capacities, affecting how quickly they heat up or cool down."],
         "context": ["Heat_Capacity : Definition"]
@@ -292,7 +294,7 @@
     },
     {
         "tag": "Thermodynamic_Process",
-        "patterns": ["What is a thermodynamic process?", "Explain thermodynamic process", "Thermodynamic process definition"],
+        "patterns": ["What is a thermodynamic process?", "Explain thermodynamic process", "Thermodynamic process definition", "one state to another in a thermodynamic system to achieve thermodynamic equilibrium"],
         "responses": ["A thermodynamic process is reversible if it can return to its original states, both for the system and the surroundings, with no other changes elsewhere in the universe. It means that both the system and surroundings return to their initial states at the end of the reverse process."],
         "context": ["Thermodynamic_Process : Definition"]
     },
@@ -405,7 +407,8 @@
     {
         "tag": "Potential_Energy_Sample_situation",
         "patterns": [
-            "Give me an example of potential energy.",
+            "Give me an example situation of potential energy.",
+            "Sample situation of potential energy",
             "What is an example of potential energy?",
             "Can you provide a sample situation for potential energy?"
         ],
@@ -913,7 +916,8 @@
                "What is Newton's first law of motion?",
                "Law of inertia.",
                "State the first law of motion.",
-               "Define the law of inertia."
+               "Define the law of inertia.",
+               "an object at rest remains at rest, and an object in motion will continue to move at a constant velocity unless acted upon by a net force"
             ],
             "responses": ["Newton's first law of motion, the law of inertia, states that an object at rest stays at rest, and an object in motion remains in motion unless acted upon by an external force."],
             "context": ["Law of Inertia: Definition"]
@@ -964,7 +968,7 @@
         "context": ["Camera Lens: Process"]
         },
         {
-        "tag": "Properties_of_Mirrors_and_Lenses_Used_in_Optical_Instruments_Camera_lens_parts_and_functions", 
+        "tag": "Camera_lens_parts_and_functions", 
         "patterns": [
         	"A camera is similar to a human eye in several aspects.",
         	"What are the parts of a camera lens?",
@@ -1282,7 +1286,8 @@
           	"Law of interaction?",
           	"What is the third law of motion?",
           	"Tell me about the third law of motion.",
-          	"Exaplain the third law of motion."
+          	"Explain the third law of motion.",
+            "third law of motion"
           ],
           "reponses": ["Law of interaction state that 'for every action, there is always an equal and opposite reaction.' This law tells us that a force exerted on any object is always exerted back by an equal magnitude of force but in opposite direction. Always remember that in this law, forces always come in pairs. These are called 'action' and 'reaction' forces, and they do not act on the same body. In determining the action and reacted forces, be able to identify first the action that requires force, and then identify the reaction force that counteracts the action force."],
           "context": ["Law of Interaction: Definition"]
@@ -1327,7 +1332,7 @@
             "context": ["Heat Engine : Definition"]
             },
             {
-            "Tag": "On Heat Engines, Heat Transfer and Energy Transformation",
+            "Tag": "Heat Engines, Heat Transfer and Energy Transformation",
             "patterns": [
             "What is Thermodynamics?",
             "Define Thermodynamics.",
@@ -1349,7 +1354,7 @@
             "context": ["Heat Energy : Definition"]
             },
             {
-            "tag": "Heat Engine, Heat Transfer and Energy Transformation", 
+            "tag": "Heat_process", 
             "patterns": [
             "What is Heat Process?",
             "Define Heat Process.",
@@ -1371,7 +1376,7 @@
             "context": ["Carnot Engine : Definition"]
             },
             {
-            "Tag": "On Heat Engines, The Transformation of Energy and Heat Transfer", 
+            "Tag": "Heat_efficiency", 
             "patterns": [
             "What is Heat Efficiency?",
             "Define Heat Efficiency.",
@@ -1382,18 +1387,22 @@
             "context": ["Heat Efficiency : Definition"]
             },
             {
-            "Tag": "The Heat Transfer and Energy Transformation on Heat Engines ", 
+            "Tag": "Internal_combustion_engine", 
             "patterns": [
             "What are Internal Combustion Engines?",
+            "What is internal combustion engine?",
+            "What are internal combustion engines?",
             "Define Internal Combustion Engines.",
             "What is the definition of Internal Combustion Engines?",
-            "Explain Internal Combustion Engines."
+            "Explain Internal Combustion Engines.",
+            "Internal combustion engines?",
+            "Internal combustion engine"
             ], 
             "responses": ["These refer to engines where combustion takes place inside the engine chamber. Like gasoline, diesel engines and our human body."], 
             "context": ["Internal Combustion Engines : Definition"]
             },
             {
-            "Tag": "The Transformation of Energy and Transfer of Heat on Heat Engines", 
+            "Tag": "External_combustion_engine_define", 
             "patterns": [
             "What is External Combustion Engine?",
             "Define External combustion engine.",
@@ -1415,7 +1424,7 @@
               "context": ["Hydro power : Definition"] 
               },
               {
-              "tag": "Electrical energy generation, transmission, and distribution",
+              "tag": "Transmission_of_Electricity_Definition",
               "patterns": [
               "What is Transmission of Electricity?",
               "Define Transmission of Electricity.",
@@ -1426,7 +1435,7 @@
               "context": ["Transmission of Electricity : Definition"] 
               },
               {
-              "tag": "Electricity generation, transmission, and distribution",
+              "tag": "Electric_Power_Distribution_Definition",
               "patterns": [
               "What is Electric Power Distribution?",
               "Define Electric Power Distribution.",
@@ -1437,7 +1446,7 @@
               "context": ["Electric Power Distribution : Definition"] 
               },
               {
-              "tag": "Conservation of Momentum", 
+              "tag": "Conservation_of_Momentum_Balloon_Example", 
                 "patterns": [
                   "initial momentum of the system was zero",
                   "The system's initial momentum was indeed zero.",
@@ -1452,7 +1461,7 @@
                 "context": ["Conservation of Momentum: Balloon Example"]
                 },
                 {
-                "tag": "Conservation of Momentum", 
+                "tag": "Conservation_of_Momentum_Definition", 
                 "patterns": [
                   "Conservation of momentum",
                   "Total momentum before collision is equal to total momentum after collision",
@@ -1463,11 +1472,21 @@
                   "In a closed system, momentum can be transferred between objects without being lost.",
                   "Momentum is transferred when there is collision"
                 ],
-                "reponses": ["Conservation of momentum stated that the total momentum of an isolated system stays constant. So total momentum before collision is equal to total momentum after collision. Therefore, the total momentum in the system was conserved. Conserved means that the momentum can be transformed from one object to another but does not lost the system. In a closed system, there were no other factors like forces that play significant roles in the interactions. Momentum is transferred when there is collision."],
+                "reponses": ["Conservation of momentum stated that the total momentum of an isolated system stays constant. So total momentum before collision is equal to total momentum after collision. Therefore, the total momentum in the system was conserved. Conserved means that the momentum can be transformed from one object to another but does not lost the system. In a closed system, there were no other factors like forces that play significant roles in the interactions."],
                 "context": ["Conservation of Momentum: Definition"]
                 },
                 {
-                "tag": "Conservation of Momentum", 
+                  "tag": "Conservation_of_Momentum_When_there_is_collision", 
+                  "patterns": [
+                    "When there is collision, what happens to momentum?",
+                    "Momentum when there is collision",
+                    "Momentum on collision"
+                  ],
+                  "reponses": ["Momentum is transferred when there is collision."],
+                  "context": ["Conservation of Momentum: When there is collision"]
+                  },
+                {
+                "tag": "Conservation_of_Momentum_Formula", 
                 "patterns": [
                   "initial total momentum is zero",
                   "momentum is negative",
@@ -1482,58 +1501,82 @@
                 "context": ["Conservation of Momentum: Formula"]
                 },
                 {
-                "tag": "Heat and Work", 
+                "tag": "Heat_definition", 
 "patterns": [
-	"What happens to internal energy of a body when the temperature increases?",
-	"temperature difference",
-	"changes from solid to liquid or from liquid to gas",
 	"What is heat?",
 	"Tell me about heat.",
-	"How does heat work?"
+	"How does heat work?",
+  "Meaning of heat?",
+  "Heat meaning?"
 ],
 "reponses": ["Heat is the energy transferred from one body to another as a results of temperature difference. The internal energy of a body increases when the temperature increases and changes from solid to liquid or from liquid to gas. Normally heat flows spontaneously from a higher temperature to a lower temperature by doing work or by heating, internal energy can be increased. Heating is the process in which heat is transferred from one body to another as a result of temperature difference."],
 "context": ["Heat: Definition"]
 },
 {
-"tag": "Heat and Work", 
+"tag": "Heat_and_Work_thermodynamics_first_law", 
 "patterns": [
 	"What does the first law of thermodynamics state?",
 	"heat taken in by the system",
 	"work done by the system",
-	"internal energy of the substances is the sum of"
+	"internal energy of the substances is the sum of",
+  "internal energy of the substances"
 ],
 "reponses": ["The first law of thermodynamic states that the change in internal energy of a system equals to the difference between the heat taken in by the system and the work done by the system internal energy of the substances is the sum of molecular kinetic energy( due to random motion of the molecules) , the molecular potential energy ( due to forces that acts between atoms of a molecule and between molecules) and other kinds of molecular energy."],
 "context": ["Thermodynamic: First Law"]
 },
 {
-"tag": "Heat and Work", 
+"tag": "Heat_and_Work_thermodynamics_first_law_formula", 
 "patterns": [
 	"How is the first law of thermodynamics mathematically expressed?",
 	"First law of Thermodynamics formula",
 	"What does Q represent in first law of thermodynamics formula?",
 	"What does W represent in first law of thermodynamics formula?",
-	"What does ∆U represent in first law of thermodynamics formula?"
+	"What does ∆U represent in first law of thermodynamics formula?",
+  "Thermodynamics first law formula",
+  "First law formula of thermodynamics",
+  "mathematical equation of first law of thermodynamics",
+  "first law thermodynamics equation",
+  "first law of thermodynamics mathematically expressed"
 ],
 "reponses": ["Mathematically, the law is expressed as ∆U = Q - W. Where: Q = amount of heat flowing into the system during a given process. W = net work done by the system. ∆U = change in the system internal energy. Q = W + ∆U"],
 "context": ["Thermodynamics First Law: Formula"]
 },
 {
-"tag": "Heat and Work", 
+"tag": "Heat_and_Work_thermodynamics_Objects_considered_hot", 
 "patterns": [
 	"When is an object considered hot?",
 	"What happens to heat flow when two objects are in contact?",
-	"Why are objects hot when touched?",
-	"Spontaneous process",
-	"Non-spontaneous process",
-	"Does not require any externel energy to occur",
-	"What does heat flow need to happen?"
+	"Why are objects hot when touched?"
 ],
 "reponses": ["An object with high temperature is said to be hot. Remember heat flows from hotter objects to a cooler one when two objects are in contact. This is the reasons when we touch them; it feels hot since the temperature is greater than our normal body temperature of 37° celsius. This is a natural phenomenon and is said to be a spontaneous process. It does not require any external energy to occur. When heat flow from lower temperature to a higher temperature, it needs mechanical energy to happen and said to be a non- spontaneous process."],
-"context": ["Spontaneous and Non-spontaneous process"]
+"context": ["Objects_considered_hot"]
+},
+{
+"tag":"Thermodynamics_Spontaneous_Process_Definition",
+"patterns": [
+	"What is a spontaneous process?",
+  "What is spontaneous process?",
+  "spontaneous process?",
+	"What happens to heat flow when two objects are in contact?",
+  "Define spontaneous process."
+],
+"reponses": ["An object with high temperature is said to be hot. Remember heat flows from hotter objects to a cooler one when two objects are in contact. This is the reasons when we touch them; it feels hot since the temperature is greater than our normal body temperature of 37° celsius. This is a natural phenomenon and is said to be a spontaneous process. It does not require any external energy to occur."],
+"context": ["Spontaneous process: Definition"]
+},
+{
+"tag": "Thermodynamics_Non-spontaneous_Process_Definition", 
+"patterns": [
+	"What is a non-spontaneous process?",
+  "What is non-spontaneous process?",
+  "non-spontaneous process",
+  "Define non-spontaneous process."
+],
+"reponses": ["When heat flow from lower temperature to a higher temperature, it needs mechanical energy to happen and said to be a non-spontaneous process."],
+"context": ["Non-spontaneous process: Definition"]
 },
 {
   "tag": "Charge",
-  "patterns": ["What is charge?", "Explain charge", "Charge definition"],
+  "patterns": ["What is charge?", "Explain charge", "Charge definition", "what charge is", "how charge affects particles"],
   "responses": ["Charge is the fundamental property that allows particles to attract or repulse each other."],
   "context": ["Charge : Definition"]
 },
@@ -1568,6 +1611,12 @@
   "context": ["Electric_Current : Definition"]
 },
 {
+  "tag": "Electric_Current_measurement",
+  "patterns": ["Electric current measured?", "How is electric current measured", "measurement of electric current"],
+  "responses": ["It is measured in Amperes (A), with one ampere being equal to 1 coulomb of charge per second. It is given by I= q/t, where I is current in Amperes (A), q = charge in coulombs (C), t = time in seconds (s)"],
+  "context": ["Electric_Current : Measurement"]
+},
+{
   "tag": "Voltage",
   "patterns": ["What is voltage?", "Explain voltage", "Voltage definition"],
   "responses": ["Voltage (V) is what makes a current move. It is given by V = W/q, where V is voltage in volts, W is work in Joules (J), and q is charge in Coulombs (C)."],
@@ -1593,7 +1642,7 @@
 },
 {
   "tag": "ohms_law",
-  "patterns": ["What is Ohm's Law?", "Explain Ohm's Law", "Ohm's Law definition"],
+  "patterns": ["What is Ohm's Law?", "Explain Ohm's Law", "Ohm's Law definition", "how does it relate to voltage, current, and resistance in a circuit"],
   "responses": ["Ohm's Law summarizes the relationship among voltage, current, and resistance. It states that I = V/R, where I is current in Amperes, V is voltage in volts, and R is resistance in ohms."],
   "context": ["Ohms_law : Definition"]
 },
@@ -1602,6 +1651,12 @@
   "patterns": ["What is momentum?", "Explain momentum", "Momentum definition"],
   "responses": ["Momentum is defined as the product of mass and velocity. Its value depends on the mass and velocity of the moving object. The equation for momentum is p = mv, where p is momentum, m is mass, and v is velocity."],
   "context": ["Momentum : Definition"]
+},
+{
+  "tag": "Momentum_Equation",
+  "patterns": ["Equation for calculating momentum", "Equation for momentum", "What is the formula for calculating momentum?", "What is the equation for calculating momentum?"],
+  "responses": ["The equation for momentum is p = mv, where p is momentum, m is mass, and v is velocity."],
+  "context": ["Momentum : Equation"]
 },
 {
   "tag": "Impulse",
@@ -1617,13 +1672,13 @@
 },
 {
   "tag": "Elastic_Collisions",
-  "patterns": ["What are elastic collisions?", "Explain elastic collisions", "Elastic collisions definition"],
+  "patterns": ["What are elastic collisions?", "Explain elastic collisions", "Elastic collisions definition", "Elastic collision?", "What happens during elastic collision?"],
   "responses": ["Elastic collisions are those in which the total kinetic energy of the system does not change, and colliding objects bounce off each other after the collision. They separate from each other without deforming or damaging each other, similar to a ball bouncing. The objects remain separated after the collision."],
   "context": ["Elastic_Collisions : Definition"]
 },
 {
   "tag": "Inelastic_Collisions",
-  "patterns": ["What are inelastic collisions?", "Explain inelastic collisions", "Inelastic collisions definition"],
+  "patterns": ["What are inelastic collisions?", "Explain inelastic collisions", "Inelastic collisions definition", "Inelastic collision?", "What happens during inelastic collision?"],
   "responses": ["Inelastic collisions are those in which the total energy of the system changes, and objects are deformed by the collision. The objects may stick together after the collision and move at a common velocity."],
   "context": ["Inelastic_Collisions  : Definition"]
 },
@@ -1694,14 +1749,17 @@
          "context": ["Safety Situation"] 
     }, 
     {
-        "tag": "Safety Electricity Application: Direct Current", 
+        "tag": "Direct Current", 
         "patterns": [
             "What is Direct Current?",
             "Give the definition of Direct current.",
             "What is the meaning of direct current?", 
-            "What does Direct current mean?"
+            "What does Direct current mean?",
+            "Direct current simple terms",
+            "direct current",
+            "Direct current"
            ], 
-         "responses": ["is a current that travels from negative to the positive terminal. It does not change its direction. It is the current we can get from a battery."
+         "responses": ["Direct current is a current that travels from negative to the positive terminal. It does not change its direction. It is the current we can get from a battery."
             ], 
          "context": ["Direct Current: Definition"]
     },
@@ -1810,7 +1868,9 @@
       "tag": "Electric circuit: Current",
       "patterns": [
         "What is the formula for current?",
-        "How do we calculate current?."
+        "How do we calculate current?.",
+        "Current formula?",
+        "Formula of current?"
       ],
       "responses": [
         "Current in electrical circuits can be calculated using the formula I = V / R, where I represents current, V is voltage, and R is resistance. This formula helps determine the flow of electric charge in a circuit."
@@ -1953,7 +2013,10 @@
       "patterns": [
         "What is a voltage source in an electric circuit?",
         "Explain voltage sources in circuits.",
-        "Tell me about the role of voltage sources."
+        "Tell me about the role of voltage sources.",
+        "Voltage sources",
+        "Voltage",
+        "Could you elaborate what is voltage source?"
       ],
       "responses": [
         "A voltage source in an electric circuit is a device that maintains a constant amount of voltage. It provides the electrical potential necessary for current flow within the circuit."
@@ -2372,24 +2435,24 @@
   "context": ["trajectory"]
 },
 {
-  "tag": "Once",
+  "tag": "projectile_once_projected",
   "patterns": [
     "A projectile that is once projected",
     "A projectile that is once projected?", 
     "What happens to a projectile that is once projected?" 
 ],
-  "responses": ["A  projectile that is once projected, continues in motion by its own inertia and is influenced only by the downward force of gravity. An object projected horizontally will reach the ground at the same time as an object dropped vertically. No matter how large the horizontal velocity is, the downward pull of gravity is always the same."],
-  "context": ["once"]
+  "responses": ["A projectile that is once projected, continues in motion by its own inertia and is influenced only by the downward force of gravity. An object projected horizontally will reach the ground at the same time as an object dropped vertically. No matter how large the horizontal velocity is, the downward pull of gravity is always the same."],
+  "context": ["projectile_once_projected"]
 },
 {
-  "tag": "Launching",
+  "tag": "Launching_projectile_horizontally",
   "patterns": [
     "What happens in launching a projectile horizontally?",
     "Explain what happens in launching a projectile horizontally.",
     "Tell me about launching a projectile horizontally."
 ],
-  "responses": ["Film is the part of the camera that serves as screen where the image is formed."],
-  "context": ["launching"]
+  "responses": ["In launching a projectile horizontally, the initial velocity (vi) is equal to its horizontal component velocity (vx) and this is constant all throughout the path just before it hits the ground. There is no vertical component velocity (vy) in this type of launched, thus its vertical motion is identical to that of a dropped object. The downward velocity increases uniformly due to gravity."],
+  "context": ["Launching_projectile_horizontally"]
 },
 {
   "tag": "Kinematic Equation",
@@ -2402,6 +2465,129 @@
 ],
   "responses": ["Kinematic equations for projectile motions can be divided into two components, horizontal and vertical motion. Horizontal motion consists of: ax = 0, vx = constant, vfx = vix, xf = xi - vixt. While vertical motion consists of: ay = -ag = constant, vfy = viy - agt, yf = yi + viyt -  /2 1 agt², vfy2 = viy2 - 2ag (yf-yi). Wherein: vfx = is the final velocity along x-axis, vfy = is the final velocity along y-axis, vix = is the initial velocity along x-axis, viy = is the initial velocity along y-axis, xf = is the final range of the projectile, xi = is the initial range of the projectile, yi = is the initial height of the projectile, yf = is the final height of the projectile, ag = is the acceleration due to gravity, and t = is the time taken."],
   "context": ["Kinematic Equation"]
+},
+{
+  "tag": "Thermodynamics_definition",
+  "patterns": [
+      "What is thermodynamics?",
+      "Define thermodynamics.",
+      "What does thermodynamics mean?",
+      "What is the definition of thermodynamics?",
+      "What is the meaning of thermodynamics?",
+      "What is Thermodynamics?"
+  ],
+  "responses": [
+      "Thermodynamics is a branch of science that deals with the relationship between heat and other forms of energy (electrical, mechanical, etc.)."
+  ],
+  "context": ["Thermodynamics: Definition"]
+},
+{
+  "tag": "Thermodynamics_process",
+  "patterns": [
+      "What is a thermodynamic process?",
+      "Define thermodynamic process.",
+      "What does thermodynamic process mean?",
+      "What is the definition of a thermodynamic process?",
+      "What is the meaning of a thermodynamic process?"
+  ],
+  "responses": [
+      "A thermodynamic process refers to a change from one state to another in a thermodynamic system to achieve thermodynamic equilibrium. These states can be defined by the values of pressure, volume, temperature, etc. This process can be classified by how these variables are kept constant."
+  ],
+  "context": [
+      "Thermodynamic Process: Definition"]
+},
+{
+  "tag": "Thermodynamic_equilibrium_definition",
+  "patterns": [
+      "What is thermodynamic equilibrium?",
+      "Define thermodynamic equilibrium.",
+      "What does thermodynamic equilibrium mean?",
+      "What is the definition of thermodynamic equilibrium?",
+      "What is the meaning of thermodynamic equilibrium?"
+  ],
+  "responses": [
+      "Thermodynamic equilibrium refers to the condition or state of a thermodynamic system where its properties remain unchanged over time and can only be changed through other systems."
+  ],
+  "context": [
+      "Thermodynamic Equilibrium: Definition"]
+},
+{
+  "tag": "Thermodynamics_four_types",
+  "patterns": [
+      "What are the four kinds of thermodynamics process?",
+      "List the four kinds of thermodynamics process.",
+      "What are the types of thermodynamics process?",
+      "four types of thermodynamics?",
+      "four processes of thermodynamics?",
+      "thermodynamics four processes",
+      "four process of thermodynamics"
+  ],
+  "responses": [
+      "The four kinds of thermodynamic process are:\n\n1. Adiabatic process: A process with no heat transfer into or out of the system.\n2. Isochoric process: A constant-volume process.\n3. Isobaric process: A constant-pressure process.\n4. Isothermal process: A constant-temperature process."
+  ],
+  "context": ["Four kinds of Thermodynamics"]
+},
+{
+  "tag": "Thermodynamics_adiabatic_process",
+  "patterns": [
+      "What is an adiabatic process?",
+      "Define adiabatic process.",
+      "What does adiabatic process mean?",
+      "What is the definition of an adiabatic process?",
+      "What is the meaning of an adiabatic process?",
+      "adiabatic process?"
+  ],
+  "responses": [
+      "An adiabatic process refers to one with no heat transfer into or out of the system. Heat flow can be prevented in this process by surrounding the system with thermally insulating material."
+  ],
+  "context": [
+      "Adiabatic Process: Definition"]
+},
+{
+  "tag": "Thermodynamics_isochoric_process_definition",
+  "patterns": [
+      "What is an isochoric process?",
+      "Define isochoric process.",
+      "What does isochoric process mean?",
+      "What is the definition of an isochoric process?",
+      "What is the meaning of an isochoric process?"
+  ],
+  "responses": [
+      "An isochoric process is a constant-volume process. When the volume of a thermodynamic system is constant, it does not work on its surroundings."
+  ],
+  "context": ["Isochoric process: Definition"]
+},
+{
+  "tag": "Thermodynamics_isobaric_process_definition",
+  "patterns": [
+      "What is an isobaric process?",
+      "Define isobaric process.",
+      "What does isobaric process mean?",
+      "What is the definition of an isobaric process?",
+      "What is the meaning of an isobaric process?",
+      "isobaric process?",
+      "isobaric"
+  ],
+  "responses": [
+      "An isobaric process is a constant-pressure process."
+  ],
+  "context": ["Isobaric process: Definition"]
+},
+{
+ "tag": "Thermodynamics_isothermal_process_definition",
+  "patterns": [
+      "What is an isothermal process?",
+      "Define isothermal process.",
+      "What does isothermal process mean?",
+      "What is the definition of an isothermal process?",
+      "What is the meaning of an isothermal process?",
+      "isothermal process",
+      "meaning of isothermal process"
+  ],
+  "responses": [
+      "An isothermal process is a constant-temperature process. For a process to be isothermal, any heat flow into or out of the system must occur slowly enough that thermal equilibrium is maintained."
+  ],
+  "context": ["Isothermal process: Definition"] 
 }
 ]
 }

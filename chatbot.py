@@ -2,9 +2,10 @@ import nltk
 import sys
 import time
 import os
-import math 
-import string 
+import math
+import string
 import spacy
+import numpy as np
 
 from nltk.stem import WordNetLemmatizer
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -17,7 +18,7 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 
 # Load the spaCy NER model
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_lg")
 
 # Initialize the lemmatizer
 lemmatizer = WordNetLemmatizer()
@@ -26,14 +27,20 @@ lemmatizer = WordNetLemmatizer()
 nltk.download('omw-1.4') """
 
 """ Function to print text with a gradual appearance effect """
+
+
 def print_with_appearance(text):
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()  # Flush the output buffer to make the text appear immediately
-        time.sleep(0.03)  # Adjust the sleep duration to control the speed of appearance
+        # Adjust the sleep duration to control the speed of appearance
+        time.sleep(0.03)
     print()  # Move to the next line after printing the complete text
 
+
 """ Main program """
+
+
 def main():
 
     # Check command-line arguments
@@ -43,7 +50,8 @@ def main():
     # Calculate IDF values across files
     files = load_files(sys.argv[1])
     file_words = {
-        filename: tokenize(files[filename], set())  # Pass an empty set for named_entities
+        # Pass an empty set for named_entities
+        filename: tokenize(files[filename], set())
         for filename in files
     }
 
@@ -66,7 +74,8 @@ def main():
     for filename in filenames:
         for passage in files[filename].split("\n"):
             for sentence in nltk.sent_tokenize(passage):
-                tokens = tokenize(sentence, named_entities)  # Pass named_entities here
+                # Pass named_entities here
+                tokens = tokenize(sentence, named_entities)
                 if tokens:
                     sentences[sentence] = tokens
 
@@ -74,7 +83,8 @@ def main():
     idfs = compute_idfs(sentences, query, named_entities)
 
     # Determine top sentence matches
-    matches = top_sentences(query, sentences, idfs, named_entities, n=SENTENCE_MATCHES)
+    matches = top_sentences(query, sentences, idfs,
+                            named_entities, n=SENTENCE_MATCHES)
     for match in matches:
         # Concatenate the matches into a single string
         matches_str = ' '.join(matches)
@@ -100,6 +110,7 @@ def load_files(directory):
 
     return file_dict
 
+
 def perform_ner(document):
     """
     Given a document (string), perform Named Entity Recognition (NER) using spaCy.
@@ -108,6 +119,7 @@ def perform_ner(document):
     doc = nlp(document)
     entities = [ent.text for ent in doc.ents]
     return entities
+
 
 def tokenize(document, named_entities):
     """
@@ -175,33 +187,84 @@ def compute_idfs(documents, query, named_entities):
 
     return word_idfs
 
-def query_attention(word, query, named_entity):
+
+def query_attention(word, query, named_entities):
     """
     Calculate the attention score for a word based on its relevance to the query.
 
     Args:
     word (str): The word to calculate attention for.
     query (set): A set of words representing the query.
+    named_entities (set): A set of named entities in the query.
 
     Returns:
     float: The attention score for the word.
     """
+    # Convert the word to lowercase for consistency
+    word = word.lower()
 
-    # Check for exact match with query
-    if word in query:
-        return 1.0
+    # Calculate word embeddings (you may need to load word vectors or use embeddings from a pre-trained model)
+    word_embedding = get_word_embedding(word)
 
-    if word in named_entity: 
+    # Check if the word is part of any named entity in the query
+    if any(entity.lower() in word for entity in named_entities):
         return 0.8
 
-    # Check for partial match with query
-    for query_word in query:
-        if query_word in word or word in query_word:
-            return 0.5
+    # Calculate cosine similarity between word embedding and query embedding
+    query_embedding = get_query_embedding(query)
+    similarity_score = calculate_similarity(word_embedding, query_embedding)
 
-    # Default attention score for non-matching words
-    return 0.01
+    # Use a dynamic threshold for relevance scoring
+    if similarity_score > 0.7:
+        return similarity_score
+    else:
+        return 0.001  # Default attention score for non-matching words
 
+def get_word_embedding(word):
+    """
+    Get the word embedding for a given word.
+
+    Args:
+    word (str): The word for which to obtain the embedding.
+
+    Returns:
+    numpy.ndarray: The word embedding as a numpy array.
+    """
+    word = word.lower()  # Ensure lowercase for consistency
+    if word in nlp.vocab:
+        return nlp.vocab[word].vector
+    else:
+        # Handle out-of-vocabulary words or return a default embedding
+        return nlp.vocab["<unk>"].vector  # You can choose a default word vector for unknown words
+
+def get_query_embedding(query):
+    """
+    Get the query embedding by averaging word embeddings of query words.
+
+    Args:
+    query (set): A set of words representing the query.
+
+    Returns:
+    numpy.ndarray: The query embedding as a numpy array.
+    """
+    # Filter out words not in the vocabulary and obtain their embeddings
+    word_embeddings = [get_word_embedding(word) for word in query if word in nlp.vocab]
+
+    if word_embeddings:
+        # Calculate the average embedding of query words
+        return np.mean(word_embeddings, axis=0)
+    else:
+        # Handle the case when no valid word embeddings are found in the query
+        return np.zeros(nlp.vocab.vectors.shape[1])  # Return a zero vector
+
+def calculate_similarity(embedding1, embedding2):
+    # Compute the cosine similarity between two embeddings
+    if np.linalg.norm(embedding1) > 0 and np.linalg.norm(embedding2) > 0:
+        similarity = np.dot(embedding1, embedding2) / (np.linalg.norm(embedding1) * np.linalg.norm(embedding2))
+    else:
+        similarity = 0.0  # Handle the case of zero vectors
+
+    return similarity
 
 def top_files(query, files, idfs, n):
     """
@@ -212,7 +275,7 @@ def top_files(query, files, idfs, n):
     """
 
     # Dictionary to hold scores for files
-    file_scores = {filename:0 for filename in files}
+    file_scores = {filename: 0 for filename in files}
 
     # Iterate through words in query:
     for word in query:
@@ -220,12 +283,13 @@ def top_files(query, files, idfs, n):
         if word in idfs:
             # Iterate through the corpus, update each texts tf-idf:
             for filename in files:
-              tf = files[filename].count(word)
-              tf_idf = tf * idfs[word]
-              file_scores[filename] += tf_idf
+                tf = files[filename].count(word)
+                tf_idf = tf * idfs[word]
+                file_scores[filename] += tf_idf
 
-    sorted_files = sorted([filename for filename in files], key = lambda x : file_scores[x], reverse=True)
-    """ print("Sorted Files:", sorted_files) """
+    sorted_files = sorted([filename for filename in files],
+                          key=lambda x: file_scores[x], reverse=True)
+    print("Sorted Files:", sorted_files)
 
     # Return best n files
     return sorted_files[:n]
@@ -240,12 +304,13 @@ def top_sentences(query, sentences, idfs, named_entity, n):
     """
 
     # Dict to score sentences:
-    sentence_score = {sentence: {'idf_score': 0, 'query_attention_score': 0} for sentence in sentences}
+    sentence_score = {sentence: {'idf_score': 0,
+                                 'query_attention_score': 0} for sentence in sentences}
 
     # Iterate through sentences:
     for sentence in sentences:
         s = sentence_score[sentence]
-        
+
         # Calculate IDF score for the sentence
         for word in sentences[sentence]:
             if word in idfs:
@@ -253,10 +318,12 @@ def top_sentences(query, sentences, idfs, named_entity, n):
 
         # Calculate query attention score for the sentence
         for word in query:
-            s['query_attention_score'] += query_attention(word, query, named_entity)
+            s['query_attention_score'] *= query_attention(
+                word, query, named_entity)
 
     # Rank sentences by combined score (idf + query attention) and return n sentences
-    sorted_sentences = sorted([sentence for sentence in sentences], key=lambda x: (sentence_score[x]['idf_score'] + sentence_score[x]['query_attention_score']), reverse=True)
+    sorted_sentences = sorted([sentence for sentence in sentences], key=lambda x: (
+        sentence_score[x]['idf_score'] + sentence_score[x]['query_attention_score']), reverse=True)
 
     # Return n entries for sorted sentences:
     return sorted_sentences[:n]
@@ -264,3 +331,4 @@ def top_sentences(query, sentences, idfs, named_entity, n):
 
 if __name__ == "__main__":
     main()
+

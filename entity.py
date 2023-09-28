@@ -3,13 +3,21 @@ import sys
 import os
 
 # Define the entity labels for the topics
-ENTITY_LABELS = ["AI", "Probability", "MachineLearning", "NLP", "NeuralNetwork", "Python"]
+ENTITY_LABELS = ["Effect of Temperature", "Forces", "Heat and Temperature", "Laws of Motion", "Qualitative Characteristics of Images", ""]
 
 def main():
     # Check command-line arguments
     if len(sys.argv) != 2:
-        sys.exit("Usage: python chatbot.py corpus")
+        sys.exit("Usage: python entity.py query_corpus")
 
+    # Calculate IDF values across files
+    files = load_files(sys.argv[1])
+    file_words = {
+        # Pass an empty set for named_entities
+        filename: tokenize(files[filename], set())
+        for filename in files
+    }
+    
     # Load the spaCy model
     nlp = spacy.load("en_core_web_sm")
 

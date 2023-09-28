@@ -1,0 +1,6 @@
+nltk
+scikit-learn
+spacy
+transformers
+numpy
+# python -m spacy download en_core_web_lg <- don't forget to download this one!

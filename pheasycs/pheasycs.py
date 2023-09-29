@@ -2,7 +2,6 @@ import sys
 import time
 import nltk
 import tkinter as tk
-from tkinter import PhotoImage
 from nltk.stem.lancaster import LancasterStemmer
 import numpy as np
 import tensorflow as tf
@@ -93,8 +92,7 @@ def print_with_appearance(text):
     print()  # Move to the next line after printing the complete text
 
 
-# Function to get chatbot response
-def get_response(user_input):
+def get_response(user_input, confidence_threshold=0.5):
     stemmer = LancasterStemmer()
 
     def bag_of_words(s):
@@ -111,6 +109,11 @@ def get_response(user_input):
 
     results = model.predict(bag_of_words(user_input))  # Remove the extra list []
     results_index = np.argmax(results)
+    max_confidence = results[0][results_index]
+
+    if max_confidence < confidence_threshold:
+        return ["PhEASYCS: I'm sorry, but I don't have a response for that question."]
+
     tag = labels[results_index]
 
     responses = []
@@ -122,7 +125,7 @@ def get_response(user_input):
     if responses:
         return ["PhEASYCS: " + responses[0]]  # Return only the first response
     else:
-        return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by the data sets provided, which is from DEPED Physics Modules."]
+        return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics. "]
 
 
 # Create a tkinter window

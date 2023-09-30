@@ -73,12 +73,52 @@ def build_and_train_model(training, output, model_filename='model.h5'):
     ])
 
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+    
+    # Print the number of neurons in the input and output layers
+    num_input_neurons = len(training[0])
+    num_output_neurons = len(output[0])
 
+    print(f"Number of neurons in the input layer: {num_input_neurons}")
+    print(f"Number of neurons in the output layer: {num_output_neurons}")
+    
     try:
         model = tf.keras.models.load_model(model_filename)
     except:
         model.fit(training, output, epochs=100, batch_size=8)
         model.save(model_filename)
+
+    """
+    Model: "sequential"
+    __________________________________________________________________
+     Layer (type)                Output Shape              Param #
+    ==================================================================
+     dense (Dense)               (None, 8)                 5112
+
+     dense_1 (Dense)             (None, 8)                 72
+
+     dense_2 (Dense)             (None, 222)               1998
+
+    ==================================================================
+    Total params: 7182 (28.05 KB)
+    Trainable params: 7182 (28.05 KB)
+    Non-trainable params: 0 (0.00 Byte)
+    __________________________________________________________________
+    dense True
+    [TensorShape([638, 8]), TensorShape([8])]
+    dense_1 True
+    [TensorShape([8, 8]), TensorShape([8])]
+    dense_2 True
+    [TensorShape([8, 222]), TensorShape([222])]
+    """
+
+    # Display a summary of the model architecture, including the number of parameters
+    model.summary()
+
+    # Access the details of each layer
+    for layer in model.layers:
+        print(layer.name, layer.trainable)
+        if hasattr(layer, 'weights'):
+            print([w.shape for w in layer.weights])
 
     return model
 
@@ -92,7 +132,7 @@ def print_with_appearance(text):
     print()  # Move to the next line after printing the complete text
 
 
-def get_response(user_input, confidence_threshold=0.5):
+def get_response(user_input, confidence_threshold=0.50):
     stemmer = LancasterStemmer()
 
     def bag_of_words(s):
@@ -112,7 +152,7 @@ def get_response(user_input, confidence_threshold=0.5):
     max_confidence = results[0][results_index]
 
     if max_confidence < confidence_threshold:
-        return ["PhEASYCS: I'm sorry, but I don't have a response for that question."]
+        return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics."]
 
     tag = labels[results_index]
 

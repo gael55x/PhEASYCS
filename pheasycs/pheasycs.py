@@ -63,7 +63,29 @@ def preprocess_data(data):
 
     return words, labels, np.array(training), np.array(output)
 
-# Function to build and train the model using tf.keras
+"""
+    Build and train a deep learning model using TensorFlow/Keras.
+
+    This function creates a sequential neural network model with configurable layers,
+    compiles it with specified optimizer and loss, and optionally loads a pre-trained model
+    or trains a new one based on provided training data.
+
+    Args:
+        training (numpy.ndarray): The input training data.
+        output (numpy.ndarray): The output or target training data.
+        model_filename (str): The name of the file to save/load the trained model (default is 'model.h5').
+
+    Returns:
+        tf.keras.Model: The trained deep learning model.
+
+    Raises:
+        IOError: If loading a pre-trained model fails.
+
+    Example:
+        # Build and train a model
+        model = build_and_train_model(training_data, target_data)
+
+"""
 def build_and_train_model(training, output, model_filename='model.h5'):
     model = tf.keras.Sequential([
         tf.keras.layers.Input(shape=(len(training[0]),)),

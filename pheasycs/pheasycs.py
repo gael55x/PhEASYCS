@@ -3,6 +3,8 @@ import time
 import nltk
 import tkinter as tk
 from nltk.stem.lancaster import LancasterStemmer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import tensorflow as tf
 import json
@@ -154,29 +156,33 @@ def print_with_appearance(text):
     print()  # Move to the next line after printing the complete text
 
 
+# Load intents data, preprocess, and build the model
+intents_data = load_intents_data()
+words, labels, training, output = preprocess_data(intents_data)
+model = build_and_train_model(training, output)
+# Initialize TfidfVectorizer
+vectorizer = TfidfVectorizer()
+
+# Preprocess and vectorize your data during initialization
+corpus = [intent['patterns'] for intent in intents_data['intents']]
+X = vectorizer.fit_transform([' '.join(pattern) for pattern in corpus])
+y = np.array([intent.get('tag', 'unknown') for intent in intents_data['intents']])
+
+
 def get_response(user_input, confidence_threshold=0.50):
-    stemmer = LancasterStemmer()
+    user_vector = vectorizer.transform([user_input])
 
-    def bag_of_words(s):
-        bag = [0 for _ in range(len(words))]
-        s_words = nltk.word_tokenize(s)
-        s_words = [stemmer.stem(word.lower()) for word in s_words]
+    # Calculate cosine similarity between user input and patterns
+    similarity_scores = cosine_similarity(user_vector, X)
 
-        for se in s_words:
-            for i, w in enumerate(words):
-                if w == se:
-                    bag[i] = 1
+    # Find the intent with the highest similarity score
+    max_similarity_index = np.argmax(similarity_scores)
+    max_similarity = similarity_scores[0, max_similarity_index]
 
-        return np.array([bag])  # Wrap the bag in an additional array to match the expected shape
-
-    results = model.predict(bag_of_words(user_input))  # Remove the extra list []
-    results_index = np.argmax(results)
-    max_confidence = results[0][results_index]
-
-    if max_confidence < confidence_threshold:
+    if max_similarity < confidence_threshold:
         return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics."]
 
-    tag = labels[results_index]
+    tag = y[max_similarity_index]
 
     responses = []
     for intent in intents_data['intents']:
@@ -188,8 +194,7 @@ def get_response(user_input, confidence_threshold=0.50):
         return ["PhEASYCS: " + responses[0]]  # Return only the first response
     else:
         return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics. "]
-
-
+    
 # Create a tkinter window
 window = tk.Tk()
 window.title("PhEASYCS Chatbot")
@@ -248,11 +253,6 @@ send_button = tk.Button(window, text="Send", command=handle_user_input, font=("A
 send_button.pack()
 
 print("PhEASYCS is ready to talk!! (Type 'quit' to exit)")
-
-# Load intents data, preprocess, and build the model
-intents_data = load_intents_data()
-words, labels, training, output = preprocess_data(intents_data)
-model = build_and_train_model(training, output)
 
 # Run the tkinter main loop
 window.mainloop()

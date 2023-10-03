@@ -91,8 +91,9 @@ def preprocess_data(data):
 def build_and_train_model(training, output, model_filename='model.h5'):
     model = tf.keras.Sequential([
         tf.keras.layers.Input(shape=(len(training[0]),)),
-        tf.keras.layers.Dense(8),
-        tf.keras.layers.Dense(8),
+        tf.keras.layers.Dense(18),
+        tf.keras.layers.Dense(18),
+        tf.keras.layers.Dense(18),
         tf.keras.layers.Dense(len(output[0]), activation='softmax')
     ])
 
@@ -108,7 +109,7 @@ def build_and_train_model(training, output, model_filename='model.h5'):
     try:
         model = tf.keras.models.load_model(model_filename)
     except:
-        model.fit(training, output, epochs=100, batch_size=8)
+        model.fit(training, output, epochs=100, batch_size=12)
         model.save(model_filename)
 
     """
@@ -160,6 +161,7 @@ def print_with_appearance(text):
 intents_data = load_intents_data()
 words, labels, training, output = preprocess_data(intents_data)
 model = build_and_train_model(training, output)
+
 # Initialize TfidfVectorizer
 vectorizer = TfidfVectorizer()
 

@@ -3,12 +3,12 @@
     {
      "tag": "greeting",
      "patterns": ["Hi there", "How are you?", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-     "responses": ["Hello! Nice to meet you.", "Good to see you again.", "Hi there, how can I help?"],
+     "responses": ["Hello! Nice to meet you. I'm PhEASYCS, an AI Chatbot Designed to teach Physics.", "Good to see you again. I'm PhEASYCS, an AI Chatbot Designed to teach Physics.", "Hi there. I'm PhEASYCS, an AI Chatbot Designed to teach Physics. How can I help?"],
      "context": ["greet"]
     },
     {
      "tag": "introduction",
-     "patterns": ["Who are you?"],
+     "patterns": ["Who are you?", "What are you?"],
      "responses": ["Hello, my name is PhEASYCS! I make Physics easier for you!", "Hi! I'm PhEASYCS. How can I help you?", "Bonjour! I'm PhEASYCS. How can I help you?"],
      "context": ["introduction"]
     },
@@ -27,7 +27,7 @@
     {
      "tag": "unknown",
      "patterns": ["I don't know", "What do you think?", "Can you answer this?", "I'm not sure"],
-     "responses": ["That's a tough one. I don't have the answer. As an AI language model, I am limited by my own dataset, which is from DEPED Physics modules. I am specifically designed to teach anyone Physics.", "That's a tough one. I don't have the answer. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics.", "It's a bit beyond my knowledge. As an AI language model, I am limited by my own data sets which is from DEPED Physics modules. I am only designed to teach anyone Physics. ", "As a language model, I am only trained from the DEPED Physics modules only. I am only designed to teach anyone Physics."],
+     "responses": ["That's a tough one. I don't have the answer. As an AI language model, I am limited by my own datasets, which are from DEPED Physics modules and some Physics books. I am specifically designed to teach students Physics.", "That's a tough one. I don't have the answer. As an AI language model, I am limited by my own data sets, which are from DEPED Physics modules and some Physics books. I am only designed to teach anyone Physics.", "It's a bit beyond my knowledge. As an AI language model, I am limited by my own which are from DEPED Physics modules and some Physics books. I am only designed to teach students Physics. ", "As an AI language model, I am only trained from from DEPED Physics modules and some Physics books only. I am only designed to teach students Physics."],
      "context": ["unknown"]
     }, 
     {
@@ -49,7 +49,8 @@
     "patterns": [
         "What is magnitude of a force?",
         "How is force magnitude measured?",
-        "Explain the strength of a force."
+        "Explain the strength of a force.",
+        "Magnitude of a force?"
     ],
     "responses": ["Magnitude refers to the size or strength of the force. It is commonly expressed in Newton (N) for the International System of Units (SI)."],
     "context": ["Force : Magnitude"]
@@ -245,10 +246,10 @@
         "context": ["Joule : Definition"]
     },
     {
-        "tag": "Temperature",
-        "patterns": ["What is temperature?", "Explain temperature", "Temperature definition"],
+        "tag": "Temperature_Definition",
+        "patterns": ["What is temperature?", "Explain temperature", "Temperature definition", "Temperature?"], 
         "responses": ["Temperature is a measure of the hotness or coldness of an object. It is related to the average kinetic energy of molecules in a substance, with faster-moving molecules indicating higher temperatures."],
-        "context": ["Temperature : Definition"]
+        "context": ["Temperature_Definition"]
     },
     {
         "tag": "Thermometer",
@@ -260,7 +261,7 @@
         "tag": "Temperature_Scales",
         "patterns": ["What are the common temperature scales?", "Explain temperature scales", "Temperature scales definition"],
         "responses": ["The three common temperature scales are Celsius, Fahrenheit, and Kelvin, each with its own reference points and intervals for measuring temperature."],
-        "context": ["Temperature_Scales : Definition"]
+        "context": ["Temperature_Scales_Definition"]
     },
     {
         "tag": "Thermal_Expansion",
@@ -646,7 +647,7 @@
     "context": ["Six important points in locating the image formed in a curved mirror : Enumeration"]
     },
     {
-    "Tag":"Plane_Mirror_Center_of_curvature_definition_symbol",
+    "tag":"Plane_Mirror_Center_of_curvature_definition_symbol",
     "patterns": [
     "What is the Center of Curvature.",
     "Describe the Center of Curvature.",
@@ -952,7 +953,7 @@
          	"Enumerate the basic elements of a camera.",
          	"Elements of a camera?"
          ],
-         "reponses": ["The real camera has lens instead of a pinhole and uses a film for a screen instead of a wax paper. The basic elements of a camera are, namely: a converging lens, a light sensitive film to record an image, and a shutter to let the light from the lens strike the film."],
+         "responses": ["The real camera has lens instead of a pinhole and uses a film for a screen instead of a wax paper. The basic elements of a camera are, namely: a converging lens, a light sensitive film to record an image, and a shutter to let the light from the lens strike the film."],
          "context": ["Basic Elements of a Camera"]
          },
         {
@@ -964,7 +965,7 @@
         	"Camera lenses process?",
         	"Lens process?"
         ],
-        "reponses": ["When the camera is in proper focus, the position of the film coincides with the position of the real image formed by the lens. With a converging lens, the image distance increases as the object distance decreases. Hence in focusing the camera, the lens is moved closer to the film for a distant object and farther from the film for a nearby object. Often, this is done by turning the lens in a threaded mount."],
+        "responses": ["When the camera is in proper focus, the position of the film coincides with the position of the real image formed by the lens. With a converging lens, the image distance increases as the object distance decreases. Hence in focusing the camera, the lens is moved closer to the film for a distant object and farther from the film for a nearby object. Often, this is done by turning the lens in a threaded mount."],
         "context": ["Camera Lens: Process"]
         },
         {
@@ -977,7 +978,7 @@
         	"Explain the parts and functions of a camera lens.",
         	"Parts and functions of camera lens?"
         ],
-        "reponses": ["A camera is similar to a human eye in several aspects. The shutter of a camera excludes unnecessary light just as the eyelids do. The diaphragm regulates the amount of light that enters the camera through the aperture just as the iris regulates the amount of light that enters the eye through the pupil. In the dark, the pupil dilates, while it constricts in bright light. A camera has a simple converging lens or a system of lenses which forms images by refraction just like the lens of a human eye. The light sensitive film insides camera corresponds to the light sensitive retina in the back of the eye, and both receive an inverted, real image that is smaller than the object. In a camera, the lens is adjusted to form a sharp image, while our eyes have the power of accommodation to see near and distant objects. The camera gives a permanent image of the object, while the image in the eye lasts for only about 1/16 of a second before another distinct image is formed."],
+        "responses": ["A camera is similar to a human eye in several aspects. The shutter of a camera excludes unnecessary light just as the eyelids do. The diaphragm regulates the amount of light that enters the camera through the aperture just as the iris regulates the amount of light that enters the eye through the pupil. In the dark, the pupil dilates, while it constricts in bright light. A camera has a simple converging lens or a system of lenses which forms images by refraction just like the lens of a human eye. The light sensitive film insides camera corresponds to the light sensitive retina in the back of the eye, and both receive an inverted, real image that is smaller than the object. In a camera, the lens is adjusted to form a sharp image, while our eyes have the power of accommodation to see near and distant objects. The camera gives a permanent image of the object, while the image in the eye lasts for only about 1/16 of a second before another distinct image is formed."],
         "context": ["Camera Lens: Parts and Functions"]
         },
         {
@@ -991,7 +992,7 @@
         	"Optical system?",
         	"Optical instruments?"
         ],
-        "reponses": ["Most optical instruments are made up of a lens or an arrangement or combination of lenses. The function of the optical systems is determined by the focal lengths of the lenses and their relative positions."],
+        "responses": ["Most optical instruments are made up of a lens or an arrangement or combination of lenses. The function of the optical systems is determined by the focal lengths of the lenses and their relative positions."],
         "context": ["Optical system: Definition"]
         },
         {
@@ -1003,7 +1004,7 @@
         	"What is the function of a telescope?",
         	"Telescope?"
         ],
-        "reponses": ["A telescope is used to make distant objects look closer and appear bigger. It consists of two converging lenses: the objective lens is used to collect light from a distant object and to form the first image. The eyepiece lens is a magnifying lens which produces a final virtual image at a distance."],
+        "responses": ["A telescope is used to make distant objects look closer and appear bigger. It consists of two converging lenses: the objective lens is used to collect light from a distant object and to form the first image. The eyepiece lens is a magnifying lens which produces a final virtual image at a distance."],
         "context": ["Telescope: Definition"]
         },
         {
@@ -1016,7 +1017,7 @@
         	"Compare and contrast the optical system of telescope and microscope.",
         	"Optical system of a telescope and microscope?"
         ],
-        "reponses": ["The optical system of a telescope is similar to that of a compound microscope. In both instruments, the image formed by an objective lens is viewed through an eyepiece. The key difference is that the telescope that uses lens as an objective. It is called a 'refracting telescope'. In the 'reflecting telescope' the objective lens is replaced by a concave mirror. This is because large perfect lenses are more difficult to make than large mirrors."],
+        "responses": ["The optical system of a telescope is similar to that of a compound microscope. In both instruments, the image formed by an objective lens is viewed through an eyepiece. The key difference is that the telescope that uses lens as an objective. It is called a 'refracting telescope'. In the 'reflecting telescope' the objective lens is replaced by a concave mirror. This is because large perfect lenses are more difficult to make than large mirrors."],
         "context": ["Telescope and Microscope: Similarities and Differences"]
         },
         {
@@ -1247,7 +1248,7 @@
           	"Tell me about the second law of motion.",
           	"Exaplain the second law of motion."
           ],
-          "reponses": ["The law of acceleration states that the acceleration of an object is directly proportional to the net force acting on it and is inversely proportional to the object's mass. The direction of the acceleration is in the direction of the net force acting on the object."],
+          "responses": ["The law of acceleration states that the acceleration of an object is directly proportional to the net force acting on it and is inversely proportional to the object's mass. The direction of the acceleration is in the direction of the net force acting on the object."],
           "context": ["Law of acceleration: Definition"]
           },
           {
@@ -1257,7 +1258,7 @@
           	"How is Newton's second law of motion expressed?",
           	"Law of acceleration formula?"
           ],
-          "reponses": ["Netwon’s second law of motion is expressed through the equation: ∑F as-a-vector = m multiplied by a as-a-vector. Sigma (∑) stands for the algebraic sum. ∑F as-a-vector stands for the net force acting on the object, m for mass of the object and a as-a-vector for its acceleration. The arrow above the letters F and a indicated that both have magnitude and direction."],
+          "responses": ["Netwon’s second law of motion is expressed through the equation: ∑F as-a-vector = m multiplied by a as-a-vector. Sigma (∑) stands for the algebraic sum. ∑F as-a-vector stands for the net force acting on the object, m for mass of the object and a as-a-vector for its acceleration. The arrow above the letters F and a indicated that both have magnitude and direction."],
           "context": ["Law of acceleration: Formula"]
           },
           {
@@ -1266,7 +1267,7 @@
           	"What are the units of mass, acceleration and force involved in the second law of motion?",
             "Units of mass, acceleration, and force involved in 2nd law of motion?"
           ],
-          "reponses": ["If system is in MKS then mass is in kg, acceleration in m/s² and force in N= kg. m/s². If system is in CGS then mass is in g, acceleration: cm/ s² and force in Dyne= g.cm/s². If system is in FPS then mass is in slug, acceleration in ft/s² and force in pounds (lbs)= slug. ft/s²."],
+          "responses": ["If system is in MKS then mass is in kg, acceleration in m/s² and force in N= kg. m/s². If system is in CGS then mass is in g, acceleration: cm/ s² and force in Dyne= g.cm/s². If system is in FPS then mass is in slug, acceleration in ft/s² and force in pounds (lbs)= slug. ft/s²."],
           "context": ["Units of mass, acceleration and force involved in the second law of motion"]
           },
           {
@@ -1276,11 +1277,11 @@
             "Presidential Degree No. 187?",
             "May 10, 1973?"
           ],
-          "reponses": ["In the Philippines, Presidential Degree No. 187 dated May 10, 1973, prescribes the use of the metric system of weights and measures as the standard measurement for all products may it be commodities, materials, utilities, services as well as in all business and legal transactions."],
+          "responses": ["In the Philippines, Presidential Degree No. 187 dated May 10, 1973, prescribes the use of the metric system of weights and measures as the standard measurement for all products may it be commodities, materials, utilities, services as well as in all business and legal transactions."],
           "context": ["Presidential Degree No. 187"]
           },
           {
-          "tag": "Laws_Of_Motion_Law_of_Interaction_Definition", 
+          "tag": "Third_law_of_motion_Law_of_Interaction_Definition", 
           "patterns": [
           	"The third law of motion?",
           	"Law of interaction?",
@@ -1289,7 +1290,7 @@
           	"Explain the third law of motion.",
             "third law of motion"
           ],
-          "reponses": ["Law of interaction state that 'for every action, there is always an equal and opposite reaction.' This law tells us that a force exerted on any object is always exerted back by an equal magnitude of force but in opposite direction. Always remember that in this law, forces always come in pairs. These are called 'action' and 'reaction' forces, and they do not act on the same body. In determining the action and reacted forces, be able to identify first the action that requires force, and then identify the reaction force that counteracts the action force."],
+          "responses": ["Law of interaction state that 'for every action, there is always an equal and opposite reaction.' This law tells us that a force exerted on any object is always exerted back by an equal magnitude of force but in opposite direction. Always remember that in this law, forces always come in pairs. These are called 'action' and 'reaction' forces, and they do not act on the same body. In determining the action and reacted forces, be able to identify first the action that requires force, and then identify the reaction force that counteracts the action force."],
           "context": ["Law of Interaction: Definition"]
           },
           {
@@ -1299,7 +1300,7 @@
           	"Give an example of the third law of motion.", 
             "Give example of law of interaction"
           ],
-          "reponses": ["An example of this is a boy pushing a wall. When the boy pushes the wall (Action), the wall exerts an equal and opposite magnitude of force to the boy (reaction). Another example is a horse pulling a calesa (action). The calesa pulls an equal and opposite magnitude of force towards the horse (reaction). Some more examples include hammering a nail, pushing a grocery cart, and attracting a paper clip using a magnet."],
+          "responses": ["An example of this is a boy pushing a wall. When the boy pushes the wall (Action), the wall exerts an equal and opposite magnitude of force to the boy (reaction). Another example is a horse pulling a calesa (action). The calesa pulls an equal and opposite magnitude of force towards the horse (reaction). Some more examples include hammering a nail, pushing a grocery cart, and attracting a paper clip using a magnet."],
           "context": ["Law of Interaction: Example"]
           },
           {
@@ -1308,7 +1309,7 @@
           	"What is the weight of gravity?",
           	"Force of gravity?"
           ],
-          "reponses": ["In one of Galileo’s experiments, objects dropped near the surface of the Earth would fall with the same acceleration, if air resistance is neglected. This acceleration is denoted by g ⃗  with an approximate value of 9.8m/s² or 980cm/s² or 32 ft/s². The force that causes this acceleration is called the force of gravity or gravitational force. The force acts vertically downward toward the centre of the Earth."],
+          "responses": ["In one of Galileo’s experiments, objects dropped near the surface of the Earth would fall with the same acceleration, if air resistance is neglected. This acceleration is denoted by g ⃗  with an approximate value of 9.8m/s² or 980cm/s² or 32 ft/s². The force that causes this acceleration is called the force of gravity or gravitational force. The force acts vertically downward toward the centre of the Earth."],
           "context": ["The Force of Gravity or Weight"]
           },
           {
@@ -1317,11 +1318,11 @@
           	"How is gravitational force expressed?",
           	"Gravitational Force Formula?"
           ],
-          "reponses": ["F as a vector sub g = m multiplied by g as a vector. Where F as a vector sub g is for gravitational force, m for mass and g as a vector for acceleration due to gravity. The direction of this force is always down toward the center of the Earth. The magnitude of the force of gravity on an object, mg, is called the object’s weight, symbolized by the letter W. When a person’s mass is 40 kg, the computed weight is 392 N (multiply the mass to g = 9.8 m/s²) on Earth. His weight differs when he is on other planets and satellites like the Moon."],
+          "responses": ["F as a vector sub g = m multiplied by g as a vector. Where F as a vector sub g is for gravitational force, m for mass and g as a vector for acceleration due to gravity. The direction of this force is always down toward the center of the Earth. The magnitude of the force of gravity on an object, mg, is called the object’s weight, symbolized by the letter W. When a person’s mass is 40 kg, the computed weight is 392 N (multiply the mass to g = 9.8 m/s²) on Earth. His weight differs when he is on other planets and satellites like the Moon."],
           "context": ["Gravitational Force Formula"]
           },
           {
-            "Tag": "Heat Transfer and Energy Transformation on Heat Engines", 
+            "tag": "Heat_Engines_Definition", 
             "patterns": [
             "What is Heat Engine?",
             "Define Heat Engine.",
@@ -1332,7 +1333,7 @@
             "context": ["Heat Engine : Definition"]
             },
             {
-            "Tag": "Heat Engines, Heat Transfer and Energy Transformation",
+            "tag": "Heat Engines, Heat Transfer and Energy Transformation",
             "patterns": [
             "What is Thermodynamics?",
             "Define Thermodynamics.",
@@ -1343,7 +1344,7 @@
             "context": ["Thermodynamics : Definition"]
             },
             {
-            "Tag": "Heat Transfer and Energy Conversion in Heat Engines", 
+            "tag": "Heat Transfer and Energy Conversion in Heat Engines", 
             "patterns": [
             "What is Heat energy?",
             "Define Heat energy.",
@@ -1365,7 +1366,7 @@
             "context": ["Heat Process : Definition"]
             },
             {
-            "Tag": "The Transfer Of Heat And Transformation of Energy on Heat Engines", 
+            "tag": "The Transfer Of Heat And Transformation of Energy on Heat Engines", 
             "patterns": [
             "What is Carnot Engine?",
             "Define Carnot Engine.",
@@ -1376,7 +1377,7 @@
             "context": ["Carnot Engine : Definition"]
             },
             {
-            "Tag": "Heat_efficiency", 
+            "tag": "Heat_efficiency", 
             "patterns": [
             "What is Heat Efficiency?",
             "Define Heat Efficiency.",
@@ -1387,7 +1388,7 @@
             "context": ["Heat Efficiency : Definition"]
             },
             {
-            "Tag": "Internal_combustion_engine", 
+            "tag": "Internal_combustion_engine", 
             "patterns": [
             "What are Internal Combustion Engines?",
             "What is internal combustion engine?",
@@ -1402,7 +1403,7 @@
             "context": ["Internal Combustion Engines : Definition"]
             },
             {
-            "Tag": "External_combustion_engine_define", 
+            "tag": "External_combustion_engine_define", 
             "patterns": [
             "What is External Combustion Engine?",
             "Define External combustion engine.",
@@ -1457,7 +1458,7 @@
                   "no external force involved",
                   "There was no external force involved, so the total momentum was conserved."
                 ],
-                "reponses": ["At the start, the system which consists of the balloon and the air inside were not moving so the initial momentum of the system was zero. If we let the air inside the balloon out, the balloon moves. The force that causes the balloon to move comes from the air inside the balloon, moving at opposite directions. There was no external force involved, thus the total momentum was conserved and remained zero."],
+                "responses": ["At the start, the system which consists of the balloon and the air inside were not moving so the initial momentum of the system was zero. If we let the air inside the balloon out, the balloon moves. The force that causes the balloon to move comes from the air inside the balloon, moving at opposite directions. There was no external force involved, thus the total momentum was conserved and remained zero."],
                 "context": ["Conservation of Momentum: Balloon Example"]
                 },
                 {
@@ -1472,7 +1473,7 @@
                   "In a closed system, momentum can be transferred between objects without being lost.",
                   "Momentum is transferred when there is collision"
                 ],
-                "reponses": ["Conservation of momentum stated that the total momentum of an isolated system stays constant. So total momentum before collision is equal to total momentum after collision. Therefore, the total momentum in the system was conserved. Conserved means that the momentum can be transformed from one object to another but does not lost the system. In a closed system, there were no other factors like forces that play significant roles in the interactions."],
+                "responses": ["Conservation of momentum stated that the total momentum of an isolated system stays constant. So total momentum before collision is equal to total momentum after collision. Therefore, the total momentum in the system was conserved. Conserved means that the momentum can be transformed from one object to another but does not lost the system. In a closed system, there were no other factors like forces that play significant roles in the interactions."],
                 "context": ["Conservation of Momentum: Definition"]
                 },
                 {
@@ -1482,7 +1483,7 @@
                     "Momentum when there is collision",
                     "Momentum on collision"
                   ],
-                  "reponses": ["Momentum is transferred when there is collision."],
+                  "responses": ["Momentum is transferred when there is collision."],
                   "context": ["Conservation of Momentum: When there is collision"]
                   },
                 {
@@ -1497,7 +1498,7 @@
                   "What happens to momentum if object moves to the right?",
                   "When is total momentum conserved?"
                 ],
-                "reponses": ["Most often, we started from rest, so the initial total momentum is zero. When it starts to move these two bodies are in opposite directions, as it moves to the left, momentum is negative and when it moves to the right, momentum is positive. Thus, the total momentum of the system was conserved."],
+                "responses": ["Most often, we started from rest, so the initial total momentum is zero. When it starts to move these two bodies are in opposite directions, as it moves to the left, momentum is negative and when it moves to the right, momentum is positive. Thus, the total momentum of the system was conserved."],
                 "context": ["Conservation of Momentum: Formula"]
                 },
                 {
@@ -1509,7 +1510,7 @@
   "Meaning of heat?",
   "Heat meaning?"
 ],
-"reponses": ["Heat is the energy transferred from one body to another as a results of temperature difference. The internal energy of a body increases when the temperature increases and changes from solid to liquid or from liquid to gas. Normally heat flows spontaneously from a higher temperature to a lower temperature by doing work or by heating, internal energy can be increased. Heating is the process in which heat is transferred from one body to another as a result of temperature difference."],
+"responses": ["Heat is the energy transferred from one body to another as a results of temperature difference. The internal energy of a body increases when the temperature increases and changes from solid to liquid or from liquid to gas. Normally heat flows spontaneously from a higher temperature to a lower temperature by doing work or by heating, internal energy can be increased. Heating is the process in which heat is transferred from one body to another as a result of temperature difference."],
 "context": ["Heat: Definition"]
 },
 {
@@ -1521,7 +1522,7 @@
 	"internal energy of the substances is the sum of",
   "internal energy of the substances"
 ],
-"reponses": ["The first law of thermodynamic states that the change in internal energy of a system equals to the difference between the heat taken in by the system and the work done by the system internal energy of the substances is the sum of molecular kinetic energy( due to random motion of the molecules) , the molecular potential energy ( due to forces that acts between atoms of a molecule and between molecules) and other kinds of molecular energy."],
+"responses": ["The first law of thermodynamic states that the change in internal energy of a system equals to the difference between the heat taken in by the system and the work done by the system internal energy of the substances is the sum of molecular kinetic energy( due to random motion of the molecules) , the molecular potential energy ( due to forces that acts between atoms of a molecule and between molecules) and other kinds of molecular energy."],
 "context": ["Thermodynamic: First Law"]
 },
 {
@@ -1538,7 +1539,7 @@
   "first law thermodynamics equation",
   "first law of thermodynamics mathematically expressed"
 ],
-"reponses": ["Mathematically, the law is expressed as ∆U = Q - W. Where: Q = amount of heat flowing into the system during a given process. W = net work done by the system. ∆U = change in the system internal energy. Q = W + ∆U"],
+"responses": ["Mathematically, the law is expressed as ∆U = Q - W. Where: Q = amount of heat flowing into the system during a given process. W = net work done by the system. ∆U = change in the system internal energy. Q = W + ∆U"],
 "context": ["Thermodynamics First Law: Formula"]
 },
 {
@@ -1548,7 +1549,7 @@
 	"What happens to heat flow when two objects are in contact?",
 	"Why are objects hot when touched?"
 ],
-"reponses": ["An object with high temperature is said to be hot. Remember heat flows from hotter objects to a cooler one when two objects are in contact. This is the reasons when we touch them; it feels hot since the temperature is greater than our normal body temperature of 37° celsius. This is a natural phenomenon and is said to be a spontaneous process. It does not require any external energy to occur. When heat flow from lower temperature to a higher temperature, it needs mechanical energy to happen and said to be a non- spontaneous process."],
+"responses": ["An object with high temperature is said to be hot. Remember heat flows from hotter objects to a cooler one when two objects are in contact. This is the reasons when we touch them; it feels hot since the temperature is greater than our normal body temperature of 37° celsius. This is a natural phenomenon and is said to be a spontaneous process. It does not require any external energy to occur. When heat flow from lower temperature to a higher temperature, it needs mechanical energy to happen and said to be a non- spontaneous process."],
 "context": ["Objects_considered_hot"]
 },
 {
@@ -1560,7 +1561,7 @@
 	"What happens to heat flow when two objects are in contact?",
   "Define spontaneous process."
 ],
-"reponses": ["An object with high temperature is said to be hot. Remember heat flows from hotter objects to a cooler one when two objects are in contact. This is the reasons when we touch them; it feels hot since the temperature is greater than our normal body temperature of 37° celsius. This is a natural phenomenon and is said to be a spontaneous process. It does not require any external energy to occur."],
+"responses": ["An object with high temperature is said to be hot. Remember heat flows from hotter objects to a cooler one when two objects are in contact. This is the reasons when we touch them; it feels hot since the temperature is greater than our normal body temperature of 37° celsius. This is a natural phenomenon and is said to be a spontaneous process. It does not require any external energy to occur."],
 "context": ["Spontaneous process: Definition"]
 },
 {
@@ -1571,7 +1572,7 @@
   "non-spontaneous process",
   "Define non-spontaneous process."
 ],
-"reponses": ["When heat flow from lower temperature to a higher temperature, it needs mechanical energy to happen and said to be a non-spontaneous process."],
+"responses": ["When heat flow from lower temperature to a higher temperature, it needs mechanical energy to happen and said to be a non-spontaneous process."],
 "context": ["Non-spontaneous process: Definition"]
 },
 {
@@ -2009,7 +2010,7 @@
       "context": ["Electric circuit"]
     },
     {
-      "tag": "Electric circuit: Voltage Source",
+      "tag": "Electric_circuit_Voltage_Source",
       "patterns": [
         "What is a voltage source in an electric circuit?",
         "Explain voltage sources in circuits.",
@@ -2021,7 +2022,7 @@
       "responses": [
         "A voltage source in an electric circuit is a device that maintains a constant amount of voltage. It provides the electrical potential necessary for current flow within the circuit."
       ],
-      "context": ["Voltage source"]
+      "context": ["Voltage source : Definition"]
       },
       {
 
@@ -2588,6 +2589,2363 @@
       "An isothermal process is a constant-temperature process. For a process to be isothermal, any heat flow into or out of the system must occur slowly enough that thermal equilibrium is maintained."
   ],
   "context": ["Isothermal process: Definition"] 
-}
+},
+{
+  "tag": "Measurements_definition",
+  "patterns": [
+      "What is a measurement?", 
+      "Define measurements", 
+      "Explain the meaning of measurements.", 
+      "Measurement definition.", 
+      "Explain measurements"
+  ],
+  "responses": [
+      "Measurements are expressed in unit values or units. Some of the earliest units of measurement such as foot were originally referenced to part of the human body." 
+  ],
+  "context": ["Measurement: Definition"]
+},
+{
+   "tag": "Standard unit_definition", 
+   "patterns": [ 
+       "What are standard units?", 
+       "What is the meaning of standard unit?", 
+       "Define standard unit.", 
+       "Explain standard unit.", 
+       "SI define", 
+       "What is SI?", 
+       "Explain SI."  
+   ], 
+   "responses": [ 
+        "An SI is also called as standard unit. This is the term used when a unit becomes officially accepted. Traditionally, the government or an international body establishes their unit. A group of standard units is called system of units."
+   ], 
+   "context": ["Standard unit_Definition"] 
+}, 
+{ 
+   "tag": "Measurement_Two_types", 
+   "patterns": [ 
+       "What are the two types of system of unit?",
+       "What are the major system of units?", 
+       "Give the two major types of system of units.", 
+       "two types of system of units", 
+       "two major system of units." 
+   ],  
+   "responses" : [ 
+       "The two types of system of units are the metric and british system. The latter is still widely used in the United States, but has virtually disappeared in other parts of the world. The metric system is the one that is commonly used by many." 
+
+   ], 
+   "context": ["Measurement_Two types"]
+}, 
+{ 
+    "tag": "Fundamental physical quantities_Enumeration", 
+    "patterns": [
+        "Enumerate the fundamental physical quantities.",
+        "What are the fundamental physical quantities?"
+    ], 
+    "responses": [ 
+        "Length, mass, and time are fundamental physical quantities that describe many great objects and phenomenas. Length has an SI unit of meter (m). The SI unit of mass is kilogram (kg). The SI unit of time is seconds (s)."
+    ], 
+    "context": ["Fundamental physical quantities_Enumeration"] 
+}, 
+{ 
+    "tag": "System of unit_More information", 
+    "patterns": [ 
+        "Explain more about systems of units.", 
+        "More information about systems of units",
+        "Give more information about system of units.", 
+        "More information about measurement system of units." 
+    ], 
+    "responses": [
+        "Historically, the metric system was the outgrowth of proposals for a more uniform system of weights and measures in Frances during the 17th and 18th centuries. The metric system today is called International System of Units, officially abbreviated as SI. The SI also includes base and derived quantities. Base quantities are presented by standards such as meter and kilogram. Derived, on the other, are kinds of combinations of the base quantities. Another example of standard base units are length and time indicated in m for meters, and s for seconds, resectively." 
+    ], 
+    "context": ["System of unit_More information"]
+}, 
+{ 
+    "tag": "System of units_More information_Explanation",
+    "patterns": [ 
+        "Elaborate base and derived units.", 
+        "Provide a simple explanation of base and derived units.", 
+        "What are derived and base units simple discussion."
+    ], 
+    "responses": [ 
+        "Think of base and derived units as a house made out of bricks. The bricks that make up the house are what we call BASE UNITS. And the house being created from the bricks are what we call DERIVED units. We can relate this to the measurements we have. \n Example: A foot can be derived from inches, and inches can be derived from centimeters (cm), and we can convert this into the standard baee unit of length which is meter. \n Here is a simple example: Suppose you are to convert 1 foot to meters, how would you do it? \n 1 foot = 12 inches \n 1 inch = 2. 54 centimeters we then convert centimeters to meters. \n 2.54 / 100 because we move two steps before centimeters, and every unit contains a quantity of 10, which gives us an answer of 0.0254 meters." 
+   ], 
+   "context": ["System of units_More information_Explanation"]
+}, 
+{ 
+   "tag": "SI Base Units_Types", 
+   "patterns": [ 
+        "What are the types of base units?", 
+        "Give me the base units.", 
+        "Enumerate the following base units.", 
+        "Types of base units.", 
+        "How many base units are there?", 
+        "Number of base units." 
+   ], 
+   "responses": [
+        "There are seven base units. In addition to meter, kilogram, and seconds for (1) length, (2) masss, and (3) time respectively there are also (4) electric current (charge/second) in amperes (A), (5) temperature in kelvins (K), (6) amount of substance in moles (mol), and (7) luminous intensityin candelas (cd)." 
+   ], 
+   "context": ["SI Base Units_Types"]
+}, 
+{ 
+   "tag": "More about the metric system", 
+   "patterns": [ 
+       "Provide more explanation about measurements.", 
+       "Expain metric system even further.", 
+       "Metric system elaborate", 
+       "What are more information about metric system?" 
+   ], 
+   "responses": [ 
+       "The mmetric system involved length, mass, and time now incorporated in the SI was once called the mks system or meter-kilogramp-second. Another metric system which deals with relatively small quantities called cgs system or centimeters-grams-second. As for the british system, this is sometimes called the fps system or foot-pound-second. The metric system is prevalently used and is increasing in the United States."
+   ], 
+   "context": ["More about the metric system"] 
+}, 
+{ 
+   "tag": "Volume_definition", 
+   "patterns": [ 
+       "what is volume as an SI unit?", 
+       "SI unit of volume", 
+       "standard unit of volume" 
+   ], 
+   "responses": [ 
+       "The standard unit of volume is cube meter (m^3) - the three dimensional derived unit of the meter base unit. Because this unit is rather large, it is often more convenient to use the nonstandard unit of volume of a cube centimeters." 
+   ], 
+   "context": ["Volume_definition"] 
+
+}, 
+{ 
+   "tag": "Dimensional analysis: Definition", 
+
+   "patterns": [ 
+          "What is a dimensional analysis?", 
+          "Explain dimensional analysis.", 
+          "Define dimensional analysis.", 
+          "Definition of dimensional analysis.", 
+          "Meaning of definition analysis.", 
+          "Dimensional analysis definition"
+   ], 
+"responses": [ 
+"Dimensional analysis is a procedure by which the dimensional consistency of any equation may be checked. You have used equations and know that an equation is a mathematical equality. Since physical quantities used in equations have dimensions, the two sides of an equation must be equal not only in numerical value, but also in dimensions. \n For example: You are ask to find the area of an object have sizes l=3.0 m, and w=4.0 m. Considering that the formula in finding the area is 1 x w, we can make the equation: \n 3.0 x 4.0 = 12 m^2. Both sides are dimensionally equal. \nThis is very useful especially if you want to check if the equation is in its correct form.", 
+          "Another example is the equation: \n L = L/T^2 x T^2 OR L = L  \n considering that if we multiply both L/T^2 x T^2, we can  cross multiply both the factors L/T^2 anf T^2 which will give us an answer of L because T^2 can be cancelled out in the process. From that, we can see that both sides are correct dimensionally. There are other equations where they are not physically correct in nature, but are correct dimensionally." 
+], 
+  "context": ["Dimensional analysis: Definition"] 
+}, 
+{ 
+
+"tag": "Exact and Measured Numbers: Difference", 
+"patterns": [ 
+"What are the differences between Exact and Measured Number?", 
+"What is the difference between Exact and Measured Number?", 
+      "Exact and Measured Numbers difference", 
+      "What is the difference between exact and measured numbers?"
+], 
+"responses": [ 
+"Exact numbers are numbers without any uncertainty or error and measured numbers are numbers obtained from measurement process and thus generally have some degree of uncertainty or error." 
+], 
+"context": ["Exact and Measured Numbers: Difference"] 
+}, 
+{
+"tag":"Significant figures_information", 
+"patterns": [
+      "What are the rules of significant figures?",
+"Rules of significant figures.", 
+"How to do significant figures?" 
+], 
+"responses": [ 
+" (1) Zeros at the beginning of a number are not significant. They merely locate the decimal point. For example, 0.0235 m has three significant figures. \n(2) Zeros within a number are significant. For example, 104.6 m has four significant figures. \n(3) Zeros at the end of a number after the decimal point are significant. For example, 2705.0 m has five significant figures. \n(4) In whole numbers without a decimal that end in one or more zeros, the zeros may ot may not be significant. \nExample: \n5.0 x 10^2 has two significant figures \n5.00 x 10^2 has three significant figures"
+], 
+"context": ["Significant figures_information"] 
+}, 
+{ 
+"tag": "Rules for rounding significant figures", 
+"patterns": [ 
+ "How do we round significant figures off?", 
+ "What are the rules for rounding significant figures?", 
+ "Rounding off significant figures."
+], 
+"responses": [
+ " (1) If the first digit to be dropped is less than 5, leave the preceding digit as is. \n(2) If the first digit to be dropped is 5 or greater, increase the preceding digit by one. \n(3) In addition and subtraction, round off the figures based on the least number of digit. \n(4) In multiplication and division, round off the figures based on the least number of significant figures." 
+], 
+"context": ["Rules for rounding significant figures"] 
+}, 
+{ 
+"tag": "Mechanics_Definition",    
+"patterns": [ 
+"What is the meaning of mechanics?", 
+"Definition of mechanics", 
+"Explain mechanics",
+"What is mechanics?" 
+], 
+"responses": [ 
+"Mechanics is the branch of physics concerned with the study of motion and what produces and affects motion. The roots of mechanics and of human interest in motion go back to early civilizations." 
+], 
+"context": ["Mechanics_Definition"] 
+}, 
+{ 
+"tag": "Dynamics_Definition", 
+"patterns": [ 
+ "What is the definition of dynamics?", 
+ "What is the mean of dynamics?", 
+ "Meaning of dynamics", 
+ "Explain dynamics", 
+ "Explain the definition of dynamics," 
+], 
+"responses": [ 
+ "Dynamics analyzes the causes of motion." 
+], 
+"context": ["Dynamics_Definition"] 
+}, 
+{ 
+"tag": "Distance_definition", 
+"patterns": [ 
+ "What is the definition of distance?", 
+ "What is the meaning of distance?", 
+ "Explain distance.", 
+ "Definition of distance and formula." 
+], 
+"responses": [ 
+ "Distance is a scalar quantity. A scalar quantity is quantity with only magnitude or size. This can be calculated through the formula: \nD = vt \nwhere v is speed, t is time. "
+], 
+"context": ["Distance_definition"]
+}, 
+{
+"tag": "Speed_definition", 
+"patterns": [
+ "What is the definition of speed?", 
+ "What is the meaning of speed?", 
+ "How do we calculate speed and its meaning"
+], 
+"responses": [ 
+ "When something moves, it changes its position. This motion is what we call speed, and it can be calculated through the formula: \nV = d/t \nwhere d is distance, and t is time." 
+], 
+"context": ["Speed_definition"] 
+}, 
+{ 
+"tag": "Displacement_definition", 
+"patterns": [ 
+ "What is displacement?", 
+ "Elaborate displacement.",
+ "What is the definition of displacement?", 
+ "What is the meaning of displacement?" 
+],
+"responses": [ 
+ "Displacement is the straight-line distance between two points, along wih the direction from the starting point to the final point."  
+], 
+"context": ["Displacement_definition"]
+}, 
+{
+"tag": "Displacement_formula", 
+"patterns": [ 
+"What is the formula of the displacement?",
+"How do we calculate displacement?", 
+"How we solve displacement?"
+], 
+"responses": [ 
+"The displacement can be solved through: \ndisplacement = final velocity - initial velocity \nExample: The man walks 90 meters from the left to 10 meters right. Find the displacement. \nInitial velocity = 10 m \nFinal velocity = 90 m \nConsidering that if an object moves to the left, the sign of the magnitude is negative, and if otherwise (right), it is positive. " 
+], 
+"context": ["Displacement_formula"]
+}, 
+{ 
+"tag": "Velocity_definition", 
+"patterns": [ 
+"What is the definition of velocity?",
+"What is the meaning of velocity?", 
+"Definition of velocity", 
+"Explain velocity" 
+], 
+"responses": [ 
+ "Velocity tells you how fast something is moving and in which direction it is moving. The velocity can be calculated through the formula: \nV = d/t where d is displacement, and t is time."
+], 
+"context": ["Velocity_definition"]
+}, 
+{ 
+"tag": "Acceleration_definition", 
+"patterns": [ 
+"What is the meaning of acceleration?", 
+"What is the definition of acceleration?", 
+"Explain acceleration.", 
+"Elaborate acceleration."
+], 
+"responses": [ 
+"Acceleration is a change in velocity. This can be calculated through the formula: \n average acceleration = change in velocity / time to make the change"
+], 
+"context": ["Acceleration_definition"]
+}, 
+{ 
+"tag": "Galileo Galilei_Background", 
+"patterns": [ 
+"Who is Galileo Galilei?",
+"Galileo Galilei?", 
+"What is the background of Galileo Galilei?" 
+], 
+"responses": [
+"He was born in Pisa, Italy in 1564, during the Renaissance. He is known as the father of modern science or father of mechanics and experimental physics, which attests to the magnitude of his scientific contributions." 
+], 
+"context": ["Galileo Galilei_Background"] 
+}, 
+{ 
+"tag": "Friction_definition", 
+"patterns": [
+"What is the definition of Friction?", 
+"What is the meaning of Friction?", 
+"Explain friction.", 
+"Elaborate friction"
+],
+"responses": [
+"Friction refers to the ever-present resistance to motion that occurs whenever two materials or media are in contact with each other. This resistance occurs for all types of media - solid, liquid, gas - and is characterized as the force of friction." 
+], 
+"context": ["Friction_definition"] 
+}, 
+{ 
+"tag": "Friction_types", 
+"patterns": [
+"What are the types of friction?", 
+"Types of friction", 
+"Friction types", 
+"Kinds of friction"
+], 
+"responses": [ 
+"The types of friction are static, sliding or kinetic, rolling friction. Static friction includes all cases in which the frictional force is sufficient to prevent relative motion between surfaces. Sliding friction occurs when there is relative (sliding) motion at the interface. Rolling friction occurs when one surface rotates as it moves over another surface, but does not slip or slide at the point or area of contact."], 
+"context": ["Friction_types"] 
+}, 
+{ 
+"tag": "Air resistance_definition",
+"patterns": [ 
+"What is the definition of air resistance?",
+"What is the meaning of air resistance?", 
+"Definition of air resistance", 
+"Explain air resistance"
+], 
+"responses": [ 
+"This refers to the resistance force acting on an object as it moves through air. This is a type of frictional force. This occurs when a moving object collides with air molecules. Therefore, air resistance depends on an object's sizes and shape, as well as its speed."
+], 
+"context": ["Air resistance_definition"] 
+}, 
+{
+"tag": "pressure_formula", 
+"patterns": [ 
+"how we calculate pressure?", 
+"Calculation pressure", 
+"How do we solve pressure?", 
+"Pressure formula"
+], 
+"responses": [ 
+ "When a force F acts perpendicular to a surface area A, the pressure p exerted on the surface is the ratio between the magnitude F of the force and the area. Because a perpendicular force is also described as a noraml force, we can say that pressure is the magnitude of normal force per unit area: \nP = F/A \nPressure = normal force/area" 
+],
+"context": ["Air resistance_definition"] 
+}, 
+{
+"tag": "Pressure_three ways to measure pressure", 
+"patterns": [ 
+"What are three ways to measure pressure?", 
+"3 ways to measure pressure,",
+"what are ways to measure pressure?", 
+"how do we measure pressure?"
+], 
+"responses": [ 
+"Three types used to measure pressure are aneroid, manometer, and Bourdon tube. Aneroid measures pressures in terms of the amount by which the thin, flexible ends of an evacuated metal chamber are pushed in or out by the external pressure. Manometer measures pressure in terms of the difference in height (h). Bourdon tube straightens out when the internal pressure exceeds the external pressure." 
+], 
+"context": ["Pressure_three ways to measure pressure"]
+}, 
+{ 
+"tag": "Pressure_three properties of pressure in fluid", 
+"patterns": [ 
+"What are the three properties of pressure in fluid?", 
+"Three types of properties of pressure.", 
+"Properties of pressure.", 
+"3 properties of pressure."
+], 
+"responses": [ 
+"The properties of pressure in a fluid are (1) The forces a fluid at rest exerts on the walls of its container, and vice versa, always act perpendicular to the walls; (b) An external pressure exerted on a fluid is transmitted uniformly throughout the volume of fluid; (c) The pressure on a small surface in a fluid is the same regardless of the orientation of the surface." 
+],
+"context": ["Pressure_three properties of pressure in fluid"] 
+},
+{
+"tag": "Pump_definition", 
+"patterns": [ 
+"Explain pump",
+"Define pump", 
+"What is pump?", 
+"What is the definition of pump?", 
+"What is the meaning of pump?"
+],
+"responses": [
+"A pump is a device for creating a pressure difference." 
+], 
+"context": ["Pump_definition"]
+},
+{
+"tag": "Basic machine_types", 
+"patterns": [
+"What are the three basic machine types?",
+      "What are the three types of simple machine?", 
+"Simple machine three types", 
+"Basic machine three types", 
+"Three types of basic machine", 
+"Three types of simple machine"
+], 
+"responses": [ 
+ "The three basic machines are the lever, inclined plane, and hydraulic press."
+], 
+"context": ["Basic machine_types"] 
+},
+{
+"tag": "Hydraulic Press_Definition",
+"patterns": [
+"What is Hydraulic Press?", 
+"Define Hydraulic PrHydraulic Press_Definitioness.",
+"Explain Hydraulic Press." 
+],
+"responses": [ 
+"This is based on Pascal's principle. The principle of Hydraulic Press an be applied in a variety of ways. Common industrial uses include presses of various kinds, garage lifts, control system in airplanes, and vehicle press." 
+], 
+"context": ["Hydraulic Press_Definition"]
+}, 
+{ 
+"tag": "Bouyancy_Definition",
+"patterns": [ 
+"What is Bouyancy?",
+"Define Bouyancy.", 
+"Explain Bouyancy", 
+"What is the definition of Bouyancy." 
+],
+"responses": [
+"When an object is placed in water (or any other fluid), an upward force acts on it. This is Bouyancy which makes it possible for balloons to float in the air."
+], 
+"context": ["Bouyancy_Definition"] 
+}, 
+{ 
+"tag": "Hydrometer_Definition", 
+"patterns": [ 
+"What is hydrometer?",
+"What is the meaning of hydrometer?", 
+"Give the definition of hydrometer.", 
+"Define hydrometer?", 
+"Explain hydrometer?" 
+], 
+"responses": [
+"Hydrometer is a simple instrument based on Archimedes' principle that is used to measure the density of a liquid."
+], 
+"context": ["Hydrometer_Definition"]
+}, 
+{ 
+"tag": "Bernoulli_Equation", 
+"patterns": [ 
+"What is the formula of Bernoulli Equation?", 
+"Bernoulli Equation.", 
+"How to find bernoulli's equation?" 
+], 
+"responses": [ 
+"Bernoulli's Equation: \np1 + pgh1 + 1/2pv2/1 = p2 + pgh2 = 1/2pv2/2 \nwhere g is 9.8 mls^2 \nP1 and p2 is the pressure \nh1 and h1 is the height above some reference and; \nv1 and v2 is the speed of a liquid of density" 
+], 
+"context":["Bernoulli_Equation"]
+
+},
+{
+"tag": "Viscosity_Definition", 
+"patterns": [ 
+"What is viscosity?",
+"What is the meaning of viscosity?", 
+"Give the definition of viscosity.", 
+"Define viscosity?", 
+"Explain viscosity?"
+], 
+"responses": [
+ "Viscosity of a fluid is a measure of its internal friction."
+], 
+"context": ["Viscosity_Definition"]
+}, 
+{ 
+"tag": "Surface tension_Definition", 
+"patterns": [ 
+"What is Surface tension?",
+"What is the meaning of Surface tension?", 
+"Give the definition of Surface tension.", 
+"Define Surface tension?", 
+"Explain Surface tension?"
+], 
+"context": ["Surface tension_Definition"]
+}, 
+{ 
+"tag": "Surfactant_Definition", 
+"patterns": [ 
+"What is a Surfactant?",
+"What is the meaning of Surfactant", 
+"Give the definition of Surfactant.", 
+"Define Surfactant?", 
+"Explain Surfactant?"
+], 
+"responses": [ 
+"This is a substance whose addition to a liquid reduces its surface tension. These are also known as wetting agents because they allow water solution to spread uniformly over a surface instead of forming into separate droplets." 
+], 
+"context": ["Surfactant_Definition"] 
+}, 
+{ 
+"tag": "Capillarity_Definition", 
+"patterns": [
+"What is Capillarity?",
+"What is the meaning of Capillarity?", 
+"Give the definition of Capillarity.", 
+"Define Capillarity?", 
+"Explain Capillarity?"
+], 
+"responses": [ 
+ "This is responsible for many effects, such as the ability of paper and cloth fibers to absorb water. Two factors are involved: the cohesion of the liquid which refers to the attractive forces its molecules exert on one another, and the adhesion of the liquid to the surface of then liquid which refers to the attractive forces the solid exerts on the liquid molecules."
+], 
+"context": ["Capillarity_Definition"] 
+},
+{
+  "tag": "Simple_Harmonic_Motion",
+  "patterns": ["What is Simple Harmonic Motion?", "Explain Simple Harmonic Motion", "Simple Harmonic Motion definition"],
+  "responses": ["Simple Harmonic Motion occurs whenever a force will keep oscillating back and forth infidenitely. Oscillating means to swing backward and forward like a pendulum. \nIn harmonic motion the energy of the vibrations goes back and forth between kinetic and potential forms. Simple harmonic motion occurs whenever a force proportional to the displacement acts on a body in the opposite direction to its displacement from its normal position. The elastic restoring force of a stretched or compressed spring always tends to return the spring to its normal length, but the momentum of the moving mass compels it to overshoot in one direction and then in the other and thus to oscillate. A complete oscillation is often called a cycle."],
+  "context": ["Simple Harmonic Motion : Definition"]
+},
+{
+  "tag": "Amplitude",
+  "patterns": ["What is Amplitude?", "Explain Amplitude?", "Amplitude Definition?"],
+  "responses": ["The maximum displacement A of an object undergoing harmonic motion on either side of its equilibrium position is called the amplitude of the motion: \nA = Xmax \nAmplitude = maximum displacement from equilibrium position"],
+  "context": ["Amplitude : Definition"]
+},
+{
+  "tag": "Period of Simple Harmonic Motion formula",
+  "patterns": ["What is the Period of Simple Harmonic Motion formula?", "Explain the Period of Simple Harmonic Motion formula?", "Period of Simple Harmonic Motion definition formula?", "Formula of period simple harmonic motion?"],
+  "responses": ["The period of all types of simple harmonic motion is given by the same formula: \nT = 2π √-x⁄a \nPeriod = 2π √- displacement/acceleration"],
+  "context": ["Period of Simple Harmonic Motion : Definition"]
+},
+{
+  "tag": "Frequency",
+  "patterns": ["What is Frequency?", "Explain Frequency", "Frequency definition"],
+  "responses": ["A quantity often used in describing harmonic motion is frequency. The frequency is the number of cycles that occur per unit time. Hence frequency, whose symbol is f, is the reciprocal of period T, \nf = ¹⁄T"],
+  "context": ["Elastic_Collisions : Definition"]
+},
+{
+  "tag": "Unit_of_Frequency",
+  "patterns": ["What is the unit of Frequency?", "Explain the unit of Frequency"],
+  "responses": ["The unit of frequency, the hertz, is named in honor of Heinrich Hertz (1857-1894). a pioneer in the study of electromagnetic waves: 1 hertz (Hz) = 1 cycle/s."],
+  "context": ["Unit_of_Frequency  : Definition"]
+},
+{
+  "tag": "Frequency_example",
+  "patterns": ["What is an example for frequency?", "Provide an example for frequency", "Frequency example"],
+  "responses": ["EXAMPLE: When a ball is suspended from a spring, the spring stretches by 70 mm (Fig. 11.8). If the ball then oscillates up and down, what is its period? Its frequency? \nSOLUTION: The force exerted on the spring is the ball's weight of mg. Because F = kx, the force constant of the spring is \nk = F⁄x = mg/x \nThe period of the oscillations is therefore \nT = 2π√m/k = 2π√mx/mg = 2π√x/g = 2π√0.70m/9.8 m/s² - 0.53s \nWe did not have to know the ball's mass to find the period of its motion, because x/g = m/k here. The frequency that corresponds to a period of 0.53 s is \nf = 1/T = 1/0.53 s = 1.9 cycle/s = 1.9 Hz"],
+  "context": ["Frequency_example : Example"]
+},
+{
+"tag": "Physical_Pendulum_definition",
+  "patterns": ["What is Physical Pendulum?", "Explain Physical Pendulum", "Define Physical Pendulum"],
+  "responses": ["An object of any shape will oscillate back and forth when it is pivoted at some point other than its center of gravity and given an initial push. Such an object is called a physical pendulum"],
+  "context": ["Physical_Pendulum : Definition"]
+},
+{
+"tag": "Formula_for_Elastic_potential_energy",
+  "patterns": ["What is the formula for elastic potential energy?", "Explain formula for elastic potential energy", "State the formula for elastic potential energy"],
+  "responses": ["PE = 1/2kx²"],
+  "context": ["Elastic_potential_energy : Formula"]
+},
+{
+"tag": "Formula_for_Physical_Pendulum",
+  "patterns": ["What is the formula for Physical Pendulum?", "Explain formula for Physical Pendulum", "State the formula for Physical Pendulum"],
+  "responses": ["T = 2π√1/mgh"],
+  "context": ["Elastic_potential_energy : Formula"]
+},
+{
+  "tag": "Formulas_that_apply_to_any_harmonic_oscillator",
+  "patterns": ["What are Formulas that apply to any harmonic oscillator?", "Explain Formulas that apply to any harmonic oscillator", "Provide Formulas that apply to any harmonic oscillator"],
+  "responses": ["The principle of conservation of energy gives us a way to express the speed of an object in SHM in terms of its frequency f, amplitude A, and displacement x. The total energy of the oscillator (object plus spring) is the sum of its kinetic and potential energies at any time, which are, respectively, 1/2mv² and 1/2kx². At either end of the motion, when x = +A or x = -A, the object is stationary and has only the potential energy ka². Hence  \nTotal energy = KE + PE \n1/2kA² = 1/2mv² + 1/2kx² \nmv² = k(A² - x²) \nv = √k/m √A² - x²"],
+  "context": ["Formulas_that_apply_to_any_harmonic_oscillator : Definition"]
+},
+{
+  "tag": "Photoelectric_effect_definition",
+  "patterns": ["What is the photoelectric effect?", "photoelectric effect?", "Explain the photoelectric effect.", "Explain the definition of the photoelectric effect."],
+  "responses": ["The photoelectric effect is a phenomenon when light (particularly ultraviolet light) falls on a metal surface, electrons are found to be given off."],
+  "context": ["Photoelectric_effect_definition"]
+},
+{
+  "tag": "Planck's_constant_formula",
+  "patterns": ["What is the formula for Planck's constant?", "Planck's constant formula", "Planck constant formula", "Explain the formula of Planck's constant"],
+  "responses": ["Planck's constant is: \n h = 6.63 x 10^-34 J * s \n where the quantity h is a universal constant"],
+  "context": ["Planck's_constant_formula"]
+},
+{
+  "tag": "Planck's_constant_example",
+  "patterns": ["Give an example situation of Planck's constant.", "Can you give a situation about Planck's constant?", "Can you give an example about Planck's constant?", "Planck's constant example."],
+  "responses": ["Here's an example: \n The eye can detect as little as 1 x 10^-18 J of electromagnetic energy. How many photons of orange light whose wavelength is 600nm does this energy represent?  \n Here's a way to solve this: \n The frequency of this light is \n f = c/λ = (3 x 10^8 m/s)/(6 x 10^-7m) = 5 x 10^14 Hz \n Each photon has the energy hf. Hence: \n Number of photons = (detectable energy)/(energy or photon) = (1 x 10^-18 J)/(6.63 x 10^-34 J * s)(5 x 10^14 Hz) = 3 photons"],
+  "context": ["Planck's constant example"]
+},
+{
+  "tag": "Light_definition",
+  "patterns": ["What is the definition of light?", "Light definition", "Light definition according to the quantum theory", "Quantum theory Light definition?", "Explain light"],
+  "responses": ["According to the quantum theory, light is a series of individual photons, each small enough to be absorbed by a single electron. Yet, despite the particle picture of light it presents, the quantum theory needs the frequency f of hte light to describe the photon energy. Light behaves as though it has either a wave nature or a particle nature."],
+  "context": ["Light_definition_quantum_theory"]
+},
+{
+  "tag": "X_rays_contain",
+  "patterns": ["What do X-Rays contain?", "What do X-Rays have?"],
+  "responses": ["X-Rays consist of high-energy photons. X-rays exhibit both interference and polarization effects, leading to the conclusion that they are em waves. From the interference experiments their wavelengths were found to be very short, shorter than those in ultraviolet light. Electromagnetic radiation in the approximate wavelength interval from 0.01 to 10nm is today classed as X-radiation."],
+  "context": ["X_rays_contain"]
+},
+{
+  "tag": "X_rays_physical_process",
+  "patterns": ["What is the physical process involved in the production of X-rays?", "Physical process in the production of X-rays", "Process involved in the production of X-rays"],
+  "responses": ["It is known that charged particles emit em waves when accelerated, and so we may reasonably identify X-rays as the radiation that accompanies the slowing down of fast electrons when they strike matter. The great majority of the electrons, to be sure, lose their kinetic energy too gradually for X-rays to be given off, and merely heat the target. (Hence the targets in X-ray tubes are made of metals with high melting points, and a means for cooling the target is often provided.) A few electrons, however, lose much or all of their energy in single collisions with target atoms, and this is the energy that appears as X-rays. In other words, we may regard X-ray production as an inverse photoelectric effect."],
+  "context": ["X_rays_physical_process"]
+},
+{
+  "tag": "Wave_function_definition",
+  "patterns": ["What is a wave function?", "The quantity whose variations constitute the matter waves of a moving object is known as", "Explain a wave function", "Define a wave function."],
+  "responses": ["A wave function is a quantity whose variations constitute the matter waves of a moving object. The symbol for wave function is Ψ, the Greek letter psi. For this reason,, the quantity Ψ^2 is called the probability density of the object. The value of Ψ^2 for a particular object at a certain place and time is proportional to the probability of finding the object at that place at that time. A large value of Ψ^2 means that it is likely to be found at the specified place and time; a small value of Ψ^2 means that it is unlikely to be found at that place and time. Thus matter waves may be regarded as waves of probability."], 
+  "context": ["Wave_function_definition"]
+},
+{
+  "tag": "Special_relativity_conclusion",
+  "patterns": ["What is the conclusion of special relativity?", "Special relativity", "Explain special relativity"],
+  "responses": ["The most far-reaching conclusion of special relativity is that mass and energy are closely related - so closely that matter can be converted into energy and energy into matter."],
+  "context": ["special_relativity_conclusion"]
+},
+{
+  "tag": "Rest_energy_definition",
+  "patterns": ["What is rest energy?", "What is the definition of rest energy?", "What is the rest energy of a body?", "Energy equivalant of its mass"],
+  "responses": ["The rest energy of a body is the energy equivalent of its mass. If a body has the mass m0 when it is at rest, its rest energy is: \n E0 = m0c^2 \n Where c is the speed of light."],
+  "context": ["Rest_energy_definition"]
+},
+{
+  "tag": "Relativity_of_mass_definition",
+  "patterns": ["What is the relativity of mass?", "Relativity of Mass?", "Explain the Relativity of Mass?"],
+  "responses": ["The mass of an object is not constant but depends on the object's speed with respect to the observer. The greater the speed, the greater the mass."],
+  "context": ["Relativity_of_mass_definition"]
+},
+{
+  "tag": "Variation_of_mass_with_speed",
+  "patterns": ["What is the variation of mass with speed?", "Variation of mass with speed?"],
+  "responses": ["The variation of mass with speed is not noticeable for ordinary moving things, but in the subatomic world the variation is conspicuous because such tiny particles as electrons, protons, and neutrons may move very fast."],
+  "context": ["Variation_of_mass_with_speed"]
+},
+{
+  "tag": "Variation_of_mass_with_speed_formula",
+  "patterns": ["What is the variation of mass with speed formula?", "Formula for the variation of mass with speed."],
+  "responses": ["The variation of mass with speed is given by the formula \n m = (m_0)/(√(1-v^2/c^2)) \n whose symbols have these meanings: \n m_0 = mass measured when objects is at rest('rest mass') \n m = mass measured when object is in relative motion \n v = speed of relative motion \n c = speed of light"],
+  "context": ["Variation_of_mass_with_speed"]
+},
+{
+  "tag": "Michael Faraday",
+  "patterns": [
+  "Who is Michael Faraday?",
+  "What is Michael Faraday's contribution to magnetism?"
+  ],
+  "responses": ["The English physicist Michael Faraday joined the other scientists in the challenge when he jotted in his notebook 'convert magnetism to electricity' in 1822 It was not, however, till 1831 that he returned to the problem of electromagnetic induction for which he is credited at discovering. Faraday's first apparatus consisted of two coils mounted on a wooden spool. The first coil was attached to a battery and a switch, was called the primary coil. The other coil was attached to a galvanometer and was called the secondary coil At first, he did not observe any deflection in the galvanometer when he closed the switch So he installed a more powerful battery composed of a hundred cells. Even with that number, the effects he observed were very faint and transient, and yet for him, that was enough Faraday also observed that the galvanometer needle deflected in one direction whenever the switch was closed and returned to zero immediately, even when current was present in the primary coil. As soon as he opened the switch, meaning current no longer flowed in the primary coil, he again observed that the galvanometer needle deflected in the opposite direction and then promptly returned to zero \n Faraday repeated the experiments, this time replacing the wooden spool with a ferromagnetic core. He used a soft iron ring to concentrate the magnetic force. This time the deflection of the needle unmistakably showed the presence of an induced current in the secondary coil He also discovered that change was the crucial aspect of electromagnetic induction a changing magnetic field generated a current After writing and reporting about this phenomenon, he went on to use his new knowledge to build an electric generator. Through his experiments, Faraday has shown that a changing magnetic field induces current in a nearby coil. Let us perfor activities that show how this phenomenon occurs. \nMichael Faraday devised the world's first electric generator in 1821. The generator he built was a seemingly simple thing: a hand- cranked copper disk rotated between the poles of a permanent magnet. Charges in the metal are set in motion across the field as the disk turns, and experience a radial force acting along the conductor. The work done on the mobile charges creates the potential difference. As long as the rate of rotation is kept constant, the induced voltage is also kept quite steady. This was Faraday's generator or dynamo. The induced voltage is quite small and the device may have become impractical, yet it probably had the greatest impact on society than any other invention in the world."],
+  "context": ["Michael Faraday : Definition"]
+  },
+  {
+  "tag": "Induced current",
+  "patterns": [
+  "How is current produced?",
+  "Explain how current is produced.",
+  "What does induced current depend on?"
+  ],
+  "responses": ["Current is produced or induced when a conductor moves across a magnetic field or when a magnetic field moves with respect to a stationary conductor. For current to be induced, there must be relative motion between the coil and the magnetic field. Induced current depends on the following: \n1. The relative velocities of the conductor and magnetic field, \n2. The strength of the magnetic field, and \n3. The length of the conductor in the field. Current is induced in a conductor within a changing magnetic field. Magnetic field changes relative to a conductor when (a) there is relative motion between them and (b) current changes in a nearby coil."],
+  "context": ["Induced current : Definition"]
+  },
+  {
+  "tag": "Joseph Henry",
+  "patterns": [
+  "Who is Joseph Henry?",
+  "Joseph Henry"
+  ],
+  "responses": ["Joseph Henry, an American scientist, actually discovered electromagnetic induction in 1830, a year earlier than Faraday did However, he did not publish his works, so Faraday got the credit. Faraday also did more experiments than Henry to show electromagnetic induction. Henry on the other hand discovered the process of self-induction during his experiments. Joseph Henry worked on the same experiments on electromagnetic induction as Michael Faraday but he did not publish them first. He did not only show electromagnetic induction but he also showed that electromagnetism can be used to communicate with. In a class demonstration that he performed, he showed how an electromagnet with current attracted an iron bar which in turn struck a nearby bell. This was considered a case of electrical signaling."],
+  "context": ["Joseph Henry : Definition"]
+  },
+  {
+  "tag": "DC generators",
+  "patterns": [
+  "What are the uses of DC generators?",
+  "Explain the use of DC generators."
+  ],
+  "responses": ["DC generators are used in recharging automobile batteries. AC generators cannot do the job. An AC generator cannot substitute for a DC generator and vice versa. What is the difference between the two? A simple model of the DC generator uses a split ring commutator and brushes made of metal or carbon."],
+  "context": ["DC generators : Definition"]
+  },
+  {
+  "tag": "Electrical Energy",
+  "patterns": [
+  "Explain Electrical Energy",
+  "Electrical Energy"
+  ],
+  "responses": ["Electrical energy transmission begins when the 13 800-volt output of a power plant generator is raised to 69 115 or 230 kilovolts (kV) before leaving the power station. The electrical energy is then carried by transmission lines over long distances to the first substation. Here, the 69-kV transmission voltage is reduced to 34 kilovolts. From the first substation, electrical energy is distributed to the substations in the locality. At the second substation, the voltage is further reduced to 4 160 volts. The electrical energy is then transmitted through primary distribution feeders to distribution transformers. These transformers, which are found on electric poles, finally bring the voltage down to 220 volts The electrical energy is then passed on to secondary lines. Electrical energy is carried from secondary lines by the service wires to the consumer's circuits. The consumer's circuit, such as a household circuit, is connected to the service wire through a wattmeter (also called an electric meter) located in a conspicuous part of the building. The wattmeter measures the amount of electrical energy consumed in every home. Electrical energy from a power plant is transmitted at high voltage and low current to minimize power losses. Step-up transformers raise output voltage from generators before transmission."],
+  "context": ["Electrical Energy : Definition"]
+  },
+  {
+  "tag": "Transformers",
+  "patterns": [
+  "How does a transformer raise or lower voltage?",
+  "What is a transformer"
+  ],
+  "responses": ["A transformer has two coils wound around the same iron core The coil where the current is sent to is the primary, the coil where voltage is induced is called the secondary. The transformer core is usually perfectly round or perfectly square. The latter is most often used today. A perfect shape ensures that all magnetization due to the primary coil can run all the way to the secondary collA transformer with less loops in the secondary than that in the primary is called step-down transformer. For the step-down transformer, the induced voltage in the secondary coil is less than that in the primary coil. This means that a high alternating voltage can be reduced to any desired value. On the other hand, if the number of loops in the secondary coil is greater than that in the primary coil so that the induced voltage is greater than the input voltage, the transformer is a step-up transformer. A step-up transformer is used to raise voltage output from a power plant generator for long-distance transmission."],
+  "context": ["Transformers : Definition"]
+  },
+  {
+  "tag": "Lenz's Law",
+  "patterns": [
+  "What is Lenz's Law?",
+  "Define Lenz's Law.",
+  "Explain Lenz's Law."
+  ],
+  "responses": ["Lenz's law. The direction of the induced current is such that it sets up a magnetic field of its own, which opposes whatever action is responsible for the production of the current. Lenz's law can be used to determine the direction of the induced current in a conductor."],
+  "context": ["Lenz's Law : Definition"]
+  },
+  {
+  "tag": "motion",
+  "patterns": [
+  "What is motion?",
+  "Define motion.",
+  "What is the definition of motion?",
+  "Explain motion."
+  ],
+  "responses": ["Motion is a change in position with respect to a reference object. An object is said to be moving when it has traveled a certain distance from the reference, or it is displaced from the reference."],
+  "context": ["Motion : Definition"]
+  },
+  {
+  "tag": "Distance and Displacement",
+  "patterns": [
+  "What is the difference between distance and displacement",
+  "What differentiates distance and displacement"
+  ],
+  "responses": ["Distance is a scalar quantity It has magnitude but no direction. To get the total distance traveled by a body, all we have to do is add all the distances traveled. On the other hand, displacement a vector quantity, is the difference between two positions It has both magnitude and direction. Generally, when we give directions, we use four geographical directions north (N), south (S), east (E), and west (W)."],
+  "context": ["Distance and Displacement : Definition"]
+  },
+  {
+  "tag": "Constant speed",
+  "patterns": [
+  "What is constant speed?",
+  "Define constant speed.",
+  "What is the definition of constant speed?",
+  "Explain constant speed."
+  ],
+  "responses": ["A body moving with constant velocity has constant speed. When we say a body is moving at constant velocity, we mean it is moving at constant speed in the same direction along a straight line. But a body moving at constant speed may or may not have constant velocity. For example, on your way to school today you may have turned several comers. So even if you moved at constant speed, you did not have constant velocity because your direction of motion changed several times. A jeepney moving at constant speed on a curved road is not moving at constant velocity either."],
+  "context": ["Constant speed : Definition"]
+  },
+  {
+  "tag": "Diesel Engines",
+  "patterns": [
+  "What is diesel engine?",
+  "What is the difference between diesel engine and gasoline engine?",
+  "Explain diesel engine."
+  ],
+  "responses": ["The diesel engine is an engine that operates almost like the gasoline engine.The difference lies in the way fuel is admitted and ignited in the cylinder In diesel engines, only air enters the cylinder in the intake stroke. It is then compressed and brought to a high temperature. When air is hot enough, it ignites the fuel even without a spark plug. Diesel vapor then enters other strokes in the diesel engine are the same as the gasoline engine."],
+  "context": ["Diesel engine : Definition"]
+  },
+  {
+  "tag": "Piston-type steam engines",
+  "patterns": [
+  "What are Piston-type steam engines?",
+  "Define Piston-type steam engines.",
+  "What is the definition of Piston-type steam engines?",
+  "Explain Piston-type steam engines."
+  ],
+  "responses": ["Piston-type steam engines operate on the same principle as the internal combustion engine. The piston moves to and fro due to the compression and expansion of gases instead of fuel gas or vapor, however, engine uses superheated steam (high-temperature steam). Burning of fuels occurs outside the engine chamber where the steam is produced. Steam engines have only two strokes instead of four."],
+  "context": ["Piston-type steam engines"]
+  },
+  {
+  "tag": "ordered and disordered energies",
+  "patterns": [
+  "What are ordered and disordered energies?",
+  "Differentiate ordered and disordered energies.",
+  "What is the definition of ordered and disordered energies?",
+  "Explain ordered and disordered energies.",
+  "ordered and disordered energies"
+  ],
+  "responses": ["Thermal energy which is associated with the motion of molecules is considered a disordered energy. On the other hand, mechanical energy of macroscopic bodies, such as cars, stones, and balls, is an ordered energy. When a car is running its kinetic energy (ordered) transforms into heat or thermal energy (disordered). "],
+  "context": ["ordered and disordered energies : Definition"]
+  },
+  {
+  "tag": "barometer",
+  "patterns": [
+  "What is a barometer?",
+  "Define a barometer. ",
+  "What is the definition of a barometer?"
+  ],
+  "responses": ["The barometer is an instrument that measures atmospheric pressure. A simple barometer, like the one invented by Italian physicist Tomicelli, compares air pressure to the pressure exerted by a liquid. In Tomicelli's barometer, mercury is the liquid used The use of an aneroid barometer is based on the mechanical effects of air pressure changes."],
+  "context": ["barometer : Definition"]
+  },
+  {
+  "tag": "Pascal's principle",
+  "patterns": [
+  "What is Pascal's principle?",
+  "Define Pascal's principle.",
+  "What is the definition of Pascal's principle?",
+  "Explain Pascal's principle."
+  ],
+  "responses": ["Unlike gases, liquids are not compressible. When an outside force is exerted on an enclosed liquid, there is uniform increase in pressure throughout the whole volume of the liquid. Blaise Pascal was the first to recognize this phenomenon. Pascal's principle applies to enclosed liquids at rest. It has found practical applications in biology, medicine, and mechanics. The dentist's chair, hydraulic press, hydraulic brake, hydraulic car lift, and other machines that convert small force into big ones or vice versa are common applications of this principle. The hydraulic machine operates by liquid pressure."],
+  "context": ["Pascal's principle : Definition"]
+  },
+  {
+  "tag": "Archimedes Principle",
+  "patterns": [
+  "What is Archimedes Principle?",
+  "Define Archimedes Principle.",
+  "What is the definition of Archimedes Principle?",
+  "Explain Archimedes Principle."
+  ],
+  "responses": ["For a totally submerged object, the volume of displaced water is equal to the volume of the object. This was shown by the rise in water level when you immersed your object into the water in a graduated cylinder or calibrated container Similarly, the buoyant force on the object was registered as a loss of weight in water, as indicated in the spring balance when you submerged a metal into the water. When an object is less dense than water, it floats on the water or it is partially immersed. The spring balance reading becomes zero. This means that the buoyant force on the object equals the weight of the object. It was Archimedes who first showed that the buoyant force on an object immersed in water is equal to the weight of the water displaced by the object"],
+  "context": ["Archimedes Principle : Definition"]
+  },
+  {
+  "tag": "Communication",
+  "patterns": [
+  "What is communication?",
+  "Define communication.",
+  "What is the definition of communication?",
+  "Explain communication"
+  ],
+  "responses": ["Communication is the transmission and reception of meaningful Information People communicate through their senses Normally, they communicate with each other within range of sight and hearing by Visual and vocal means, that is, by light and sound. Through various technological devices such as the telephone, telegraph, radio, television, radar, radio telescope, orbiting satellites, microwave relays, and lasers as well as the advances made in the field of electronics, human communication is the beneficiary of immeasurable favors. Until now, barriers of time and distance prevented efficient and speedy interaction. Today, the boon of communication technology permits people from opposite poles to talk like next-door neighbors. Fundamental to these modes of communication is the conversion of light and sound to electrical energy, and the use of electromagnetic waves for the transmission and reception of information."],
+  "context": ["Communication : Definition"]
+  },
+  {
+  "tag": "Modulation",
+  "patterns": [
+  "What is modulation?",
+  "Define Modulation.",
+  "What is the definition Modulation?",
+  "Explain Modulation."
+  ],
+  "responses": ["Modulation is the process by which the carrier wave is changed or varied in relation to the original sound's loudness and pitch Loudness and intensity are related to the amplitude of a wave, pitch is related to frequency. Thus, the two basic ways of modulating radio waves are amplitude modulation (AM) and frequency modulation (FM). Amplitude and Frequency Modulation- A wave's amplitude is its maximum displacement from equilibrium position in amplitude modulation, the oscillator emits a fixed frequency the carrier frequency The amplitude of the carrier wave is vaned according to the intensity (loudness) and frequency (pitch) of the source sound wave"],
+  "context": ["Modulation : Definition"]
+  },
+  {
+  "tag": "Energy conservation in communication",
+  "patterns": [
+  "Explain Energy Conservation in Communication."
+  ],
+  "responses": ["The significant finding of Maxwell and Hertz paved the way for rapid technological developments in the field of communications Now information can be transmitted from place to place at incredible speeds Thus, it has become possible to view live on television significant events rocket launching, moon landing, even sports, and entertain- ment programs - by satellite transmission International communication networks have also made possible direct communication among world leaders Political and economic issues may now be discussed and resolved by teleconferencing, one of the most modern means of distance communication."],
+  "context": ["Energy Conservation in Communication : Definition"]
+  },
+  {
+  "tag": "Electronics",
+  "patterns": [
+  "What is Electronics?",
+  "Define Electronics.",
+  "What is the definition of Electronics?",
+  "Explain Electronics."
+  ],
+  "responses": ["Electronics is the branch of physics that deals with the emission, behavior and effects of electrons (as in electron tubes and transistors) and with electronic devices It evolved separately from electricity in 1887 when the English physicist JJ Thomson (1856-1940) measured the charge to mass ratio (e/m) of the electron and when the American physicist Robert A Millikan (1868-1953) measured its electrical charge in 1909."],
+  "context": ["Electronics : Definition"]
+  },
+  {
+  "tag": "Vacuum tubes",
+  "patterns": [
+  "What are Vacuum tubes",
+  "Define Vacuum tubes",
+  "What is the definition of Vacuum tubes"
+  ],
+  "responses": ["At the time Thomson was doing his research, the American inventor Thomas A. Edison had observed a bluish glow in some of the early light bulbs under certain conditions. He found that a current would pass from the cathode (the negative electrode) to the anode (the positive electrode). Further experiments done by the English engineer John Ambrose Fleming (1849-1945) and Thomson's students revealed that the so-called Edison effect was the result of the emission of electrons from the cathode."],
+  "context": ["Vacuum tubes : Definition"]
+  },
+  {
+  "tag": "Light-dependent and Temperature-dependent Resistors",
+  "patterns": [
+  "What are Light-dependent and Temperature-dependent Resistors?",
+  "Define Light-dependent and Temperature-dependent Resistors.",
+  "Differentiate Light-dependent and Temperature-dependent Resistors.",
+  "Explain Light-dependent and Temperature-dependent Resistors."
+  ],
+  "responses": ["Some resistors are used in electronic circuits as sensors. These sensors are either light-sensitive, as in the case of the photocell, or temperature-sensitive, like the thermistor. The photocell sometimes referred to as light-dependent resistor LDR and the thermistor as a temperature-dependent resistor TDR. The LDR and the TDR, just like the ordinary resistors, are used to limit the current in a circuit. By limiting the current, these components can be used as a switch. Do the following activity to find out how the LDR and TDR function as switches You will need the following 330 2 resistor, LED, LDR, TDR, and connectors."],
+  "context": ["Light-dependent and Temperature-dependent Resistors : Definition"]
+  },
+  {
+  "tag": "Capacitors",
+  "patterns": [
+  "What are Capacitors?",
+  "Define Capacitors.",
+  "What is the definition of Capacitors?"
+  ],
+  "responses": ["The capacitor is another important component of an electronic circuit. It stores electric charges."],
+  "context": ["Capacitors : Definition"]
+  },
+  {
+  "tag": "Inductors",
+  "patterns": [
+  "What are Inductors?",
+  "Define Inductors.",
+  "What is the definition of Inductors?"
+  ],
+  "responses": ["An inductor is an electromagnet. Whereas a capacitor stores energy in the electric field in the space between the plates, an inductor stores energy in the magnetic field around its coil."],
+  "context": ["Inductors : Definition"]
+  },
+  {
+  "tag": "Two types of integrated circuits",
+  "patterns": [
+  "What are the two types of integrated circuits?",
+  "Define the two two types of integrated circuits.",
+  "Explain the two types of integrated circuits."
+  ],
+  "responses": ["There are two types of integrated circuits: digital IC and linear IC. \nThe digital ICs contain switching-type circuits handling electrical signals which have only one of two values. Their inputs and outputs are either 'high' (eg, near the supply voltage) or 'low' (eg, near 0 V) These are the earliest type. These are the 'brain' in pocket calculators. \nLinear ICs on the other hand, include amplifier-type circuits of many kinds, for both audio and radio frequencies. They handle signals that are often electrical representations. That is, analogs of physical quantities such as sound, which change smoothly and continuously over a range of values. One of the most versatile linear ICs and the first of this type (1964) is the operational amplifier (op amp). Here, the flow of electricity is regulated (not switched) and a continuous range of voltages between zero and some maximum is possible. The actual value at any instant stands for a number."],
+  "context": ["two types of integrated circuits : Definition"]
+  },
+  {
+    "tag": "Definition of Physics",
+    "patterns": [
+      "Physics",
+      "Physics?",  
+      "What is physics?",
+      "Define physics.", 
+      "Tell me about physics.",
+      "Definition of physics."
+  ],
+    "responses": [
+      "Physics is a branch of science which deals with the study of matter, energy and its interaction.From this definition we can validly explain that everything in the universe represents matter and therefore everything in the universe is simply Physics in itself."
+    ],
+    "context": ["definition_of_physics"]
+  },
+  {
+    "tag": "Domains or Fields of Study of Physics",
+    "patterns": [
+      "Domains or Fields of Study of Physics",
+      "Domains or Fields of Study of Physics?",
+      "What are the domains or fields of study of Physics?",  
+      "Give me the domains or fields of study of Physics."
+  ],
+    "responses": [
+      "Physics is classified and subdivided according o Domains or Fields of Study: \n(1) Mechanics - a domain of Physics which deals mainly on the study of forces and motion \n(2) Properties of Matter - entails explanation dealing with the Physical properties and characteristics oi matter in general \n(3) Heat and Thermodynamics - deals with the study of heat energy, thermal energy, internal energy and other Laws and Theories covered by this domain \n(4) Electricity and Magnetism - it covers explanations dealing with electrical and magnetic phenomena including the relationship existing between electricity and magnetism \n(5) Wave and Optics-deals with the study of the different types of waves such as Mechanical,Light and Sound waves. Properties and Characteristics of these types of waves were also given emphasis \n(6) Nuclear Physics - this domain focus more in the investigation of the central core of an atom known as the Nucleus. Series of explanations will be given to show the posime and even the detrimental benefits of the harnessing of nuclear energy"
+    ],
+    "context": ["domain_fields_of_physics"]
+  },
+  {
+    "tag": "Scientific Notation",
+    "patterns": [
+      "Scientific Notation",
+      "Scientific Notation?",
+      "Tell me about scientific notation.",
+      "What is scientific notation?",
+      "Define scientific notation.",
+      "Definition of scientific notation."
+  ],
+    "responses": [
+      "It is defined as the most convenient way of writing very large and very small numbers. "
+    ],
+    "context": ["scientific_notation"]
+  },
+  {
+    "tag": "Convertion of Decimals to Scientific Notation",
+    "patterns": [
+      "How to convert decimals into scientific notation?",
+      "Steps in converting decimals into scientific notation.",
+      "What are the steps in converting decimals into scientific notation?"
+  ],
+    "responses": [
+      "1.Take note of the decimal point.found in a given value. \n2.In expressing the base to a single digit number, move the decimal point to the left and position it before the left-most non-zero digitif the original number is equal or greater than one). Move the decimal point to the right and position it after the first non-zero digit(if the original decimal number is less than one). \nExamples: \n26000.00 = 2.60x 10^4 \n0.000260 = 2.60 x 10^-4 \n3.To determine the power of ten in the scientific notation. the exponent represents the number of times a decimal place has been moved. Right to left movement denotes positive and Left to right denotes negative value. \nExamples: \n8400.00 = 8.4x 10^3 \n0.84 = 8.4 x 10^-3"
+    ],
+    "context": ["conversion_to_scientific_notation"]
+  },
+  {
+    "tag": "Significant Figures",
+    "patterns": [
+      "Significant Figures",
+      "Significant Figures?",
+      "What are significant figures?", 
+      "Define significant figures.",
+      "Explain significant figures.", 
+      "Tell me about significant figures."
+  ],
+    "responses": [
+      "Significant Figures are digits in a number with known certainty at which the last digit is uncertain."
+    ],
+    "context": ["significant_figures"]
+  },
+  {
+    "tag": "Determining significant figures",
+    "patterns": [
+      "How to determine significant figures?",
+      "What are the steps in determining significant figures?",
+      "Give me the steps in determining significant figures.",
+      "Tell me about the steps in determining significant figures",
+      "Give steps in determining significant figures."
+  ],
+    "responses": [
+      "Shortest step: \nSTEP 1: If there is a decimal point in a mumber, draw an arrow from left to right until  you arrived to the first non-zero digit.All digits not drawn by an arrow are significant \nExamples: \n0.00987=3 significant figures \n0.5000=4 significant figures \nSTEP 2: If there is no decimal point in a number, draw an arrow from right to left unti you arrived to the first non-zero digit. All digits not drawn by an arrow are significant. \nExamples: \n6500=2 significant figures \n8000=3 significant figures."
+    ],
+    "context": ["determine_significant_figures"]
+  },
+  {
+    "tag": "Conversion of Units",
+    "patterns": [
+      "How to convert units?",
+      "Formula in the convertion of units.",
+      "Give the formula in the convertion of units.",
+      "What is the formula in the convertion of units?"
+  ],
+    "responses": [
+      "The representation of every quantity with corresponding units of expression can often times be converted in its equivalent unit.This is very useful particularly in the field of scientific researches and even when there is a need to measure any property or dimension of a given object. \nGeneral formula in Conversion: \nGiven unit X Desired unit/ Given unit = Desired unit"
+    ],
+    "context": ["conversion_of_units"]
+  },
+  {
+    "tag": "Vector Quantities",
+    "patterns": [
+      "Vector Quantities",
+      "Vector Quantities?",
+      "What are vector quantities?",  
+      "Define vector quantities.",
+      "Explain vector quantities.", 
+      "Tell me about vector quantities."
+  ],
+    "responses": [
+      " (1) These are quantities indicating both the magnitude and direction. Examples: Displacement, Force., Electric Current, Velocity,Acceleration Scalar Quantities \n(2) These are quantities that only indicate the magnitude Examples: Distance, Mass, Time, Speed \nRepresentation of vectors: \n----------> \nAn arrow as shown above is the symbol used to denote vector quantity. In this kind of arrow it represents three major parts: \n1. Tail - indicates the origin of the vector \n2. Body - denotes the magnitude or the length \n3. Arrow head - point to the direction of the given vector."
+    ],
+    "context": ["vector_quantities"]
+  },
+  {
+    "tag": "Resultant Vector",
+    "patterns": [
+      "Resultant Vector",
+      "Resultant Vector?",
+      "What is resultant vector?",  
+      "Define resultant vector.",
+      "Explain resultant vector.", 
+      "Tell me about resultant vector."
+  ],
+    "responses": [
+      "We define Resultant vector as the combination of all the given vectors either graphically or mathematically derived. The addition of Vectors would yield to resultant vectors. In other analysis, a resultant vector is said to be the shortest possible path."
+    ],
+    "context": ["resultant_vectors"]
+  },
+  {
+    "tag": "Methods of Vector Addition",
+    "patterns": [
+      "Methods of Vector Addition",
+      "Methods of Vector Addition?", 
+      "What are the methods of vector addition?", 
+      "Give the methods of vector addition.", 
+      "Tell me about the methods of vector addition."
+  ],
+    "responses": [
+      "(1) Graphical Method- in this method the use of measuring instruments are needed such as the metric ruler and the protractor. The ruler determines the magnitude of the given and resultant vector while the protractor denotes the direction as well as the angle of the given and resultant vector. \na.) Parallelogram Method - a graphical method of getting the resultant vector but limited only up to two vectors. \nb.) Polygon Method - otherwise known as the head-to-tail method. This method is the most flexible type of graphical method. This is useful for two or more vectors. \nScaling- assigning scales to represent vectors in graphical method is essential. Take note that the resultant vector must carry the given unit and not the unit assigned in the appropriate scale. Example of scaling: 20 km, East :Scale: 1cm=4km therefore when you plot this using graphical, the original given will then be 5cm, East. Remember that the same scale must be used in all the given vector in a given problem. \n(2) Analytical Method (Component) - The most accurate method in vector addition. In this method the components of every given vector are mathematically or analytically solved. This is applicable for two or more vectors. The Resultant vector derived using graphical method must be the same or if not exactly the same should be at least closer to the value derived using component."],
+    "context": ["methods_of_vector_addition"]
+  },
+  {
+    "tag": "Parallelogram Method",
+    "patterns": [
+      "How to do the parallelogram method?",
+      "What are the steps in parallelogram method?",
+      "Give me the steps in parallelogram method.",
+      "Tell me about the steps in parallelogram method",
+      "Give steps for parallelogram method."
+  ],
+    "responses": ["1. Draw a Cartesian plane represented by X and Y axis. \n2. Represent the given vectors in the constructed Cartesian Plane. \n3. Construct the sides parallel to the given vector by getting it from the head of the other vector. \n4. From the point of origin up to the point of intersection connect it with a straight line using a ruler and that will be the Resultant Vector."],
+    "context": ["parallelogram_method"]
+  },
+  {   
+    "tag": "Polygon Method",
+    "patterns": [
+      "How to do the polygon method?",
+      "What are the steps in polygon method?",
+      "Give me the steps in polygon method.",
+      "Tell me about the steps in polygon method",
+      "Give steps for polygon method."
+  ],
+    "responses": ["1. Draw a Cartesian plane represented by X and Y axis. \n2. Plot the given vector in the coordinate plane. Only the first vector given will plotted from the original Cartesian plane. \n3. From the head of the first vector plotted, connect the second vector measuring from the scale indicated in a problem. \n4. Locate the Resultant vector by drawing a straight line from the original Cartesian plane point of origin up to the last vector plotted. Then measure the length of the line using a ruler and convert it to the scale assigned. This would indicate the magnitude of the resultant vector. Then from the positive x-axis up to the line constructed representing the Resultant vector measure the angle. This will indicate the degree."],
+    "context": ["polygon_method"]
+  },
+  {
+    "tag": "Component Method",
+    "patterns": [
+      "How to do the component method?",
+      "What are the steps in component method?",
+      "Give me the steps in component method.",
+      "Tell me about the steps in component method",
+      "Give steps for component method."
+  ],
+    "responses": ["1. Draw and plot the vectors graphically. No need to assign scale anyway it will be solved mathematically. \n2. Resolve the X and Y components. \n3. Get algebraic sum of the vectors using the equation ∑X and ∑Y \n4. Compute for the magnitude of the Resultant vector using Pythagorean equation: R = √∑X^2 + ∑Y^2 \n5. Find the angle of the direction by using the equation: θ = Tan^-1 |∑X / ∑Y| "],
+    "context": ["component_method"]
+  },
+  {
+    "tag": "Speed",
+    "patterns": [
+      "Speed",
+      "Speed?",
+      "What is speed?",  
+      "Define speed.",
+      "Explain speed.", 
+      "Tell me about speed."
+  ],
+    "responses": ["(1) Defined as the rate of motion \n(2) Scalar quantity indicating only the magnitude \n(3) Ratio between distance traveled over time of travel \n(4) Unit expressed as m/s,km/hr,ft/s, mi/hr  \nGeneral formula: \nV=D/T  \nWhere: \nV= speed (m/s) \nD= distance (m) \nT= time (s) "],
+    "context": ["speed"]
+  },
+  {
+    "tag": "Types of Speed",
+    "patterns": [
+      "Types of speed",
+      "Types of speed?",
+      "Tell me about the types of speed.",
+      "What are the types of speed?",
+      "Give the types of speed."
+  ],
+    "responses": ["a. Constant Speed - denotes that the motion of a body remains the same or does not change all through out the course of motion \nb. Average Speed- can be computed using the equations: \nV ave.=total D/ total T \nV ave. =V1+ V2/2"],
+    "context": ["types_of_speed"]
+  },
+  {
+    "tag": "Velocity",
+    "patterns": [
+      "Velocity",
+      "Velocity?",
+      "What is velocity?",  
+      "Define velocity.",
+      "Explain velocity.", 
+      "Tell me about velocity."
+  ],
+    "responses": ["(1) Rate of Motion with direction \n(2) Vector quantity indicating both the magnitude and direction  \n(3) Answers the question how much and which way \n(4) Unit expressed as m/s,km/hr,ft/s, mi/hr  \nGeneral formula: \nVelocity = displacement/time \n*Velocities of two bodies similar to forces can be added numerically if in the same \ndirection and can be subtracted if in different direction."],
+    "context": ["velocity"]
+  },
+  {
+    "tag": "Acceleration",
+    "patterns": [
+      "Acceleration",
+      "Acceleration?",
+      "What is acceleration?",  
+      "Define acceleration.",
+      "Explain acceleration.", 
+      "Tell me about acceleration."
+  ],
+    "responses": ["(1) Rate of change in velocity \n(2) Vector quantity indicating both the magnitude and direction  \n(3) Attained when body changes direction and motion \n(4) Unit expressed as meter per second squared \nGeneral formula: \nA = Change in Velocity /Time \nOr A= Vf-Vi /T \nWhere: \nA= acceleration \nVf= final velocity \nVi= initial velocity \nT= time"],
+    "context": ["acceleration"]
+  },
+  {
+    "tag": "Types of Acceleration",
+    "patterns": [
+      "Types of acceleration",
+      "Types of acceleration?",
+      "Tell me about the types of acceleration.",
+      "What are the types of acceleration?",
+      "Give the types of acceleration."
+  ],
+    "responses": ["1. Positive Acceleration- body moving with increasing speed \n2.Negative Acceleration- body moving with decreasing speed or slowing down. \nAlso known as deceleration \n3. Zero Acceleration- body moving at a constant speed \n4. Uniform Acceleration- similar to the case of a freely falling body at which \nacceleration does not change through the manner of motion."],
+    "context": ["types_of_acceleration"]
+  },
+  {
+    "tag": "Conservation of Momentum",
+    "patterns": [
+      "Momentum",
+      "Momentum?",
+      "What is momentum?",  
+      "Define momentum.",
+      "Explain momentum.", 
+      "Tell me about momentum."
+  ],
+    "responses": ["Momentum as per defined is simply the product of mass and velocity. Its SI unit is expressed as Kgm/s. Just like energy, momentum can also be conserved particularly during collisions."],
+    "context": ["momentum"]
+  },
+  {
+    "tag": "Types of Collision",
+    "patterns": [
+      "Types of collision",
+      "Types of collision?",
+      "Tell me about the types of collision.",
+      "What are the types of collision?",
+      "Give the types of collision."
+  ],
+    "responses": ["1. Elastic Collision- in a perfectly elastic collision there would be the same amount of Kinetic energy even after the collision similar to what it possess prior to contact. \n2. Inelastic Collision- the bodies stick together and the kinetic energy is transformed to other forms of energy."],
+    "context": ["types_of_collision"]
+  },
+  {
+    "tag": "Law of Universal Gravitation",
+    "patterns": [
+      "Law of Universal Gravitation",
+      "Law of Universal Gravitation?",
+      "Tell me about the Law of Universal Gravitation.",
+      "What is the Law of Universal Gravitation?"
+  ],
+    "responses": ["Newton's Law of Universal Gravitation explains that: \nThe Gravitational Force of attraction is directly proportional to the product of masses of two bodies and inversely proportional to square of the distance of separation. \nIn mathematical expression, \nWhere: \nF=G M₁ M₂ / r² \nG=6.67 x 10-¹¹ Nm²/kg² \nM= mass of the object \nM= mass of the other object \nr = square of separating distance"],
+    "context": ["law_of_universal_gravitation"]
+  },
+  {
+    "tag": "Definition of Work",
+    "patterns": [
+      "Work",
+      "Work?",
+      "What is work?",  
+      "Define work.",
+      "Explain work.", 
+      "Tell me about work."
+  ],
+    "responses": ["Work is simply described as the product of the Force exerted and the displacement covered by virtue of the force applied. The standard unit used to express such quantity is known as Newton-meter or Joule. \nMathematically: W = F x D"],
+    "context": ["definition_work"]
+  },
+  {
+    "tag": "Definition of Energy",
+    "patterns": [
+      "Energy",
+      "Energy?",
+      "What is energy?",  
+      "Define energy.",
+      "Explain energy.", 
+      "Tell me about energy."
+  ],
+    "responses": ["If work is defined as the product of Force and Displacement, we can interrelate this definition to a quantity which is somewhat related to the latter.This quantity is known as Energy. We define energy basically as the capacity or ability to perform work. The unit of expression to represent the quantity is the same as the unit of work. The standard unit under mks and cgs is Joule and Erg. There two types of energy, kinetic and potential. Lastly, there are six forms of energy: Gravitational Potential, Mechanical, Heat, Sound, Solar and Electrical"],
+    "context": ["definition_energy"]
+  },
+  {
+    "tag": "Definition of Kinetic Energy",
+    "patterns": [
+      "Kinetic energy",
+      "Kinetic energy?",
+      "What is kinetic energy?",  
+      "Define kinetic energy.",
+      "Explain kinetic energy.", 
+      "Tell me about kinetic energy."
+  ],
+    "responses": ["Defined as the energy in motion.All moving bodies possess this type of energy just like a speeding jeepney, moving train, pacesetting wind and the likes. Mathematically, we can solve for the value of kinetic energy using the equation: KE=mv²/2"],
+    "context": ["definition_kinetic_energy"]
+  },
+  {
+    "tag": "Definition of Potential Energy",
+    "patterns": [
+      "Potential energy",
+      "Potential energy?",
+      "What is potential energy?",  
+      "Define potential energy.",
+      "Explain potential energy.", 
+      "Tell me about potential energy."
+  ],
+    "responses": ["Defined as the energy possess by virtue of position. Basic definition suggests it to be as energy at rest. But a more concrete definition of i indicates the essential factor which determines it, no other than the location of a body. Mathematically speaking, we can solve for the value of PE using the equation PE= mgh"],
+    "context": ["definition_potential_energy"]
+  },
+  {
+    "tag": "Definition of  Gravitational Potential Energy",
+    "patterns": [
+      "Gravitational potential energy",
+      "Gravitational potential energy?",
+      "What is gravitational potential energy?",  
+      "Define gravitational potential energy.",
+      "Explain gravitational potential energy.", 
+      "Tell me about gravitational potential energy."
+  ],
+    "responses": ["The stored energy by virtue of height."],
+    "context": ["definition__gravitational_potential_energy"]
+  },
+  {
+    "tag": "Definition of Mechanical Energy",
+    "patterns": [
+      "Mechanical energy",
+      "Mechanical energy?",
+      "What is mechanical energy?",  
+      "Define mechanical energy.",
+      "Explain mechanical energy.", 
+      "Tell me about mechanical energy."
+  ],
+    "responses": ["The most common type of energy which enable simple machines to perform work."],
+    "context": ["definition_mechanical_energy"]
+  },
+  {
+    "tag": "Definition of Heat Energy",
+    "patterns": [
+      "Heat energy",
+      "Heat energy?",
+      "What is heat energy?",  
+      "Define heat energy.",
+      "Explain heat energy.", 
+      "Tell me about heat energy."
+  ],
+    "responses": ["Energy possess by virtue of the moving and hyper active particles in a given matter. Usually it can be sense and observed if the engine is in operation eventually heat will be formed."],
+    "context": ["definition_heat_energy"]
+  },
+  {
+    "tag": "Definition of Sound Energy",
+    "patterns": [
+      "Sound energy",
+      "Sound energy?",
+      "What is sound energy?",  
+      "Define sound energy.",
+      "Explain sound energy.", 
+      "Tell me about sound energy."
+  ],
+    "responses": ["Energy resulting from sound waves as well as the transmission of sound."],
+    "context": ["definition_sound_energy"]
+  },
+  {
+    "tag": "Definition of Solar Energy",
+    "patterns": [
+      "Solar energy",
+      "Solar energy?",
+      "What is solar energy?",  
+      "Define solar energy.",
+      "Explain solar energy.", 
+      "Tell me about solar energy."
+  ],
+    "responses": ["Energy eleased by the sun and usually being harnessed to produce electrical energy mostly in the Middle East. The invention of solar cells paved the way for the consumption of this type of energy."],
+    "context": ["definition_solar_energy"]
+  },
+  {
+    "tag": "Definition of Electrical Energy",
+    "patterns": [
+      "Electrical energy",
+      "Electrical energy?",
+      "What is electrical energy?",  
+      "Define electrical energy.",
+      "Explain electrical energy.", 
+      "Tell me about electrical energy."
+  ],
+    "responses": ["Type of energy brought about by the motion of electrons as it supplies electricity or electric current."],
+    "context": ["definition_electrical_energy"]
+  },
+  {
+    "tag": "Definition of Power",
+    "patterns": [
+      "Power",
+      "Power?",
+      "What is power?",  
+      "Define power.",
+      "Explain power.", 
+      "Tell me about power."
+  ],
+    "responses": ["Power as per defined indicates the rate of doing work. It measures how fast or how slow the amount of work is being done or executed. Mathematically: P = Work / Time"],
+    "context": ["definition_power"]
+  },
+  {
+    "tag": "Definition of Pressure",
+    "patterns": [
+      "Pressure",
+      "Pressure?",
+      "What is pressure?",  
+      "Define pressure.",
+      "Explain pressure.", 
+      "Tell me about pressure."
+  ],
+    "responses": ["Pressure is a derived quantity that simply describes the ratio between force applied to the area of contact at which it is being exerted upon. The unit of expression used to represent this quantity is N/m² or Pascal. Pressure can be computed using the equation: \nP = F / A "],
+    "context": ["definition_pressure"]
+  },
+  {
+    "tag": "Definition of Pascal's Principle",
+    "patterns": [
+      "Pascal's Principle",
+      "Pascal's Principle?",
+      "What is pascal's principle?", 
+      "Define pascal's principle.",
+      "Explain pascal's principle.", 
+      "Tell me about pascal's principle."
+  ],
+    "responses": ["Pascal's Principle states that the pressure applied on a confined liquid is transmitted undiminished through out the interior of the container. The mathematical expression used to denote this relationship is expressed as: \nF1 / A1 = F2 / A2 or P1 = P2"],
+    "context": ["definition_pascal's_principle"]
+  },
+  {
+    "tag": "Definition of Bouyancy",
+    "patterns": [
+      "Bouyancy",
+      "Bouyancy?",
+      "What is bouyancy?",  
+      "Define bouyancy.",
+      "Explain bouyancy.", 
+      "Tell me about bouyancy."
+  ],
+    "responses": ["Buoyancy is the tendency of an object to float in a fluid. If the weight of the submerged object is greater than the buoyant force, the object will sink. If the weight of the submerged object is equal to the buoyant force it will stay at a level. But if the weight of the object submerged is less than the buoyant force, it will eventually float."],
+    "context": ["definition_bouyancy"]
+  },
+  {
+    "tag": "Definition of Internal Energy",
+    "patterns": [
+      "Internal energy",
+      "Internal energy?",
+      "What is internal energy?",  
+      "Define internal energy.",
+      "Explain internal energy.", 
+      "Tell me about internal energy."
+  ],
+    "responses": ["The continuous and vibrating motion of the atoms or molecules in a given body indicates the Internal energy it possesses."],
+    "context": ["definition_internal_energy"]
+  },
+  {
+    "tag": "Definition of Heat Transfer by Conduction",
+    "patterns": [
+      "Heat transfer by conduction",
+      "Heat transfer by conduction?",
+      "What is heat transfer by conduction?",  
+      "Define heat transfer by conduction.",
+      "Explain heat transfer by conduction.", 
+      "Tell me about heat transfer by conduction."
+  ],
+    "responses": [" Heat transfer by conduction is defined as the transfer of heat through matter due to the transfer of molecular activity from molecules to adjoining molecules. "],
+    "context": ["definition_heat_transfer_by_conduction"]
+  },
+  {
+    "tag": "Definition of Heat Transfer by Convection",
+    "patterns": [
+      "Heat transfer by convection",
+      "Heat transfer by convection?",
+      "What is heat transfer by convection?",  
+      "Define heat transfer by convection.",
+      "Explain heat transfer by convection.", 
+      "Tell me about heat transfer by convection."
+  ],
+    "responses": ["The process of heating causes the particles to become lighter thus it tend to rise up and replaced by the cooler but relatively heavy layers. These in a few moment are heated and will rise up also due to the continuous and actual motion of matter. This method is known as heat transfer by convection. The motion of the molecules is then attributed as the convection current."],
+    "context": ["definition_heat_transfer_by_convection"]
+  },
+  {
+    "tag": "Definition of Heat Transfer by Radiation",
+    "patterns": [
+      "Heat transfer by radiation",
+      "Heat transfer by radiation?",
+      "What is heat transfer by radiation?",  
+      "Define heat transfer by radiation.",
+      "Explain heat transfer by radiation.", 
+      "Tell me about heat transfer by radiation."
+  ],
+    "responses": ["A method of transferring heat through radiant energy. Radiant energy uses space or air as its medium in transmitting energy."],
+    "context": ["definition_heat_transfer_by_radiation"]
+  },
+  {
+    "tag": "Definition of Thermal Expansion",
+    "patterns": [
+      "Thermal expansion",
+      "Thermal expansion?",
+      "What is thermal expansion?",  
+      "Define thermal expansion.",
+      "Explain thermal expansion.", 
+      "Tell me about thermal expansion."
+  ],
+    "responses": ["Every time heat is applied it causes body to expand based on the following factors: \n1.The original size of the material \n2. The amount of temperature change that causes it to expand \n3.The nature of the material \nThe coefficient of linear expansion represents the inear expansion of solid matter. Every material possesses different coefficients of expansion. Just like solid liquid also Expand once heated. They expand in terms of volume and expands greater than solid. The greatest of all expansion can be found in gases and it is almost relative to all. If volume is kept constant as temperature changes, pressure also changes."],
+    "context": ["definition_thermal_expansion"]
+  },
+  {
+    "tag": "Types of Expansion",
+    "patterns": [
+      "Types of expansion",
+      "Types of expansion?",
+      "Tell me about the types of expansion.",
+      "What are the types of expansion?",
+      "Give the types of expansion."
+  ],
+    "responses": ["1. LINEAR EXPANSION- states that the change in temperature causes solids to change in linear dimension proportional to the original length and change in temperature. \n2. AREA EXPANSION- states that a change in temperature causes a change in area proportional to the original area and its change in temperature. \n3. VOLUME EXPANSION- states that a change in temperature causes a change in volume proportional to original volume and its change in temperature."],
+    "context": ["types_of_expansion"]
+  },
+  {
+    "tag": "Mathematical Equations underlying the Types of Linear Expansion",
+    "patterns": [
+      "Mathematical equations underlying the type of linear expansion",
+      "Mathematical equations underlying the type of linear expansion?",
+      "Mathematical equations involving underlying the type of linear expansion.",
+      "What are the mathematical equations underlying the type of linear expansion?",
+      "Give mathematical equations underlying the type of linear expantion." 
+  ],
+    "responses": ["Mathematical Equations underlying the Types of Linear Expansion:  \n1. ∆L= αL∆T or Change in Length= Original Length x Change in Temperature \n2. ∆A = δA∆T or Change in Area=Original Area x Change in Temperature \n3. ∆V=βV∆T or Change in Volume=Original Volume x Change in Temperature"],
+    "context": ["mathematical_equations_types_of_expansion"]
+  },
+  {
+    "tag": "Definition of Heat of Fusion",
+    "patterns": [
+      "Heat of fusion",
+      "Heat of fusion?",
+      "What is heat of fusion?",  
+      "Define heat of fusion.",
+      "Explain heat of fusion.", 
+      "Tell me about heat of fusion."
+  ],
+    "responses": ["Refers to the amount of heat needed to melt a unit mass with no change in temperature. The symbol used is Lf."],
+    "context": ["definition_heat_of_fusion"]
+  },
+  {
+    "tag": "Definition of Heat of Vaporization",
+    "patterns": [
+      "Heat of vaporization",
+      "Heat of vaporization?",
+      "What is heat of vaporization?",  
+      "Define heat of vaporization.",
+      "Explain heat of vaporization.", 
+      "Tell me about vaporization."
+  ],
+    "responses": ["Refers to the amount of heat required to vaporize one unit mass of the liquid with no change in temperature. The symbol used is Lv."],
+    "context": ["definition_heat_of_fusion"]
+  },
+  {
+    "tag": "Definition of Proton",
+    "patterns": [
+      "Proton",
+      "Proton?",
+      "What is proton?",  
+      "Define proton.",
+      "Explain proton.", 
+      "Tell me about proton."
+  ],
+    "responses": ["The positively charged particle with a mass at sea level equal to 1.673x10^-27kg its charge is the exact opposite of the particle known as the electron but it is 1,840 times heavier than the latter."],
+    "context": ["definition_proton"]
+  },
+  {
+    "tag": "Definition of Neutron",
+    "patterns": [
+      "Neutron",
+      "Neutron?",
+      "What is neutron?",  
+      "Define neutron.",
+      "Explain neutron.", 
+      "Tell me about neutron."
+  ],
+    "responses": ["The uncharged particle which is perceived to be as the heaviest of all the atomic particles. Its mass at sea level is 1.675x10^-27kg."],
+    "context": ["definition_neutron"]
+  },
+  {
+    "tag": "Definition of Electron",
+    "patterns": [
+      "Electron",
+      "Electron?",
+      "What is electron?",  
+      "Define electron.",
+      "Explain electron.", 
+      "Tell me about electron."
+  ],
+    "responses": ["The negatively charged particle of an atom. The lightest among the other particles and it serves as the foundation of all electrical field of study. The mass of this particle is 9.11x10^-31kg."],
+    "context": ["definition_electron"]
+  },
+  {
+    "tag": "Charging by Contact",
+    "patterns": [
+      "Charging by contact",
+      "Charging by contact?",
+      "What is charging by contact?",  
+      "Define charging by contact.",
+      "Explain charging by contact.", 
+      "Tell me about charging by contact."
+  ],
+    "responses": ["Also known as the charging by friction. This is the most common way of charging two bodies. Simple rubbing between two bodies would make each possess different charge.Examples of such are: plastic rod and woolen cloth rubbed together would make the plastic rod negatively charged while the wool is already a positive charge. If there is a gain in electron it makes the body negatively charged and a deficiency in electron would make it a positively charged particle. \nIons- charged atoms; Positive ion represents the positively charged body and the Negative ion represents the negatively charged body."],
+    "context": ["charging_contact"]
+  },
+  {
+    "tag": "Charging by Induction",
+    "patterns": [
+      "Charging by induction",
+      "Charging by induction",
+      "What is charging by induction?",  
+      "Define charging by induction.",
+      "Explain charging by induction.", 
+      "Tell me about charging by induction."
+  ],
+    "responses": ["Can charge a given body even without physical contact through inducing a charged rod. The said rod will make the. charges re-align themselves that would eventually lead to charging. Conductors are used to charge systems."],
+    "context": ["charging_induction"]
+  },
+  {
+    "tag": "Charging by Polarization",
+    "patterns": [
+      "Charging by polarization",
+      "Charging by polarization?",
+      "What is charging by polarization?",  
+      "Define charging by polarization.",
+      "Explain charging by polarization.", 
+      "Tell me about charging by polarization."
+  ],
+    "responses": ["Charging method that uses insulators.The same method and principle of charging is true to this type same as the method of charging that takes place in the method of Induction."],
+    "context": ["charging_polarization"]
+  },
+  {
+    "tag": "Definition of Voltage",
+    "patterns": [
+      "Voltage",
+      "Voltage?",
+      "What is voltage?",  
+      "Define voltage.",
+      "Explain voltage.", 
+      "Tell me about voltage."
+  ],
+    "responses": ["This electrical property plays a vital role in the conduct of a relatively perfect and complete circuit. Voltage as per defined is simply the ratio between the Work done per unit Charge. Or mathematically, \nV= w/Q \nThe unit of expression following this formula will yield Joule per Coulomb or simply Volts (V). Conventionally speaking the term Voltage is synonymous to the concept of Potential Difference, Electromotive Force and Electric Potential."],
+    "context": ["define_volatage"]
+  },
+  {
+    "tag": "Definition of Resistance",
+    "patterns": [
+      "Resistance",
+      "Resistance?",
+      "What is resistance?",  
+      "Define resistance.",
+      "Explain resistance.", 
+      "Tell me about resistance."
+  ],
+    "responses": ["A quantity which resists the flow of charges, We all know that a typical dry cell is a good source of potential difference in a given circuit The flow of current in the circuit does not only depend on the amount of voltage induced but also on the amount of resistance in a medium offers. The resistance of a wire depends on its thickness, length, temperature and the kind of material used. \nThe standard unit of resistance is Ohm"],
+    "context": ["define_resistance"]
+  },
+  {
+    "tag": "Definition of Mechanical Wave",
+    "patterns": [
+      "Mechanical Wave",
+      "Mechanical Wave?",
+      "What is mechanical wave?",  
+      "Define mechanical wave.",
+      "Explain mechanical wave.", 
+      "Tell me about mechanical wave."
+  ],
+    "responses": ["This first type of a wave in general refers to the disturbance in the rest positions of matter at which the magnitude depends merely on time and location. Basic demonstration can be done or performed to create mechanical wave by the use of an energy source and elastic medium like spring or rubber tube. This is due to the fact that an elastic medium behaves as if it were several fronts of particles connected by springs with each particle having an equilibrium or rest-state position. There are two types of mechanical wave, longitudinal and transverse."],
+    "context": ["define_mechanical_wave"]
+  },
+  {
+    "tag": "Definition of frequency",
+    "patterns": [
+      "Frequency",
+      "Frequency?",
+      "What is frequency?",  
+      "Define frequency.",
+      "Explain frequency.", 
+      "Tell me about frequency."
+  ],
+    "responses": ["The number of waves that passes a given point per second. For instance, a given frequency is 100 cycles per second, this is the same as 100/s or 100 hz. The standard symbol and unit to denote this quantity is Hz or Hertz."],
+    "context": ["define_frequency"]
+  },
+  {
+    "tag": "Definition of period",
+    "patterns": [
+      "Period",
+      "Period?",
+      "What is period?",  
+      "Define period.",
+      "Explain period.", 
+      "Tell me about period."
+  ],
+    "responses": ["The measure of how long it would take two successive crests pass through a given point. The concept of Simple Harmonic Motion is applicable to this idea It is denoted as T and usually described as the reciprocal of Frequency. \nMathematically, \nF=1/T and T=1/F \nWhere: Fis frequency and T is period"],
+    "context": ["define_period"]
+  },
+  {
+    "tag": "Definition of wavelength",
+    "patterns": [
+      "Wavelength",
+      "Wavelength?",
+      "What is wavelength?",  
+      "Define wavelength.",
+      "Explain wavelength.", 
+      "Tell me about wavelength."
+  ],
+    "responses": ["The distance between two adjacent particles in the same relative positions and moving in the same direction. The symbol of wavelength is lambda. \nMathematically, \nV-f \nSince:f=1/T therefore V =N/T \nWhere: Vis wave velocity and Lambda is wavelength"],
+    "context": ["define_wavelength"]
+  },
+  {
+    "tag": "Definition of amplitude",
+    "patterns": [
+      "Amplitude",
+      "Amplitude?",
+      "What is amplitude?",  
+      "Define amplitude.",
+      "Explain amplitude.", 
+      "Tell me about amplitude."
+  ],
+    "responses": ["Represent the maximum displacement of particle from its undisturbed or rest position."],
+    "context": ["define_amplitude"]
+  },
+  {
+    "tag": "Definition of reflection",
+    "patterns": [
+      "Reflection",
+      "Reflection?",
+      "What is reflection?",  
+      "Define reflection.",
+      "Explain reflection.", 
+      "Tell me about reflection."
+  ],
+    "responses": ["Reflection is a property of a wave which can be shown explicitliy every  echoes return from an Eastern barrier, reflection of wave panes from ie edge of a pool."],
+    "context": ["define_reflection"]
+  },
+  {
+    "tag": "Definition of  diffused reflection",
+    "patterns": [
+      "Diffused reflection",
+      "Diffused reflection?",
+      "What is diffused reflection?",  
+      "Define diffused reflection.",
+      "Explain diffused reflection.", 
+      "Tell me about diffused reflection."
+  ],
+    "responses": ["Diffused reflection reflects light rays in dierent directions. This type of reflection is the one responsible why we see things around us. Beam of light rays as it hits a roughened surface reflects light in varied directions."],
+    "context": ["define_diffused_reflection"]
+  },
+  {
+    "tag": "Definition of regular reflection",
+    "patterns": [
+      "Regular reflection",
+      "Regular reflection?",
+      "What is regular reflection?",  
+      "Define regular reflection.",
+      "Explain regular reflection.", 
+      "Tell me about regular reflection."
+  ],
+    "responses": ["Regular reflection reflects light rays in one direction This is true to all smooth and shiny surfaces."],
+    "context": ["define_diffused_reflection"]
+},
+{
+  "tag": "Physics",
+  "patterns": [
+     "What is physics?",
+     "Define physics.",
+     "What is the definition of physics.",
+     "Physics."
+  ],
+  "responses": ["Physics is the branch of science that deals with the interaction between matter and energy. It is the pioneer science. The concepts of younger sciences, like chemistry, are reducible to those of physics. Like other sciences, physics employs the scientific method as it deals with the basic nature of all matter and various ways that matter interacts with other matter."],
+  "context": ["Physics: Definition"]
+},
+{
+  "tag": "Scientific or Power-of-ten notation",
+  "patterns": [
+     "What is scientific notation?",
+     "Define scientific notation.",
+     "What is the power-of-ten notation?",
+     "Define power-of-ten notation.",
+     "What is scientific or Power-of-ten notation?"
+  ],
+  "responses": ["This system is based on exponents of 10, which are shorthand notations for repeated multiplication."],
+  "context": ["Scientific or Power-of-ten notation: Definition"]
+},
+{
+  "tag": "Scientific Method",
+  "patterns": [
+     "What is scientific method?",
+     "Define scientific method.",
+     "What is the definition of scientific method?",
+     "Explain what scientific method means."
+  ],
+  "responses": ["This system is based on exponents of 10, which are shorthand notations for repeated multiplication."],
+  "context": ["Scientific or Power-of-ten notation: Definition"]
+},
+{
+  "tag": "Scientific Laws",
+  "patterns": [
+     "What is scientific laws?",
+     "Define scientific laws.",
+     "What is the definition of scientific laws?",
+     "Explain what scientific laws mean."
+  ],
+  "responses": ["Scientific laws are relationships between operationally defined variables. These relationships are always observed when certain experiments are done. Thus, they can be used to predict future events. Scientific laws, which have been operating in the past, are believed to continue operating in the future. Scientific laws have their limitations, and they are changed or modified even when a single exception is found."],
+  "context": ["Scientific Laws: Definition"]
+},
+{
+  "tag": "Scientific Theory",
+  "patterns": [
+     "What is a scientific theory?",
+     "Define scientific theory.",
+     "What is the definition of scientific theory?",
+     "Explain what scientific theory means."
+  ],
+  "responses": ["The formulation of a scientific hypothesis or theory is the final and most important step in the scientific method. This attempts to explain and correlate natural laws in terms of fundamental postulates and assumptions. Theories and hypotheses can be replaced anytime by more useful ones that describe more experiments or results more simply. A theory must be comprehensive and simple. A comprehensive theory can account for a wide range of phenomena. The more laws that can be deduced from a theory, the more comprehensive it is."],
+  "context": ["Scientific Theory: Definition"]
+},
+{
+  "tag": "James Clerk Maxwell",
+  "patterns": [
+     "Who is James Clerk Maxwell?",
+     "Whose electromagnetic theory puts together the theory of electricity, magnetism and light?"
+  ],
+  "responses": ["James Clerk Maxwell's electromagnetic theory puts together the theory of electricity, magnetism and light."],
+  "context": ["James Clerk Maxwell: Definition"]
+},
+{
+  "tag": "Chemistry",
+  "patterns": [
+     "What is chemistry?",
+     "Define chemistry.",
+     "What is the definition of chemistry?",
+     "Explain what chemistry means."
+  ],
+  "responses": ["Chemistry deals with the interaction between atoms and properties of substances that result from such interaction."],
+  "context": ["Chemistry: Definition"]
+},
+{
+  "tag": "Geology and Astronomy",
+  "patterns": [
+     "What is geology and astronomy?",
+     "Define geology and astronomy.",
+     "What is the definition of geology and astronomy?",
+     "Explain what geology and astronomy means."
+  ],
+  "responses": ["Are specialized sciences in which the basic principles of physics and chemistry are used to understand earth and other heavenly bodies."],
+  "context": ["Geology and Astronomy: Definition"]
+},
+{
+  "tag": "Biology",
+  "patterns": [
+     "What is biology?",
+     "Define biology.",
+     "What is the definition of biology?",
+     "Explain what biology means."
+  ],
+  "responses": ["It is concerned with the nature of living things. In this branch of science, it is learned that the cell is the basic unit of life. Inside the cell’s nucleus are the molecules of deoxyribonucleic acid or DNA which is the storehouse of information about different life forms in the planet."],
+  "context": ["Biology: Definition"]
+},
+{
+  "tag": "Physics and Mathematics",
+  "patterns": [
+     "What is the relation between physics and mathematics?",
+     "Define the relation between physics and mathematics.",
+     "What is the the relation between physics and mathematics?",
+     "Explain the relation between physics and mathematics.",
+     "How are physics and mathematics related or connected?"
+  ],
+  "responses": ["Physics has progressed using tools of mathematics while mathematics has developed from its association with physics. Differential calculus and integral calculus were developed by Newton to cope with the problem of motion and rates. Vector analysis arose as a tool of mechanics."],
+  "context": ["Physics and Mathematics: Relation"]
+},
+{
+  "tag": "Vector Analysis",
+  "patterns": [
+     "What is vector analysis?",
+     "Define vector analysis.",
+     "What is the tool of mechanics from physics and math that deals with quantities that have both magnitude and direction.?",
+     "Explain what vector analysis means."
+  ],
+  "responses": ["Vector analysis arose as a tool of mechanics from physics and math. It deals with quantities that have both magnitude and direction."],
+  "context": ["Vector Analysis: Definition"]
+},
+{
+  "tag": "Five Dimensions of Space",
+  "patterns": [
+     "What are the five dimensions of space?",
+     "Enumerate the five dimensions of space",
+     "What are the dimensions of space in physics?"
+  ],
+  "responses": ["Classical physics had three dimensions of space as its scope: length, width, and depth. Time, a fourth dimension, has been added because of Einstein’s Theory of Relativity. With science affecting  almost all facets of life, a fifth dimension has emerged, society."],
+  "context": ["Five Dimensions of Space: Enumeration"]
+},
+{
+  "tag": "Technology",
+  "patterns": [
+     "What is technology?",
+     "Define technology.",
+     "What is the definition of technology?",
+     "Explain what technology means."
+  ],
+  "responses": ["Technology leads inventions while physics provides explanation for the natural world. It is concerned with the practical applications of scientific laws and theories. While physics provides solutions to questions about nature, technology provides solutions to practical problems."],
+  "context": ["Technology: Definition"]
+},
+{
+  "tag": "The Human Eye",
+  "patterns": [
+     "What is the human eye?",
+     "Define the human eye.",
+     "What is the definition of the human eye?",
+     "Explain what the human eye does."
+  ],
+  "responses": ["The eye enables us to see and interpret the shapes, colors and dimensions of objects in the world. It is able to see in dim or bright light but it cannot see objects when light is absent . It changes light rays into electrical signals which are being sent to the brain and interpreted as visual images."],
+  "context": ["Human Eye: Definition"]
+},
+{
+  "tag": "Cornea",
+  "patterns": [
+     "What is cornea?",
+     "Define cornea.",
+     "What is the definition of cornea?",
+     "Explain what cornea means and does.",
+     "What does the cornea do?"
+  ],
+  "responses": ["The transparent oyster membrane which forms the eyeball’s outer coating. It serves as the “window” of the eye. Together with the lens, it bends light rays that enter the eye and focuses the rays to form an image in the retina. The cornea does most of the focusing of the rays."],
+  "context": ["Cornea: Definition and Function"]
+},
+{
+  "tag": "Lens",
+  "patterns": [
+     "What is lens?",
+     "Define lens.",
+     "What is the definition of lens?",
+     "Explain what lens means and does.",
+     "What does the lens do?"
+  ],
+  "responses": ["The lens is a jelly-like assembly of tiny transparent fibers. Its main function is to bend light rays that enter the eye. The lens does the fine focusing of rays to create a clear image."],
+  "context": ["Lens: Definition and Function"]
+},
+{
+  "tag": "Iris",
+  "patterns": [
+     "What is iris?",
+     "Define iris.",
+     "What is the definition of iris?",
+     "Explain what the iris means and does.",
+     "What does the iris do?"
+  ],
+  "responses": ["The iris is the colored part of the eye in front of the lens. It controls the size of the pupil and is made of two different muscle fibers."],
+  "context": ["Iris: Definition and Function"]
+},
+{
+  "tag": "Pupil",
+  "patterns": [
+     "What is a pupil?",
+     "Define pupil.",
+     "What is the definition of pupil?",
+     "Explain what the pupil means and does.",
+     "What does the pupil do?"
+  ],
+  "responses": ["The pupil allows the light to pass into the eyes from the aqueous humour to the lens. It opens and closes to control light from entering to prevent damage to the retina."],
+  "context": ["Pupil: Definition and Function"]
+},
+{
+  "tag": "Ciliary Muscle",
+  "patterns": [
+     "What is ciliary muscle?",
+     "Define ciliary muscle.",
+     "What is the definition of ciliary muscle?",
+     "Explain what the ciliary muscle means and does.",
+     "What does the ciliary muscle do?"
+  ],
+  "responses": ["The ciliary muscle contracts and expands to control the curvature of the lens."],
+  "context": ["Ciliary Muscle: Definition and Function"]
+},
+{
+  "tag": "Vitreous Humour",
+  "patterns": [
+     "What is vitreous humour?",
+     "Define vitreous humour.",
+     "What is the definition of vitreous humour?",
+     "Explain what the vitreous humour means and does.",
+     "What does the vitreous humour do?"
+  ],
+  "responses": ["The vitreous humour is a liquid that fills the cavity behind the lens. This liquid provides nourishment to the front parts of the eye and maintains eye pressure."],
+  "context": ["Vitreous Humour: Definition and Function"]
+},
+{
+  "tag": "Retina",
+  "patterns": [
+     "What is retina?",
+     "Define retina.",
+     "What is the definition of retina?",
+     "Explain what the retina means and does.",
+     "What does the retina do?"
+  ],
+  "responses": ["The retina serves as a “screen” where the image is formed. It contains millions of tiny nerve cells called rods and cones that are sensitive to light. It is located behind the cavity that is filled with vitreous humour."],
+  "context": ["Retina: Definition and Function"]
+},
+{
+  "tag": "Cones",
+  "patterns": [
+     "What are cones?",
+     "Define cones.",
+     "What is the definition of cones in the eyes?",
+     "Explain what the cone in the eyes means and does.",
+     "What are cones in our eyes responsible for?"
+  ],
+  "responses": ["Cones areresponsible for vision in light conditions."],
+  "context": ["Cones: Definition and Function"]
+},
+{
+  "tag": "Rods",
+  "patterns": [
+     "What are rods?",
+     "Define rods.",
+     "What is the definition of rods in the eyes?",
+     "Explain what the rods in the eyes mean and do.",
+     "What are rods in our eyes responsible for?"
+  ],
+  "responses": ["Rods are responsible for vision in dim conditions. Because the sensation of color is produced by the cones, colors are difficult to distinguish in faint light."],
+  "context": ["Rods: Definition and Function"]
+},
+{
+  "tag": "Cones and Rods",
+  "patterns": [
+     "What are cones and rods?",
+     "Explain what the cones and rods in the eyes mean and do.",
+     "What are cones and rods in our eyes responsible for?",
+     "What do cones and rods do in our eyes?",
+     "What do cones and rods do?"
+  ],
+  "responses": ["The rods and cones respond to the image formed on the retina and the information is transmitted to the brain by the optic nerve."],
+  "context": ["Cones and Rods: Function"]
+},
+{
+  "tag": "Fovea Centralis",
+  "patterns": [
+     "What is fovea centralis?",
+     "Define fovea centralis.",
+     "What is the definition of fovea centralis?",
+     "Explain what the fovea centralis means and does."
+  ],
+  "responses": ["It is the center of the eye’s sharpest vision and the location of most color perception."],
+  "context": ["Fovea Centralis: Definition and Function"]
+},
+{
+  "tag": "Optic Nerve",
+  "patterns": [
+     "What is optic nerve?",
+     "Define optic nerve.",
+     "What is the definition of optic nerve?",
+     "Explain what the optic nerve means and does.",
+     "What does the optic nerve do?"
+  ],
+  "responses": ["The optic nerve is the pathway that the light rays take from the retina to the processing center of the brain."],
+  "context": ["Optic Nerve: Definition and Function"]
+},
+{
+  "tag": "Light",
+  "patterns": [
+     "What is light?",
+     "Define light.",
+     "What is the definition of light?",
+     "Explain what light means."
+  ],
+  "responses": ["Light is a form of energy. It can be converted in other forms. In plants, light is converted into chemical energy through the process of photosynthesis."],
+  "context": ["Light: Definition"]
+},
+{
+  "tag": "Sun",
+  "patterns": [
+     "What is sun?",
+     "Define sun.",
+     "What is the definition of sun?",
+     "Explain what sun means."
+  ],
+  "responses": ["The sun is the main source of energy on Earth. It supplies heat and light to warm the Earth and sustain life in it. Without light, there will be eternal darkness all over."],
+  "context": ["Sun: Definition"]
+},
+{
+  "tag": "Luminous Bodies",
+  "patterns": [
+     "What are luminous bodies?",
+     "Define luminous bodies.",
+     "What is the definition of luminous bodies?",
+     "Explain what luminous bodies means."
+  ],
+  "responses": ["Luminous bodies are objects that emit light. Their light reaches our eyes and we see them."],
+  "context": ["Luminous Bodies: Definition"]
+},
+{
+  "tag": "Nonluminous",
+  "patterns": [
+     "What is nonluminous?",
+     "Define nonluminous.",
+     "What is the definition of nonluminous?",
+     "Explain what nonluminous means."
+  ],
+  "responses": ["Most objects around us are nonluminous. Nonluminous objects do not emit light but are illuminated by light from other sources."],
+  "context": ["Nonluminous: Definition"]
+},
+{
+  "tag": "Transparent Materials",
+  "patterns": [
+     "What are transparent materials?",
+     "Define transparent materials.",
+     "What is the definition of transparent materials?",
+     "Explain what transparent materials mean."
+  ],
+  "responses": ["Transparent materials are the type of materials allow light to pass through them."],
+  "context": ["Transparent Materials: Definition"]
+},
+{
+  "tag": "Opaque Materials",
+  "patterns": [
+     "What are opaque materials?",
+     "Define opaque materials.",
+     "What is the definition of opaque materials?",
+     "Explain what opaque materials mean."
+  ],
+  "responses": ["Opaque materials are materials that do not allow light to pass through them. Light bounces off or reflects from opaque materials."],
+  "context": ["Opaque Materials: Definition"]
+},
+{
+  "tag": "Ray",
+  "patterns": [
+     "What is a ray?",
+     "Define ray.",
+     "What is the definition of ray?",
+     "Explain what ray means."
+  ],
+  "responses": ["A narrow beam of light is called a ray. A ray of light is usually represented by a straight line with an arrow head pointing to the direction of travel. This is because light travels  in a straight line in one medium."],
+  "context": ["Ray: Definition"]
+},
+{
+  "tag": "Refraction",
+  "patterns": [
+     "What is refraction?",
+     "Define refraction.",
+     "What is the definition of refraction?",
+     "Explain what refraction means."
+  ],
+  "responses": ["This is the phenomenon when light bends as it passes from one transparent medium to another at an angle other than 90 degrees with the boundary."],
+  "context": ["Refraction: Definition"]
+},
+{
+  "tag": "Olaf Roemer",
+  "patterns": [
+     "Who is Olaf Roemer?",
+     "This Danish astronomer made the first rough estimate of the speed of light.",
+     "Who made the first rough estimate of the speed of light?",
+     "Who made the first rough estimate of the speed of light in 1676?"
+  ],
+  "responses": ["Olaf Roemer, a Danish astronomer, made the first rough estimate of the speed of light in 1676. He did this by measuring the length of time an eclipse occurred in one of Jupiter’s moons."],
+  "context": ["Olaf Roemer: Definition"]
+},
+{
+  "tag": "A.H.C. Fizeau",
+  "patterns": [
+     "Who is A.H.C. Fizeau?",
+     "This French physicist developed the firstnon-astronomical method of measuring the speed of light using an apparatus.",
+     "Who developed the firstnon-astronomical method of measuring the speed of light using an apparatus?"
+  ],
+  "responses": ["He is the French physicist who developed the first non-astronomical method of measuring the speed of light with the use of an apparatus."],
+  "context": ["A.H.C. Fizeau: Definition"]
+},
+{
+  "tag": "Foucault",
+  "patterns": [
+     "Who is Foucault?",
+     "This French physicist improved Fizeau's method of measuring the speed of light by substituting a rotating mirror for the toothed wheel.",
+     "Who improved Fizeau's method of measuring the speed of light by substituting a rotating mirror for the toothed wheel?",
+     "Who howed that the speed of light was less in water than in air?"
+  ],
+  "responses": ["Foucault, another French physicist, improved Fizeau’s method of measuring the speed of light by substituting a rotating mirror for the toothed wheel. In 1862, he showed that the speed of light was less in water than in air."],
+  "context": ["Foucault: Definition"]
+},
+{
+  "tag": "A.A. Michelson",
+  "patterns": [
+     "Who is A.A. Michelson?",
+     "This American physicist did precise measurements of the speed of light.",
+     "Who made the precise measurements of light using the same method as Foucault's?",
+     "Who came up with the calculated value of 2.997025 x 10 to the eighth power m/s of the speed of light which approximates the accepted value at present of the speed of light in a vacuum, which is 3.0 x 10 to the eighth power?"
+  ],
+  "responses": ["From 1880 to 1930, precise measurements of the speed of light were done by A.A. Michelson, an American physicist, using the same method as Foucault’s. His calculated value of 2.997025 x 10 to the eighth power m/s approximates the accepted value at present of the speed of light in a vacuum, which is 3.0 x 10 to the eighth power."],
+  "context": ["A.A. Michelson: Definition"]
+},
+{
+  "tag": "Visible Spectrum",
+  "patterns": [
+     "What is visible spectrum?",
+     "Define visible spectrum.",
+     "What is the definition of visible spectrum?",
+     "Explain what visible spectrum means."
+  ],
+  "responses": ["Sunlight separates into different colors called the visible spectrum as it passes through a prism. The spectrum consists of colors of the rainbow: red, orange, yellow, green, and blue."],
+  "context": ["Visible Spectrum: Definition"]
+},
+{
+  "tag": "Color Subtraction",
+  "patterns": [
+     "What is color subtraction?",
+     "Define color subtraction.",
+     "What is the definition of color subtraction?",
+     "Explain what color subtraction means."
+  ],
+  "responses": ["When white light is passed through a colored filter, a number of colors are removed. This is called color subtraction."],
+  "context": ["Color Subtraction: Definition"]
+},
+{
+  "tag": "Clouds",
+  "patterns": [
+     "What are clouds?",
+     "Define clouds.",
+     "What is the definition of clouds?",
+     "What are clouds made up of?"
+  ],
+  "responses": ["Clouds are made up of clusters of water droplets of different sizes."],
+  "context": ["Clouds: Definition"]
+},
+{
+  "tag": "Dispersion",
+  "patterns": [
+     "What is dispersion?",
+     "Define dispersion.",
+     "What is the definition of dispersion?",
+     "Explain what color dispersion means."
+  ],
+  "responses": ["Dispersion is the separation of visible light into its different colors: red, orange, yellow, green, blue, indigo, and violet."],
+  "context": ["Dispersion: Definition"]
+},
+{
+  "tag": "Law of Reflection",
+  "patterns": [
+     "What is the law of reflection?",
+     "Define the law of reflection.",
+     "What is the definition of the law of reflection?",
+     "Explain what the law of reflection means."
+  ],
+  "responses": ["The law of reflection states that the angle of incidence equals the angle of reflection."],
+  "context": ["Law of Reflection: Definition"]
+},
+{
+  "tag": "Reflection",
+  "patterns": [
+     "What is reflection?",
+     "Define reflection.",
+     "What is the definition of reflection?",
+     "Explain what reflection means."
+  ],
+  "responses": ["Reflection causes the formation of images in plane and curved mirrors."],
+  "context": ["Reflection: Definition"]
+},
+{
+  "tag": "Mirage",
+  "patterns": [
+     "What is mirage?",
+     "Define mirage.",
+     "What is the definition of mirage?",
+     "Explain what mirage means."
+  ],
+  "responses": ["Mirage is the phenomenon that motorists observe especially on hot days when the road seems to be covered with water. It is produced by the refraction of light as it travels the boundary between hot and cold air. This happens when air in contact with the ground is very hot."],
+  "context": ["Mirage: Definition"]
+},
+{
+  "tag": "Law of Refraction",
+  "patterns": [
+     "What is the law of refraction?",
+     "Define law of refraction.",
+     "What does the law of refraction state?",
+     "Explain what the law of refraction means."
+  ],
+  "responses": ["The law of refraction states that: \nFor the given two media, whatever the direction of the incident light, the ratio of the sine of the angle of incidence (sin i) to the sine of the angle of refraction (sin r) is the index of refraction n."],
+  "context": ["Law of Refraction: Definition"]
+},
+{
+  "tag": "Optical Density",
+  "patterns": [
+     "What is optical density?",
+     "Define optical density.",
+     "What does optical density determine?",
+     "Explain what optical density means."
+  ],
+  "responses": ["A medium’s optical density determines the speed of light in that medium."],
+  "context": ["Optical Density: Definition"]
+},
+{
+  "tag": "Index of Refraction",
+  "patterns": [
+     "What is index of refraction?",
+     "Define index of refraction.",
+     "What does index of refraction idicate?",
+     "Explain what index of refraction means."
+  ],
+  "responses": ["The index of refraction indicates the extent of the bending of light ray. The index of refraction of a material is the ratio of the speed of light in vacuum to the speed of light in the material."],
+  "context": ["Index of Refraction: Definition"]
+},
+{
+  "tag": "Total Internal Reflection",
+  "patterns": [
+     "What is total internal reflection?",
+     "Define total internal reflection.",
+     "What is the definition of total internal reflection?",
+     "Explain what total internal reflection means."
+  ],
+  "responses": ["Total internal reflection occurs if, as light passes from a dense to a less dense medium, its angle of incidence is greater than the critical angle. This phenomenon is applied in fiber optics and diamond cutting."],
+  "context": ["Total Internal Reflection: Definition"]
+},
+{
+  "tag": "Nearsightedness or Myopia",
+  "patterns": [
+     "What is nearsightedness or myopia?",
+     "What is nearsightedness?",
+     "What is myopia?",
+     "Define nearsightedness or myopia.",
+     "What is the definition of nearsightedness or myopia?",
+     "What is the definition of myopia?",
+     "What is the definition of nearsightness?",
+     "Explain what nearsightedness or myopia means."
+  ],
+  "responses": ["Nearsightedness or myopia is a vision defect caused by too long eyeballs. It is the inability of the eye to focus on distant objects. A nearsighted eye can see nearby objects clearly but has difficulty in seeing far objects."],
+  "context": ["Nearsightedness or Myopia: Definition"]
+},
+{
+  "tag": "Farsightedness",
+  "patterns": [
+     "What is farsightedness?",
+     "Define farsightedness.",
+     "What is the definition of farsightedness?",
+     "Explain what farsightedness means."
+  ],
+  "responses": ["Farsightedness is a vision defect caused by too short eyeballs. It is the inability of the eye to focus on nearby objects. A farsighted eye can see far objects clearly but not nearby objects."],
+  "context": ["Farsightedness: Definition"]
+},
+{
+  "tag": "Magnifying Lens",
+  "patterns": [
+     "What is a magnifying lens?",
+     "Define magnifying lens.",
+     "What is the definition of magnifying lens?",
+     "Explain what magnifying lens produces."
+  ],
+  "responses": ["A magnifying lens produces an upright, virtual, and enlarged image due to refracted light rays."],
+  "context": ["Magnifying Lens: Definition"]
+},
+{
+  "tag": "Radioactivity",
+  "patterns": [
+     "What is radioactivity?",
+     "Define radioactivity.",
+     "What is the definition of radioactivity?",
+     "Where does radioactivity come from?"
+  ],
+  "responses": ["Radioactivity comes from unstable nuclei of atoms."],
+  "context": ["Radioactivity: Definition"]
+},
+{
+  "tag": "Radioactive Emissions",
+  "patterns": [
+     "What are the three types that consist radioactive emissions?",
+     "Radioactive emissions consists of three types. Name them.",
+     "Radioactive emissions consists of three types. What are these?"
+  ],
+  "responses": ["Radioactive emmissions consist of three types: alpha particles, beta rays, and gamma rays."],
+  "context": ["Radioactive Emissions: Three Types"]
+},
+{
+  "tag": "Isotopes",
+  "patterns": [
+     "What are isotopes?",
+     "Define isotopes.",
+     "What is the definition of isotopes?"
+  ],
+  "responses": ["Isotopes are atoms of the same element having different number of neutrons."],
+  "context": ["Isotopes: Definition"]
+},
+{
+  "tag": "Nuclear Transformation",
+  "patterns": [
+     "What is nuclear transformation?",
+     "Define nuclear transformation.",
+     "What is the definition of nuclear transformation?",
+     "What does nuclear transformation involve?"
+  ],
+  "responses": ["Nuclear transformation involves the formation of a new element when A and B particles are emitted by a nucleus."],
+  "context": ["Nuclear Transformation: Definition"]
+},
+{
+  "tag": "Half-life",
+  "patterns": [
+     "What is half-life?",
+     "Define half-life.",
+     "What is the importance of half-life?",
+     "What is the definition of half-life?"
+  ],
+  "responses": ["Half-life is the time required for one-half of a radioactive substance initially present to disintegrate. It is a measure of an isotope's stability. The shorter the half-life, the more rapidly an isotope decays."],
+  "context": ["Half-life: Definition"]
+},
+{
+  "tag": "Radioactive Dating",
+  "patterns": [
+     "What is radioactive dating?",
+     "Define radioactive dating.",
+     "What is the definition of radioactive dating?"
+  ],
+  "responses": ["In radioactive dating, the relative amounts of the isotope and its decay products are compared. By knowing the isotope's half-life and using its decay curve, one can estimate the age of a sample isotope."],
+  "context": ["Radioactive Dating: Definition"]
+},
+{
+  "tag": "Uranium Dating and Carbon Dating",
+  "patterns": [
+     "What is the difference between uranium dating and carbon dating?",
+     "How is uranium dating different from carbon dating?",
+     "How is carbon dating different from uranium dating?",
+     "State the difference between uranium dating and carbon dating."
+  ],
+  "responses": ["Uranium dating is used to date relatively old organic samples while carbon dating is used to date young plant and animal remains"],
+  "context": ["Uranium Dating and Carbon Dating: Difference"]
+},
+{
+  "tag": "Light_traveling_through_glass", 
+  "patterns": ["What happens when light is traveling through glass?"],
+  "responses": ["When light travels in air is incident on a transparent material such as glass, it is partially reflected and partially transmitted. But the direction of the transmitted light is different from the direction of the incident light, so the light is said to have been refracted; in other words, it has changed direction."],
+  "context": ["Light Travelling Through Glass"]                                                                                                                                                                                                                                                                                                                   
+  },
+  {
+  "tag": "Light_speed_in_different_media", 
+  "patterns": ["How does light travel in different media?"],
+  "responses": ["Light travels with different speeds in different media. Intuitively, you might expect the passage of light to take longer through a medium with more atoms per volume, and the speed of light is, in fact, generally less in denser media."],
+  "context": ["Light speed in different media"]                                                                                                                                                                                                                                                                                                                   
+  },
+  {
+  "tag": "Light_speed_in_water", 
+  "patterns": ["What is the speed of light in water?"],
+  "responses": ["The speed of light in water is about 75% of that in air or a vacuum."],
+  "context": ["Light speed in water"]                                                                                                                                                                                                                                                                                                                   
+  },
+  {
+  "tag": "Willebord Snell", 
+  "patterns": ["Who is Willebord Snell?", "Tell me about Willebord Snell."],
+  "responses": ["Willebord Snell (1591-1626), a Dutch physicist, discovered a relationship between the angles (θ) and the speeds (v) of light in two media."],
+  "context": ["Light speed in water"]                                                                                                                                                                                                                                                                                                                   
+  },
+  {
+  "tag": "Index of refraction", 
+  "patterns": ["What is the index of refeaction?"],
+  "responses": ["The index of refraction, n, is a measure of the speed of light in a transparent material, or technically, a measure of the optical density of the material."],
+  "context": ["Index of refraction"]                                                                                                                                                                                                                                                                                                                   
+  }
 ]
 }

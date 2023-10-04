@@ -4346,17 +4346,6 @@
   "context": ["Geology and Astronomy: Definition"]
 },
 {
-  "tag": "Biology",
-  "patterns": [
-     "What is biology?",
-     "Define biology.",
-     "What is the definition of biology?",
-     "Explain what biology means."
-  ],
-  "responses": ["It is concerned with the nature of living things. In this branch of science, it is learned that the cell is the basic unit of life. Inside the cell’s nucleus are the molecules of deoxyribonucleic acid or DNA which is the storehouse of information about different life forms in the planet."],
-  "context": ["Biology: Definition"]
-},
-{
   "tag": "Physics and Mathematics",
   "patterns": [
      "What is the relation between physics and mathematics?",
@@ -4943,7 +4932,7 @@
   },
   {
   "tag": "Index of refraction", 
-  "patterns": ["What is the index of refeaction?"],
+  "patterns": ["What is the index of refraction?"],
   "responses": ["The index of refraction, n, is a measure of the speed of light in a transparent material, or technically, a measure of the optical density of the material."],
   "context": ["Index of refraction"]                                                                                                                                                                                                                                                                                                                   
   }

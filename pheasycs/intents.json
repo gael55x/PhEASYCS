@@ -283,13 +283,13 @@
     },
     {
         "tag": "First_Law_Thermodynamics",
-        "patterns": ["What is the First Law of Thermodynamics?", "Explain the First Law", "First Law definition"],
+        "patterns": ["What is the First Law of Thermodynamics?", "Explain the First Law of Thermodynamics", "First Law of Thermodynamics definition"],
         "responses": ["The First Law of Thermodynamics states that the change in internal energy of a system equals the net heat transfer into the system minus the net work done by the system. It is based on the conservation of energy principle."],
         "context": ["First_Law_Thermodynamics : Definition"]
     },
     {
         "tag": "Second_Law_Thermodynamics",
-        "patterns": ["What is the Second Law of Thermodynamics?", "Explain the Second Law", "Second Law definition"],
+        "patterns": ["What is the Second Law of Thermodynamics?", "Explain the Second Law of Thermodynamics", "Second Law of Thermodynamics definition"],
         "responses": ["The Second Law of Thermodynamics explains the directionality of thermodynamic processes. It states that heat generally cannot flow spontaneously from a material at a lower temperature to a material at a higher temperature. It also states that it's impossible to convert heat completely into work in a cyclic process, and natural systems tend to proceed toward a greater state of disorder, known as entropy."],
         "context": ["Second_Law_Thermodynamics : Definition"]
     },
@@ -910,7 +910,7 @@
           "context": ["Galileo: Person"]
        },
          {
-            "tag": "Law of Inertia",
+            "tag": "First_Law_Motion",
             "patterns": [
                "What is the law of inertia?",
                "First law of motion.",
@@ -1709,7 +1709,7 @@
         "patterns":[
             "What are following situations that cause the current to go through the body?", 
             "Electric shock situations.", 
-            "What are situatons that cause elecrtric shocks?", 
+            "What are situatons that cause electric shocks?", 
             "What are situations that cause arc flash?"
          ], 
         "responses": [

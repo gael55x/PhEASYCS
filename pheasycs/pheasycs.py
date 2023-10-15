@@ -90,12 +90,13 @@ def preprocess_data(data):
 """
 def build_and_train_model(training, output, model_filename='model.h5'):
     model = tf.keras.Sequential([
-        tf.keras.layers.Input(shape=(len(training[0]),)),
-        tf.keras.layers.Dense(18),
-        tf.keras.layers.Dense(18),
-        tf.keras.layers.Dense(18),
-        tf.keras.layers.Dense(len(output[0]), activation='softmax')
-    ])
+    tf.keras.layers.Input(shape=(len(training[0]),)),
+    tf.keras.layers.Dense(128),
+    tf.keras.layers.Dense(128),
+    tf.keras.layers.Dense(128), 
+    tf.keras.layers.Dense(128),
+    tf.keras.layers.Dense(len(output[0]), activation='softmax')
+])
 
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     
@@ -109,31 +110,39 @@ def build_and_train_model(training, output, model_filename='model.h5'):
     try:
         model = tf.keras.models.load_model(model_filename)
     except:
-        model.fit(training, output, epochs=100, batch_size=12)
+        model.fit(training, output, epochs=100, batch_size=14)
         model.save(model_filename)
 
     """
     Model: "sequential"
-    __________________________________________________________________
-     Layer (type)                Output Shape              Param #
-    ==================================================================
-     dense (Dense)               (None, 8)                 5112
+    _________________________________________________________________
+    Layer (type)                Output Shape              Param #
+    =================================================================
+    dense (Dense)               (None, 128)               135808
 
-     dense_1 (Dense)             (None, 8)                 72
+    dense_1 (Dense)             (None, 128)               16512
 
-     dense_2 (Dense)             (None, 222)               1998
+    dense_2 (Dense)             (None, 128)               16512
 
-    ==================================================================
-    Total params: 7182 (28.05 KB)
-    Trainable params: 7182 (28.05 KB)
+    dense_3 (Dense)             (None, 128)               16512
+
+    dense_4 (Dense)             (None, 682)               87978
+
+    =================================================================
+    Total params: 273322 (1.04 MB)
+    Trainable params: 273322 (1.04 MB)
     Non-trainable params: 0 (0.00 Byte)
-    __________________________________________________________________
+    _________________________________________________________________
     dense True
-    [TensorShape([638, 8]), TensorShape([8])]
+    [TensorShape([1060, 128]), TensorShape([128])]
     dense_1 True
-    [TensorShape([8, 8]), TensorShape([8])]
+    [TensorShape([128, 128]), TensorShape([128])]
     dense_2 True
-    [TensorShape([8, 222]), TensorShape([222])]
+    [TensorShape([128, 128]), TensorShape([128])]
+    dense_3 True
+    [TensorShape([128, 128]), TensorShape([128])]
+    dense_4 True
+    [TensorShape([128, 682]), TensorShape([682])]
     """
 
     # Display a summary of the model architecture, including the number of parameters
@@ -152,8 +161,7 @@ def print_with_appearance(text):
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()  # Flush the output buffer to make the text appear immediately
-        # Adjust the sleep duration to control the speed of appearance
-        time.sleep(0.03)
+        time.sleep(0.003)
     print()  # Move to the next line after printing the complete text
 
 
@@ -226,7 +234,7 @@ user_input_entry.pack()
 
 # Function to handle user input from the GUI
 def handle_user_input():
-    user_input = user_input_entry.get()
+    user_input = user_input_entry.get().lower()
     if user_input.lower() == 'quit':
         window.quit()
         return
@@ -243,7 +251,7 @@ def handle_user_input():
         for char in response:
             chatbot_chat_display.insert(tk.END, char)
             chatbot_chat_display.update_idletasks()  # Update the display immediately
-            time.sleep(0.03)  # Adjust the sleep duration for typing effect
+            time.sleep(0.003)  
 
         chatbot_chat_display.insert(tk.END, "\n")  # Move to the next line after each response
 

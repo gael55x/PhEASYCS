@@ -5064,7 +5064,7 @@
     "find for ∆length",
     "find for ∆ of length"
   ],
-  "reponses": ["Certainly! I can guide you in solving the change of length in the context of Linear Expansion. In order to solve it, you can use this formula: \n ∆L= αL∆T or Change in Length = Original Length x Change in Temperature\n"],
+  "responses": ["Certainly! I can guide you in solving the change of length in the context of Linear Expansion. In order to solve it, you can use this formula: \n ∆L= αL∆T or Change in Length = Original Length x Change in Temperature\n"],
   "context": ["solve_change_in_length_calculate"]
 },
 {
@@ -6192,7 +6192,7 @@
 {
   "tag": "mass and weight_difference",
   "patterns": ["difference between mass and weight.", "mass and weight difference", "what is the difference between mass and weight?", "how does mass differ from weight?", "contrast mass and weight", "how does weight differ from mass?"],
-  "responses": ["Mass is the quantity of matter in an object. It is also the measure of the inertia or sluggishness that an object exhibits in response to any effort to any effort made to start it, stop it, or change its state of motion in any way whereas weight is the force upon an object due to gravity. Mass and weight are directly proportional to each other. If the mass of an object is doubled, its weight is also doubled."],
+  "responses": ["Mass is the quantity of matter in an object. It is also the measure of the inertia or sluggishness that an object exhibits in responses to any effort to any effort made to start it, stop it, or change its state of motion in any way whereas weight is the force upon an object due to gravity. Mass and weight are directly proportional to each other. If the mass of an object is doubled, its weight is also doubled."],
   "context": ["mass and weight_difference"]
 },
 {
@@ -6319,7 +6319,7 @@
 {
   "tag": "media_that_transmit_sound", 
   "patterns": ["what are the media that transmit sound?", "what can transmit sound?", "how are sounds transmitted?"], 
-   "responses": ["Most sounds that we hear are transmitted through the air. However, any elastic substance whether solid, liquid, gas, or plasma can transmit sound. Elasticity is the ability of a material that has changed shape in response to an applied force to resume its initial shape once the distorting force is removed. Steel is an elastic substance. In contrast, putty is inelastic. In elastic liquids and solids, the atoms are relatively close to- gether and respond quickly to each other's motions and transmit energy with little loss Sound travels about four times faster in water than in air and about fifteen times faster in steel than in air. Relative to solids and liquids, air is a poor conductor of sound. Meaning it travels the slowest in gases."], 
+   "responses": ["Most sounds that we hear are transmitted through the air. However, any elastic substance whether solid, liquid, gas, or plasma can transmit sound. Elasticity is the ability of a material that has changed shape in responses to an applied force to resume its initial shape once the distorting force is removed. Steel is an elastic substance. In contrast, putty is inelastic. In elastic liquids and solids, the atoms are relatively close to- gether and respond quickly to each other's motions and transmit energy with little loss Sound travels about four times faster in water than in air and about fifteen times faster in steel than in air. Relative to solids and liquids, air is a poor conductor of sound. Meaning it travels the slowest in gases."], 
    "context": ["media_that_transmit_sound"]
 }, 
 { 
@@ -6409,37 +6409,37 @@
 {
   "tag": "calculate_celsius_from_fahrenheit",
   "patterns": ["what is the formula for celsius?", "how do we find celsius from fahrenheit?", "solve celsius from fahrenheit", "find celsius if given fahrenheit", "calculate celsius if given fahrenheit", "find celsius from fahrenheit"],
-  "response": "Formula: 𝑇𝐶 = 5/9 (𝑇𝐹 − 32)",
+  "responses": "Formula: 𝑇𝐶 = 5/9 (𝑇𝐹 − 32)",
   "context": ["calculate_celsius_from_fahrenheit"]
 },
 {
   "tag": "calculate_fahrenheit_from_celsius",
   "patterns": ["what is the formula for fahrenheit?", "how do we find fahrenheit from celsius?", "solve fahrenheit from celsius", "find fahrenheit if given celsius", "calculate fahrenheit if given celsius", "find fahrenheit from celsius"],
-  "response": "Formula: 𝑇𝐹 =(9/5 𝑇𝐶 )+ 32",
+  "responses": "Formula: 𝑇𝐹 =(9/5 𝑇𝐶 )+ 32",
   "context": ["calculate_fahrenheit_from_celsius"]
 },
 {
   "tag": "calculate_kelvin_from_celsius",
   "patterns": ["what is the formula for kelvin?", "how do we find kelvin from celsius?", "solve kelvin from celsius", "find kelvin if given celsius", "calculate kelvin if given celsius", "find kelvin from celsius"],
-  "response": "Formula: 𝑇𝐾 = (𝑇𝐶 + 273.15)",
+  "responses": "Formula: 𝑇𝐾 = (𝑇𝐶 + 273.15)",
   "context": ["calculate_kelvin_from_celsius"]
 },
 {
   "tag": "calculate_celsius_from_kelvin",
   "patterns": ["how do we find celsius from kelvin?", "solve celsius from kelvin", "find celsius if given kelvin", "calculate celsius if given kelvin", "find celsius from kelvin"],
-  "response": "Formula: 𝑇𝐶 = 𝑇𝐾 − 273.15",
+  "responses": "Formula: 𝑇𝐶 = 𝑇𝐾 − 273.15",
   "context": ["calculate_celsius_from_kelvin"]
 },
 {
   "tag": "calculate_fahrenheit_from_kelvin",
   "patterns": ["how do we find fahrenheit from kelvin?", "solve fahrenheit from kelvin", "find fahrenheit if given kelvin", "calculate fahrenheit if given kelvin", "find fahrenheit from kelvin"],
-  "response": "Formula: 𝑇𝐹 = 9/5(𝑇𝐾 − 459.67)",
+  "responses": "Formula: 𝑇𝐹 = 9/5(𝑇𝐾 − 459.67)",
   "context": ["calculate_fahrenheit_from_kelvin"]
 },
 {
   "tag": "calculate_kelvin_from_fahrenheit",
   "patterns": ["how do we find kelvin from fahrenheit?", "solve kelvin from fahrenheit", "find kelvin if given fahrenheit", "calculate kelvin if given fahrenheit", "find kelvin from fahrenheit"],
-  "response": "Formula: 𝑇𝐾 = 5/9 (𝑇𝐹 + 459.67)",
+  "responses": "Formula: 𝑇𝐾 = 5/9 (𝑇𝐹 + 459.67)",
   "context": ["calculate_kelvin_from_fahrenheit"]
 },
 { 
@@ -6569,7 +6569,7 @@
     "context": ["thermodynamic process_examples"] 
 }, 
 { 
-        " tag": "example_for_horizontal_launched_projectile",
+        "tag": "example_for_horizontal_launched_projectile",
         "patterns": ["what is an example involving horizontal launched projectile?", "state an example involving horizontal launched projectile", "example involving horizontal launched projectile"],
         "responses": ["EXAMPLE: The airplane is moving horizontally with a constant velocity of +115 m/s at an altitude of 1050m. Determine the time required for the care package to hit the ground. What are the magnitude and direction of the final vertical velocity of the package? \nGiven: yƒ = -1050 m (negative means downward motion) \nag = 9.8 m/s² (positive, since the given equation already considered the negative sign) \nVᵢₓ = +115 m/s \nRequired: t (time required to hit the ground) \nVƒᵧ = final vertical velocity \nEquations to be used: \nyƒ = yᵢ+vᵢᵧt - 1 agt² and Vfy = Vᵢᵧ - agt  \nSolution: \nFirst, solve the time using the equation: Yƒ = yᵢ+ Vᵢᵧ - agt² \nSince, yᵢ=0 (not specified in the problem); Vᵢᵧ = 0(horizontally launched)  \nTherefore: y = agt² \nRearranging the equation to solve for t, \nt = √2(yƒ)/-ag = √2(-1050 ̶m̶ )/-9.8 ̶m̶ /s² = 14.6s \nSecond, solve for vƒᵧ using the equation: vƒᵧ = Vᵢᵧ - agt \nSince Vᵢᵧ= 0; the equation will become: vƒᵧ = -agt \nSubstitute the given and solved values.  \nVƒᵧ = -9.8 m/s ̷² (14.6 ̷²) = -143 m/s (negative means downward direction) \nWhen a projectile is launched vertically or at an angle, its velocity has two components: \n1. The horizontal velocity with constant magnitude and the same direction as the launch. Hence, its acceleration is zero. \n2. Until it reaches its maximum height where the magnitude is zero (momentarily stop at this point), there is an upward positive decreasing vertical velocity. After reaching at the maximum trajectory, it will descend at an increasing negative vertical velocity because gravity makes it accelerates downward at a rate of 9.8 m/s².\nIn summary, the vertically launched projectile moves forward horizontally with uniform velocity while its vertical velocity is uniformly accelerated creating a parabolic trajectory. The angle of launched and its initial velocity are the only factors that can affect the motion of projectile. Refer to figure 5 for its illustration."],
         "context": ["horizontal launched projectile : example"]
@@ -6822,7 +6822,7 @@
      "state the photoelectric effect.",
      "define the photoelectric effect."
   ],
-  "responses": ["Photoelectric effect refers to the ejection of electrons from a surface of a metal in response to light directed to the metal. Albert Einstein proposed that light consisted of individual photons, which interacted with the electrons in the surface of the metal. For each frequency or color of the incident light, each photon carried energy. Increasing intensity of light corresponded to increasing incident of photons while the energy of the photons remained the same. The energy carried by a photon is directly proportional to its frequency. The arrangement of the visible spectrum of light shows that red colorhas the least frequency, which means it also has the least energy. Since photographers use light-sensitive photographic papers, red light would not overexpose and ruin the pictures during the developing process."],
+  "responses": ["Photoelectric effect refers to the ejection of electrons from a surface of a metal in responses to light directed to the metal. Albert Einstein proposed that light consisted of individual photons, which interacted with the electrons in the surface of the metal. For each frequency or color of the incident light, each photon carried energy. Increasing intensity of light corresponded to increasing incident of photons while the energy of the photons remained the same. The energy carried by a photon is directly proportional to its frequency. The arrangement of the visible spectrum of light shows that red colorhas the least frequency, which means it also has the least energy. Since photographers use light-sensitive photographic papers, red light would not overexpose and ruin the pictures during the developing process."],
   "context": ["light: photoelectric effect"]
 },
 {
@@ -7395,7 +7395,7 @@
     "elaborate about the amplitude of sound waves.", 
     "tell me about the amplitude of sound waves."
 ],
-   "responses": ["The loudness is the measure of response of a sound by human ear. The loudness of a sound is directly related to the square of its amplitude. When the sound waves have small amplitude, the sound will be soft. On the other hand, is the sound waves have a large amplitude the sound will be loud. The loudness and intensity of sound may also affect our hearing. The amount of energy that a sound wave cames can damage our ears. High amplitude sound usually carry large energy and have higher intensity while low amplitude sound carry lesser amount of energy and have lower intensity. Sounds at or below 70dBA are considered safe while any sound at or above 85 dBA will more likely to damage our hearing over time."],
+   "responses": ["The loudness is the measure of responses of a sound by human ear. The loudness of a sound is directly related to the square of its amplitude. When the sound waves have small amplitude, the sound will be soft. On the other hand, is the sound waves have a large amplitude the sound will be loud. The loudness and intensity of sound may also affect our hearing. The amount of energy that a sound wave cames can damage our ears. High amplitude sound usually carry large energy and have higher intensity while low amplitude sound carry lesser amount of energy and have lower intensity. Sounds at or below 70dBA are considered safe while any sound at or above 85 dBA will more likely to damage our hearing over time."],
    "context": ["amplitude_of_sound_waves"]
  },
  {
@@ -7510,170 +7510,170 @@
 {
   "tag": "electromagnetic_waves_types", 
   "patterns": ["what are the types of electromagnetic waves?", "electromagnetic wave types", "types of electromagnetic waves", "different kinds of electromagnetic waves", "kinds of magnetic waves"],
-"reponses": ["The different types of electromagnetic waves are: Radion waves, Microwaves, Infrared waves, Visible light, Ultraviolet rays, X-rays, and Gamma rays."],
+"responses": ["The different types of electromagnetic waves are: Radion waves, Microwaves, Infrared waves, Visible light, Ultraviolet rays, X-rays, and Gamma rays."],
 "context": ["Electromagnetic waves: types"]
 },
 {
   "tag": "radio_waves_frequency", 
   "patterns": ["what is the frequency of radio waves?",
    "radio waves frequency.", "radio waves frequency"],
-"reponses": ["Radio waves has a frequency of 3 Hz to 300 Hz."],
+"responses": ["Radio waves has a frequency of 3 Hz to 300 Hz."],
 "context": ["radio waves: frequency"]
 },
 {
   "tag": "radio_waves_prediction", 
   "patterns": ["who made the first prediction about radio waves?"],
-"reponses": ["James Clerk Maxwell who made the first prediction about radio waves but itwas Heinrich Hurtz who showed that radio waves can be produced andtransmitted."],
+"responses": ["James Clerk Maxwell who made the first prediction about radio waves but itwas Heinrich Hurtz who showed that radio waves can be produced andtransmitted."],
 "context": ["radio waves: prediction"]
 },
 {
   "tag": "radio_waves_wavelength", 
   "patterns": ["what is the wavelength of radio waves?", "radio waves wavelength"],
-"reponses": ["It has a lowest frequency and longest wavelength that makes it suitable for telecommunication."],
+"responses": ["It has a lowest frequency and longest wavelength that makes it suitable for telecommunication."],
 "context": ["radio waves: wavelength"]
 },
 {
   "tag": "radio_waves_origination", 
   "patterns": ["where do radio waves originate from?"],
-"reponses": ["Originates from the vibration of electrons which came from a natural phenomenon like lightning and astronomical objects. Artificial radio waves can be generated thru the use of transmitter, received by radio receiver,\nbroadcasting satellites and computer networks."],
+"responses": ["Originates from the vibration of electrons which came from a natural phenomenon like lightning and astronomical objects. Artificial radio waves can be generated thru the use of transmitter, received by radio receiver,\nbroadcasting satellites and computer networks."],
 "context": ["radio waves: origination"]
 },
 {
   "tag": "microwaves_spectrum", 
   "patterns": ["what is the spectrum of microwaves?", "microwave spectrum"],
-"reponses": ["Microwaves ranges from 300 MHz (3 x 10⁸ Hz) to 300 GHz (3x 10¹¹ Hz)."],
+"responses": ["Microwaves ranges from 300 MHz (3 x 10⁸ Hz) to 300 GHz (3x 10¹¹ Hz)."],
 "context": ["microwaves: spectrum"]
 },
 {
   "tag": "microwaves_frequency", 
   "patterns": ["what is the frequency of microwaves?", "microwaves wave frequency", "frequency of microwaves waves"],
-"reponses": ["Microwaves has a frequency higher than the frequency of radio waves."],
+"responses": ["Microwaves has a frequency higher than the frequency of radio waves."],
 "context": ["microwaves: frequency"]
 },
 {
   "tag": "microwaves_wavelength", 
   "patterns": ["describe the wavelength of microwaves?"],
-"reponses": ["The prefix 'micro' in microwaves signifies that it has a micrometer wavelengths compared to traditional radio waves."],
+"responses": ["The prefix 'micro' in microwaves signifies that it has a micrometer wavelengths compared to traditional radio waves."],
 "context": ["microwaves: wavelength"]
 },
 {
   "tag": "infrared_frequency", 
   "patterns": ["what is the frequency of infrared waves?", "infrared wave frequency", "frequency of infrared waves"],
-"reponses": ["Infrared has a frequency extending from 300 GHz (3x10¹¹ Hz) to THz (4.05x10¹⁴ Hz). It has a frequency higher than microwave and lower than the visible light."],
+"responses": ["Infrared has a frequency extending from 300 GHz (3x10¹¹ Hz) to THz (4.05x10¹⁴ Hz). It has a frequency higher than microwave and lower than the visible light."],
 "context": ["infrared: frequency"]
 },
 {
   "tag": "infrared_definition", 
   "patterns": ["what is infrared waves?", "define infrared waves", "explain infrared waves", "meaning of infrared waves"],
-"reponses": ["Infrared radiation is also called heat radiation so it can be detected using a thermometer."],
+"responses": ["Infrared radiation is also called heat radiation so it can be detected using a thermometer."],
 "context": ["infrared: definition"]
 },
 {
   "tag": "infrared_discovery", 
   "patterns": ["who discovered infrared waves?"],
-"reponses": ["It was being discovered when the Scientist Frederick William Herschel noticed that there is an increased of temperature in the thermometer beyond the red part of the spectrum, when he is trying to measure the air temperature."],
+"responses": ["It was being discovered when the Scientist Frederick William Herschel noticed that there is an increased of temperature in the thermometer beyond the red part of the spectrum, when he is trying to measure the air temperature."],
 "context": ["infrared: discovery"]
 },
 {
   "tag": "visible_light_definition", 
   "patterns": ["what is visible light?", "definition of visible light", "explain visible light"],
-"reponses": ["Visible light is the only EM waves that is visible to unaided eyes. It lies between infrared and ultraviolet rays. When visible light strike on a prism, the white light will split to different colors such as red, orange, yellow, green, blue, indigo and violet. They are arranged in decreasing wavelength from red to violet."],
+"responses": ["Visible light is the only EM waves that is visible to unaided eyes. It lies between infrared and ultraviolet rays. When visible light strike on a prism, the white light will split to different colors such as red, orange, yellow, green, blue, indigo and violet. They are arranged in decreasing wavelength from red to violet."],
 "context": ["visible light: definition"]
 },
 {
   "tag": "ultraviolet_rays_frequency", 
   "patterns": ["what is the frequency of ultraviolet rays?", "ultraviolet wave frequency", "frequency of ultraviolet waves"],
-"reponses": ["Ultraviolet rays has a frequency that extends from 790 THz (7.90x10¹⁴ Hz) and 30 PHz (3x10¹⁶ Hz). It has a frequency higher than the frequency of visible light and lower than the frequency of X-rays."],
+"responses": ["Ultraviolet rays has a frequency that extends from 790 THz (7.90x10¹⁴ Hz) and 30 PHz (3x10¹⁶ Hz). It has a frequency higher than the frequency of visible light and lower than the frequency of X-rays."],
 "context": ["ultraviolet rays: frequency"]
 },
 {
   "tag": "ultraviolet_rays_definition", 
   "patterns": ["what is ultraviolet rays?", "define ultraviolet rays", "what is the meaning of ultraviolet rays", "explain ultraviolet rays"],
-"reponses": ["Ultraviolet means 'beyond violet', ultra came from the Latin word beyond and violet is the visible light that contains highest frequency."],
+"responses": ["Ultraviolet means 'beyond violet', ultra came from the Latin word beyond and violet is the visible light that contains highest frequency."],
 "context": ["ultraviolet rays: definition"]
 },
 {
   "tag": "ultraviolet_rays_exposure", 
   "patterns": ["what happens when a person is exposed to ultraviolet rays?", "someone exposed to ultraviolet rays"],
-"reponses": ["Ultraviolet rays is also known as UV rays or UV radiation. Too much exposure to sunlight may cause sunburn."],
+"responses": ["Ultraviolet rays is also known as UV rays or UV radiation. Too much exposure to sunlight may cause sunburn."],
 "context": ["ultraviolet rays: exposure"]
 },
 {
   "tag": "x-rays_frequency", 
   "patterns": ["what is the frequency of x-rays?"],
-"reponses": ["X-ray has a frequency that lies between 30 PHz (3x 10¹⁶ Hz) and 30 EHz (3x10¹⁹ Hz). It has second to the highest frequency therefore it contains higher energy than the ultraviolet rays."],
+"responses": ["X-ray has a frequency that lies between 30 PHz (3x 10¹⁶ Hz) and 30 EHz (3x10¹⁹ Hz). It has second to the highest frequency therefore it contains higher energy than the ultraviolet rays."],
 "context": ["x-rays: frequency"]
 },
 {
   "tag": "x-rays_exposure", 
   "patterns": ["what happens when exposed to x-rays", "exposed to x-rays", "are x-rays harmful"],
-"reponses": ["X-rays can damage tissues. It has the ability to penetrate opaque materials, it can pass through soft tissues but can filtered by dense materials like the bone."],
+"responses": ["X-rays can damage tissues. It has the ability to penetrate opaque materials, it can pass through soft tissues but can filtered by dense materials like the bone."],
 "context": ["x-rays: exposure"]
 },
 {
   "tag": "x-rays_discovery", 
   "patterns": ["who discovered x-rays?"],
-"reponses": ["Wilhelm Conrad Roentgen conducted an experiment about cathode ray when observed a faint green glow from the screen. He discovered that these invisible rays coming from the tube were passing through the cardboards, books and papers on his desk. He wrote 'X' to indicated that they were an unknown type of radiation."],
+"responses": ["Wilhelm Conrad Roentgen conducted an experiment about cathode ray when observed a faint green glow from the screen. He discovered that these invisible rays coming from the tube were passing through the cardboards, books and papers on his desk. He wrote 'X' to indicated that they were an unknown type of radiation."],
 "context": ["x-rays: discovery"]
 },
 {
   "tag": "gamma_rays_frequency", 
   "patterns": ["what is the frequency of gamma rays?", "frequency of gamma rays", "gamma rays frequency"],
-"reponses": ["Gamma rays has a frequency higher that 30 eHz (< 3 x10¹⁹ Hz). It is the most energetic electromagnetic wave in the spectrum for it has the highest frequency and shortest wavelength."],
+"responses": ["Gamma rays has a frequency higher that 30 eHz (< 3 x10¹⁹ Hz). It is the most energetic electromagnetic wave in the spectrum for it has the highest frequency and shortest wavelength."],
 "context": ["gamma rays: frequency"]
 },
 {
   "tag": "gamma_rays_harm", 
   "patterns": ["how harmful are gamma rays harmful?", "are gamma rays harmful"],
-"reponses": ["Due to its high energy gamma rays may harm human beings and the environment."],
+"responses": ["Due to its high energy gamma rays may harm human beings and the environment."],
 "context": ["gamma rays: harm"]
 },
 {
   "tag": "plane_mirror_direction", 
   "patterns": ["in what direction is a real image placed when seen on a plane mirror?", "how is a real image seen in a plane mirror?"],
-"reponses": ["The image you see on a plane mirror is placed in the opposite direction of a real image."],
+"responses": ["The image you see on a plane mirror is placed in the opposite direction of a real image."],
 "context": ["plane_mirror_direction"]
 },
 {
   "tag": "concave_mirror_image", 
   "patterns": ["how does concave mirror form an image?", "concave mirror from an image"],
-"reponses": ["A concave mirror may form an image which is virtual, erect and diminished."],
+"responses": ["A concave mirror may form an image which is virtual, erect and diminished."],
 "context": ["concave_mirror_image"]
 },
 {
   "tag": "electric_motor_definition", 
   "patterns": ["what is an electric motor?", "define electric motor", "meaning of an electric motor", "explain electric motor"],
-"reponses": ["Anything that changes electricity into motion, meaning electrical energy into mechanical energy is called an electric motor."],
+"responses": ["Anything that changes electricity into motion, meaning electrical energy into mechanical energy is called an electric motor."],
 "context": ["electric motor: definition"]
 },
 {
   "tag": "electromagnetism_discovery", 
   "patterns": ["who discovered electromagnetism?"],
-"reponses": ["Danish physicist HANS CHRISTIAN ØRSTED began a new scientific era when he discovered that electricity and magnetism are linked. He showed by experiment that an electric current flowing through a wire could move a nearby magnet. "],
+"responses": ["Danish physicist HANS CHRISTIAN ØRSTED began a new scientific era when he discovered that electricity and magnetism are linked. He showed by experiment that an electric current flowing through a wire could move a nearby magnet. "],
 "context": ["electromagnetism: discovery"]
 },
 {
   "tag": "electric_motors_principles", 
   "patterns": ["through what principles do electric motors work?", "how does electric motors work"],
-"reponses": ["Motors work through the principles of ELECTROMAGNETISM."],
+"responses": ["Motors work through the principles of ELECTROMAGNETISM."],
 "context": ["electric motors: principles"]
 },
 {
 "tag": "electricity_and_magnetism_relationship", 
 "patterns": ["what is the relationship between electricity and magnetism?", "how does electricity and magnetism work together?"],
-"reponses": ["If you coil the wire around a rod and run electricity through the wire, it creates a magnetic field around the rod. One end of the rod will have a north magnetic pole and the other will have a south pole. Opposite poles attract one another, like poles repel. When you surround that rod with other magnets, the rod will rotate from the attractive and repulsive forces."],
+"responses": ["If you coil the wire around a rod and run electricity through the wire, it creates a magnetic field around the rod. One end of the rod will have a north magnetic pole and the other will have a south pole. Opposite poles attract one another, like poles repel. When you surround that rod with other magnets, the rod will rotate from the attractive and repulsive forces."],
 "context": ["electricity and magnetism: relationship"]
 },
 {
   "tag": "motor_energy", 
   "patterns": ["how does energy work in motors?", "energy work in motors"],
-"reponses": [" In a motor, an electric current is passed through the coil. The coil then creates a magnetic field that interacts with the already existing magnetic field. This interaction forces the coil to rotate. For a motor, the input energy is electrical energy and the useful output energy is mechanical energy."],
+"responses": [" In a motor, an electric current is passed through the coil. The coil then creates a magnetic field that interacts with the already existing magnetic field. This interaction forces the coil to rotate. For a motor, the input energy is electrical energy and the useful output energy is mechanical energy."],
 "context": ["motor: energy"]
 },
 {
   "tag": "generator_energy", 
   "patterns": ["how does energy work in a generator?", "energy in generator", "energy work in a generator"],
-"reponses": ["The generator is used to produce an electric current from rotational motion (on large scale power stations a 'turbine' is used to provide this rotation). In a generator, the rotation causes the coil to rotate inside the magnetic field. This induces an alternating current in the coil. For generator the input energy is mechanical energy and the useful output energy is electrical energy"],
+"responses": ["The generator is used to produce an electric current from rotational motion (on large scale power stations a 'turbine' is used to provide this rotation). In a generator, the rotation causes the coil to rotate inside the magnetic field. This induces an alternating current in the coil. For generator the input energy is mechanical energy and the useful output energy is electrical energy"],
 "context": ["generator: energy"]
 },
 { 
@@ -7703,25 +7703,25 @@
 {
   "tag": "characteristics_of_images", 
   "patterns": ["what are the characteristics of images formed by a plane mirror?"],
-  "reponses": ["1. Image is virtual; \n2. Same size as the object;\n3. Same orientation as the object; and\n4. Same disctance from the mirror as the object."],
+  "responses": ["1. Image is virtual; \n2. Same size as the object;\n3. Same orientation as the object; and\n4. Same disctance from the mirror as the object."],
   "context": ["characteristics of images"]
   },
   {
     "tag": "left-right_reversal_example_1", 
   "patterns": ["what is an example of left-right reversal?"],
-  "reponses": ["If you view an image of yourself in a plane mirror (perhaps a bathroom mirror), you will quickly notice that there is an apparent left-right reversal of the image. That is, if you raise your left hand, you will notice that the image raises what would seem to be its right hand. If you raise your right hand, the image raises what would seem to be its left hand. This is often termed left-right reversal."],
+  "responses": ["If you view an image of yourself in a plane mirror (perhaps a bathroom mirror), you will quickly notice that there is an apparent left-right reversal of the image. That is, if you raise your left hand, you will notice that the image raises what would seem to be its right hand. If you raise your right hand, the image raises what would seem to be its left hand. This is often termed left-right reversal."],
   "context": ["left-right reversal: example_1"]
   },
   {
     "tag": "left-right_reversal_example_2", 
     "patterns": ["what is an example of left-right reversal?"],
-  "reponses": ["The letters in front of the ambulance are written laterally. This is because when seen in rear view mirror by another vehicle, the image of the word would get inverted, letting the driver read the word properly so that he can provide way to the ambulance"],
+  "responses": ["The letters in front of the ambulance are written laterally. This is because when seen in rear view mirror by another vehicle, the image of the word would get inverted, letting the driver read the word properly so that he can provide way to the ambulance"],
   "context": ["left-right reversal: example_2"]
   },
   {
     "tag": "image_formation", 
     "patterns": ["how is an image formation done by a plane mirror?", "how image is formed from a mirror"],
-  "reponses": ["A plane mirror makes an image of objects in front of the mirror; the image appears to be behind the plane in which the mirror lies. An image is formed by reflection when two or more reflected rays of a point meet at a single point. The image is formed at the point of intersection of the reflected rays."],
+  "responses": ["A plane mirror makes an image of objects in front of the mirror; the image appears to be behind the plane in which the mirror lies. An image is formed by reflection when two or more reflected rays of a point meet at a single point. The image is formed at the point of intersection of the reflected rays."],
   "context": ["image formation"]
   },
   {
@@ -7731,7 +7731,7 @@
       "explain the location and orientation of an image formed by a convex mirror.",
       "tell me about the size and type of image formed by a convex mirror."
     ],
-  "reponses": ["If location of object is anywhere you put the object in front of a convex mirror, its orientation will be upright, reduced in size and virtual in type."],
+  "responses": ["If location of object is anywhere you put the object in front of a convex mirror, its orientation will be upright, reduced in size and virtual in type."],
   "context": ["image:convex_mirror"]
   },
   {
@@ -7740,7 +7740,7 @@
       "explain the characteristics of an image in a convex lens.",
       "what can you tell me about the image formed in a convex lens?"
     ],
-  "reponses": ["Image in a convex lens is real and inverted image. Also produces virtual, erect and enlarged image in a magnifying glass."],
+  "responses": ["Image in a convex lens is real and inverted image. Also produces virtual, erect and enlarged image in a magnifying glass."],
   "context": ["image_in_convex_lens"]
   },
   {
@@ -7749,7 +7749,7 @@
       "explain the role of convex lenses in microscopes.",
       "how are convex lenses utilized in microscopes?"
     ],
-  "reponses": ["Among the applications in which convex lenses are used is found in compound microscopes. A microscope is an instrument that is used in viewing \nsmall objects and microorganisms that are impossible for our unaided eyes to see. It uses lenses that can magnify objects100x or even more than a thousand times."],
+  "responses": ["Among the applications in which convex lenses are used is found in compound microscopes. A microscope is an instrument that is used in viewing \nsmall objects and microorganisms that are impossible for our unaided eyes to see. It uses lenses that can magnify objects100x or even more than a thousand times."],
   "context": ["convex_lenses_in_microscope"]
   },
   {
@@ -7758,7 +7758,7 @@
       "explain the role of convex lenses in camera lenses.",
       "how are convex lenses used in dslr cameras?"
     ],
-  "reponses": ["DSLR camera uses convex lenses where light rays pass through. These light rays are directed towards the slanted mirror located near the camera shutter, and then reflected from a translucent screen projected to another mirror until it reaches the viewer’s eye. Through this, the photographer will be able to see what he is capturing."],
+  "responses": ["DSLR camera uses convex lenses where light rays pass through. These light rays are directed towards the slanted mirror located near the camera shutter, and then reflected from a translucent screen projected to another mirror until it reaches the viewer’s eye. Through this, the photographer will be able to see what he is capturing."],
   "context": ["Convex lenses: camera lenses"]
   },
   {
@@ -7767,13 +7767,13 @@
       "what are the similarities between the human eye and a camera?",
   "why is the human eye considered a natural camera?"
     ],
-  "reponses": ["Our eyes are our natural cameras. Some of the basic and fundamental parts of a camera functions just like how the different parts of our eyes work. The lens, just like the cornea of our eyes gathers and bends light rays inwardly to the camera. The iris diaphragm controls the size of the aperture (opening) to regulate the light that enters. This duo resembles the iris and the pupil of our eyes. The shutter opens and shuts the aperture to avoid too much light exposure thus helping the photographic film capture a beautiful image similar to the work done by the eyelids and the retina."],
+  "responses": ["Our eyes are our natural cameras. Some of the basic and fundamental parts of a camera functions just like how the different parts of our eyes work. The lens, just like the cornea of our eyes gathers and bends light rays inwardly to the camera. The iris diaphragm controls the size of the aperture (opening) to regulate the light that enters. This duo resembles the iris and the pupil of our eyes. The shutter opens and shuts the aperture to avoid too much light exposure thus helping the photographic film capture a beautiful image similar to the work done by the eyelids and the retina."],
   "context": ["human_eye_as_a_natural_camera"]
   },
   {
     "tag": "concave_lenses_and_myopia_correction", 
     "patterns": ["how does concave lenses correct myopia?", "explain how concave lenses correct myopia (nearsightedness)."],
-  "reponses": ["Concave lenses, such as eyeglasses and contact lenses are used in correcting myopia (nearsightedness). Myopia is a condition in which light rays focus in front of the eye’s retina instead of, on the retina. The result of this condition is a makes distant object to appear blurry, while near objects appear normal."],
+  "responses": ["Concave lenses, such as eyeglasses and contact lenses are used in correcting myopia (nearsightedness). Myopia is a condition in which light rays focus in front of the eye’s retina instead of, on the retina. The result of this condition is a makes distant object to appear blurry, while near objects appear normal."],
   "context": ["concave_lenses_and_myopia_correction"]
   },
   {
@@ -7787,13 +7787,13 @@
   {
     "tag": "generator_definition", 
     "patterns": ["what is a generator?", "define generator", "explain what is a generator", "meaning of a generator"],
-  "reponses": ["A generator converts Mechanical Energy to Electrical Energy. It produces an electric current when a coil of wire is wrapped around an iron core and rotated near a magnet."],
+  "responses": ["A generator converts Mechanical Energy to Electrical Energy. It produces an electric current when a coil of wire is wrapped around an iron core and rotated near a magnet."],
   "context": ["generator: definition"]
   },
   {
     "tag": "generator_mechanism", 
     "patterns": ["how does a generator work?", "what is the mechanism of a generator?"],
-  "reponses": ["An electric generator is a device that converts mechanical energy obtained from an external source into electrical energy as the output."],
+  "responses": ["An electric generator is a device that converts mechanical energy obtained from an external source into electrical energy as the output."],
   "context": ["generator: mechanism"]
   },
   {

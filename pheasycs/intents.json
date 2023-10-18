@@ -57,11 +57,11 @@
         "i'm drawing a blank"
       ],
       "responses": [
-        "That's a tough one. I don't have the answer. My knowledge is focused on teaching physics. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach students Physics.",
-        "It seems we've hit a challenging question. My expertise lies in physics education. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach students Physics.",
-        "This is outside my current knowledge scope. I specialize in teaching physics. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach students Physics.",
-        "I'm afraid I can't assist with this one. My primary function is to teach physics. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach students Physics.",
-        "I appreciate your curiosity, but this topic is beyond the scope of my training. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach students Physics."
+        "That's a tough one. I don't have the answer. My knowledge is focused on teaching physics. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach anyone Physics.",
+        "It seems we've hit a challenging question. My expertise lies in physics education. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach anyone Physics.",
+        "This is outside my current knowledge scope. I specialize in teaching physics. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach anyone Physics.",
+        "I'm afraid I can't assist with this one. My primary function is to teach physics. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach anyone Physics.",
+        "I appreciate your curiosity, but this topic is beyond the scope of my training. As an AI language model, I am limited by my own datasets, which are from MELC. I am specifically designed to teach anyone Physics."
       ],
       "context": ["unknown"]
     },
@@ -2083,7 +2083,7 @@
        "context": ["electric_shock_situation"]
   },
   {
-    "tag": "electric_current_damage_kill", 
+    "tag": "electric_damage_kill", 
     "patterns": [
         "how can electric current damage our bodies?",
         "how can electric current hurt me?", 
@@ -2249,7 +2249,7 @@
     "context": ["current_formula"]
   },
   {
-    "tag": "calculate_current_from_voltage_and_resistance",
+    "tag": "find_calculate_current",
     "patterns": [
         "calculate current.",
         "solve for the current",
@@ -2257,6 +2257,9 @@
         "find the current",
         "find for the current",
         "find current",
+        "how to find current",
+        "how to calculate current",
+        "how to solve current",
         "calculate for the current",
         "solve current",
         "find current given <value> ohms and <value> volts",
@@ -2272,7 +2275,7 @@
     "context": ["calculate_current_problem"]
 },
 {
-  "tag": "calculate_voltage_from_current_and_resistance",
+  "tag": "find_calculate_voltage",
   "patterns": [
       "calculate voltage.",
       "calculate for voltage",
@@ -2282,6 +2285,9 @@
       "find for the voltage",
       "find voltage",
       "solve voltage",
+      "how to find voltage",
+        "how to calculate voltage",
+        "how to solve voltage",
       "solve for the voltage",
       "find voltage given <value> amps and <value> ohms",
         "solve voltage given <value> amps and <value> ohms",
@@ -2296,7 +2302,7 @@
   "context": ["calculate_voltage_solve"]
 },
 {
-  "tag": "calculate_resistance_from_voltage_and_current",
+  "tag": "find_calculate_resistance",
   "patterns": [
       "calculate resistance.",
       "calculate for the resistance",
@@ -2304,6 +2310,9 @@
       "solve for the resistance",
       "find the resistance",
       "find for the resistance",
+      "how to find resistance",
+        "how to calculate resistance",
+        "how to solve resistance",
       "find resistance given <value> amps and <value> volts",
         "solve resistance given <value> amps and <value> volts",
         "calculate resistance given <value> amps and <value> volts",
@@ -2828,7 +2837,10 @@
         "calculate final velocity given vi=<value>, a=<value>, and t=<value>",
         "find vf given a=<value>, vi=<value> and t=<value>",
         "solve vf given vi=<value>, a=<value>, and t=<value>",
-        "calculate vf given vi=<value>, a=<value>, and t=<value>"
+        "calculate vf given vi=<value>, a=<value>, and t=<value>",
+        "find final velocity given initial velocity=<value>, acceleration=<value>, and time=<value>",
+        "solve final velocity given initial velocity=<value>, acceleration=<value>, and time=<value>",
+        "calculate final velocity given initial velocity=<value>, acceleration=<value>, and time=<value>"
   ],
   "responses": [
       "To calculate the final velocity (vf) using the equation vf = vi + at, follow these steps:\n\n1. Identify the known values: Determine the initial velocity (vi), acceleration (a), and time (t) provided in the problem.\n\n2. Use the formula: Substitute these values into the equation vf = vi + at.\n\n3. Calculate vf: Perform the arithmetic to find the final velocity.\n\nRemember to use the appropriate units for velocity, acceleration, and time."
@@ -2859,7 +2871,10 @@
         "calculate average velocity given vf=<value> and vi=<value>",
         "find avg velocity given vi=<value> and vf=<value>",
         "solve avg velocity given vi=<value> and vf=<value>",
-        "calculate avg velocity given vi=<value> and vf=<value>"
+        "calculate avg velocity given vi=<value> and vf=<value>",
+        "find average velocity given initial velocity=<value>, and final velocity=<value>",
+        "solve average velocity given initial velocity=<value>, and final velocity=<value>",
+        "calculate average velocity given initial velocity=<value, and final velocity=<value>"
   ],
   "responses": [
       "To calculate the average velocity (vavg) using the equation vavg = ½ (vf + vi), follow these steps:\n\n1. Identify the known values: Determine the initial velocity (vi) and final velocity (vf) provided in the problem, if any.\n\n2. Use the formula: Substitute these values into the equation vavg = ½ (vf + vi). If values are given (e.g., vf = <vf_value>, vi = <vi_value>), replace the variables with their respective values (e.g., vavg = ½ (<vf_value> + <vi_value>)).\n\n3. Calculate vavg: Perform the arithmetic to find the average velocity.\n\nEnsure that you use the appropriate units for velocity."
@@ -3583,7 +3598,10 @@
   "what is the meaning of velocity?", 
   "definition of velocity", 
   "explain velocity",
-  "define velocity"
+  "define velocity",
+  "how to solve for velocity",
+  "how to find for velocity",
+  "how to calculate for velocity"
   ], 
 "responses": [ 
 "Velocity tells you how fast something is moving and in which direction it is moving. The velocity can be calculated through the formula: \nV = d/t where V is velocity, d is displacement, and t is time."
@@ -6291,7 +6309,7 @@
 }, 
 {
     "tag": "mechanical energy_formula", 
-    "patterns": ["give the formula of mechanical energy.", "provide the formula of mechanical energy.", "how to calculate mechanical energy.", "calculate mechanical energy.", "formula of mechanical energy."], 
+    "patterns": ["give the formula of mechanical energy.", "provide the formula of mechanical energy.", "how to calculate mechanical energy.", "calculate mechanical energy.", "formula of mechanical energy.", "how to solve for mechanical energy", "how to find for mechanical energy", "solve for mechanical energy", "how to solve for mechanical energy"], 
     "responses": [" Mechanical Energy = PE + KE where PE is the potential energy of an object, and KE is the kinetic energy of an object."], 
     "context": ["mechanical energy_formula"]
 }, 
@@ -6407,39 +6425,39 @@
    "context": ["temperature scales_calculate"] 
 }, 
 {
-  "tag": "calculate_celsius_from_fahrenheit",
-  "patterns": ["what is the formula for celsius?", "how do we find celsius from fahrenheit?", "solve celsius from fahrenheit", "find celsius if given fahrenheit", "calculate celsius if given fahrenheit", "find celsius from fahrenheit"],
-  "responses": "Formula: 𝑇𝐶 = 5/9 (𝑇𝐹 − 32)",
+  "tag": "fahrenheit_to_celsius",
+  "patterns": ["how do we find celsius from fahrenheit?", "solve celsius from fahrenheit", "find celsius if given fahrenheit", "calculate celsius if given fahrenheit", "find celsius from fahrenheit"],
+  "responses": ["We can solve celsius if given fahrenheit using this formula: \nFormula: 𝑇𝐶 = 5/9 (𝑇𝐹 − 32)"],
   "context": ["calculate_celsius_from_fahrenheit"]
 },
 {
-  "tag": "calculate_fahrenheit_from_celsius",
-  "patterns": ["what is the formula for fahrenheit?", "how do we find fahrenheit from celsius?", "solve fahrenheit from celsius", "find fahrenheit if given celsius", "calculate fahrenheit if given celsius", "find fahrenheit from celsius"],
-  "responses": "Formula: 𝑇𝐹 =(9/5 𝑇𝐶 )+ 32",
+  "tag": "celsius_to_fahrenheit",
+  "patterns": ["how do we find fahrenheit from celsius?", "solve fahrenheit from celsius", "find fahrenheit if given celsius", "calculate fahrenheit if given celsius", "find fahrenheit from celsius"],
+  "responses": ["We can solve fahrenheit if given celsius using this formula: \nFormula: 𝑇𝐹 =(9/5 𝑇𝐶 )+ 32"],
   "context": ["calculate_fahrenheit_from_celsius"]
 },
 {
-  "tag": "calculate_kelvin_from_celsius",
-  "patterns": ["what is the formula for kelvin?", "how do we find kelvin from celsius?", "solve kelvin from celsius", "find kelvin if given celsius", "calculate kelvin if given celsius", "find kelvin from celsius"],
-  "responses": "Formula: 𝑇𝐾 = (𝑇𝐶 + 273.15)",
+  "tag": "celsius_to_kelvin",
+  "patterns": ["how do we find kelvin from celsius?", "solve kelvin from celsius", "find kelvin if given celsius", "calculate kelvin if given celsius", "find kelvin from celsius"],
+  "responses": ["We can solve kelvin if given celsius using this formula: \nFormula: 𝑇𝐾 = (𝑇𝐶 + 273.15)"],
   "context": ["calculate_kelvin_from_celsius"]
 },
 {
-  "tag": "calculate_celsius_from_kelvin",
+  "tag": "kelvin_to_celsius",
   "patterns": ["how do we find celsius from kelvin?", "solve celsius from kelvin", "find celsius if given kelvin", "calculate celsius if given kelvin", "find celsius from kelvin"],
-  "responses": "Formula: 𝑇𝐶 = 𝑇𝐾 − 273.15",
+  "responses": ["We can solve celsius if given kelvin using this formula: \nFormula: 𝑇𝐶 = 𝑇𝐾 − 273.15"],
   "context": ["calculate_celsius_from_kelvin"]
 },
 {
-  "tag": "calculate_fahrenheit_from_kelvin",
+  "tag": "kelvin_to_fahrenheit",
   "patterns": ["how do we find fahrenheit from kelvin?", "solve fahrenheit from kelvin", "find fahrenheit if given kelvin", "calculate fahrenheit if given kelvin", "find fahrenheit from kelvin"],
-  "responses": "Formula: 𝑇𝐹 = 9/5(𝑇𝐾 − 459.67)",
+  "responses": ["We can solve fahrenheit if given kelvin using this formula: \n Formula: 𝑇𝐹 = 9/5(𝑇𝐾 − 459.67)"],
   "context": ["calculate_fahrenheit_from_kelvin"]
 },
 {
-  "tag": "calculate_kelvin_from_fahrenheit",
+  "tag": "fahrenheit_to_kelvin",
   "patterns": ["how do we find kelvin from fahrenheit?", "solve kelvin from fahrenheit", "find kelvin if given fahrenheit", "calculate kelvin if given fahrenheit", "find kelvin from fahrenheit"],
-  "responses": "Formula: 𝑇𝐾 = 5/9 (𝑇𝐹 + 459.67)",
+  "responses": ["We can solve kelvin if given fahrenheit using this formula: \nFormula: 𝑇𝐾 = 5/9 (𝑇𝐹 + 459.67)"],
   "context": ["calculate_kelvin_from_fahrenheit"]
 },
 { 
@@ -6510,7 +6528,7 @@
 }, 
 {
   "tag": "electrical circuit: sample problems", 
-  "patterns": ["provide examples involving electrical circuits.", "give examples about electrical circuits.", "provide problems to solve involving electrical circuit."], 
+  "patterns": ["provide examples involving electrical circuits", "give examples about electrical circuits", "provide problems to solve involving electrical circuit", "example involving electrical circuit", "examples about electrical circuit", "give an example involving electrical circuit", "give an example about electrical circuit"], 
       "responses": [" Here is a simple example of solving electrical circuits in series connections: \nLet us assume that you have five appliances connected in series. The refrigerator has a resistance of 20 Ω; the TV set 10Ω; the radio 5Ω; the electric iron75Ω and the electric kettle has 55Ω. If the circuit is connected to a direct current of 220 volts, compute for the: \na. The total resistance in the circuit; \nb. The total current in the circuit; \nc. The voltage drop in each appliance.\nTo solve what is asked in the problem, recall the result of the first activity on \nseries connection: \nRT = R1 + R2 + R3 ... \nVT = V1 + V2 + V3 ... \nIT = I1 = I2 = I3 ... \nIdentify what are given in the problem: \nR1 (refrigerator) = 20Ω \nR2 (TV set) = 10Ω \nR3 ( radio) = 5Ω \nR4 (electric iron) = 75 \nR5 (electric kettle) = 55Ω \nThese appliances are connected to 220 volt source (VT = 220 volts) \nAnd so to solve for the total resistance (RT); \na. RT = R1 + R2 + R3 + R4 + R5 \nRT = 20Ω + 10Ω + 5Ω + 75Ω + 55Ω \nRT = 165 Ω \nb. Since the current in a series circuit is equal all throughout the circuit, we will use Ohm’s Law in solving the total current (IT). And so by Ohm’s Law: \nR = V ; so IT = VT \nI RT = 220V 165Ω \n= 1.33 A \nc. The voltage drop in each appliance is asked in the problem. And since the total voltage is also given, we can use Ohm’s Law to solve the individual voltages. Hence, \nR = V/I so; V = R x I \nFor individual voltages in each appliance we can have: \nFor refrigerator: V1 = R1 x I1 \n= 20Ω x 1.33 A \n= 26.6 V \n For TV set: \nV2 = R2 x I2 \n= 10Ω x 1.33 A \n= 13.3 V \n For radio: \nV3 = R3 x I3 = 5Ω x 1.33 A \n= 6.65 V \n For flat iron: \nV4 = R4 x I4 \n= 75Ω x 1.33 A \n= 99.75 V \n For electric kettle: \nV5 = R5 x I5 = 55Ω x 1.33 A = 73.15 V \n To check if the individual voltages are correct, their sum must be equal to the total voltage given in the problem which is 220 volts. This will coincide with the result of the first activity : VT = V1 + V2 + V3 ... So, VT = V1 + V2 + V3 + V4 + V5 \n= 26.6 V + 13.3 V + 6.65 V + 99.75 V + 73.15 V \n= 219.50 or 220 V \nHere is an example of solving parallel connections: \nLet us assume that you have five appliances connected in parallel. The refrigerator has a resistance of 20 Ω; the TV set 10Ω; the radio 5Ω; the electric iron75Ω and the electric kettle has 55Ω. If the circuit is connected to a direct current of 220 volts,compute for the: \na. The total resistance in the circuit; \nb. The total current in the circuit; \nc. The voltage drop in each appliance. To solve what is asked in the problem, recall the result of the first activity on parallel connection: \nVT = V1 = V2 = V3 ... \nIT = I1 = I2 = I3 ... \n1/RT= 1/R1 + 1/R2 + 1/R3  \na. 1/RT = 1/20Ω + 1/10 Ω + 1/ 5Ω + 1/75Ω + 1/55Ω \nRT = 2.62 Ω (compare this to the total resistance in a series connection) \nb. To compute for the total current in the circuit, we need to solve for the individual current first. So by using Ohm’s law; \nR = V/I so, I = V/R \nI1 = V1/R1 = 220 V/20Ω = 11 A \nI2 = V2/R2 = 220 V/10Ω = 22 A\nI3 = V3/R3 = 220 V/5Ω = 44 A\nI4 = V4/R4 = 220 V/75 Ω = 2.9 A\nI5 = V5/R5 = 220 V/ 55Ω = 4 A\nIT = I1 + I2 + I3 + I4 + I5\n= 11A + 22A + 44A + 2.9A + 4A = 83.9 A\nc. For a parallel connection, the individual voltages or the voltage drop in each device is equal to the total voltage in the circuit Thus, \nVT = V1 = V2 = V3 = V4 = V5\n220V = V1 = V2 = V3 = V4 = V5"], 
       "context": ["electrical circuit: sample problems"]
 }, 
@@ -6534,7 +6552,7 @@
 }, 
 { 
   "tag": "isothermal process_example", 
-  "patterns": ["provide an example of isothermal process.", "provide an example of constant-temperature process", "can you provide an example for isothermal process?", "example of isothermal process"], 
+  "patterns": ["provide an example of isothermal process.", "provide an example of constant-temperature process", "can you provide an example for isothermal process?", "example of isothermal process", "give an example of isothermal process"], 
     "responses": ["An example of an isothermal process is the expansion or compression of a gas in a cylinder with a movable piston. The temperature remains constant because heat is transferred to or from the surroundings to maintain a constant temperature."], 
     "context": ["isothermal process_example"]
 }, 
@@ -6558,7 +6576,7 @@
 }, 
 { 
   "tag": "second law of thermodynamics_example", 
-  "patterns": ["examples to elaborate the second law of thermodynamics.", "what are sample situations of the second law of thermodynamics?", "provide a sample situation for the second law of thermodynamics.", "give an example situation for the second law of thermodynamics.", "elaborate 2nd law of thermodynamics"], 
+  "patterns": ["examples to elaborate the second law of thermodynamics.", "what are sample situations of the second law of thermodynamics?", "provide a sample situation for the second law of thermodynamics.", "give an example situation for the second law of thermodynamics.", "elaborate 2nd law of thermodynamics", "example of 2nd law of thermodynamics", "example of second law of thermodynamics", "example involving 2nd law of thermodynamics", "example involving second law of thermodynamics"], 
     "responses": ["Suppose we place a hot brick next to a cold brick in a tally insulated region. We know that the hot brick will cool as it gives hear in teid brick, which will warm They will arrive at a common temperature: thermal equilibrium. No energy will be lost, in accordance with the first law of thermodynamics: But pretend the hot brick extracts heat from the cold brick and becomes hotter. Would this violate the first law of thermodynamics? Not if the cold brick becomes correspondingly colder so that the combined energy of both bricks remains the same. If this were to happen, it would not violate the first law. But it would violate the second law of thermodynamics. The second law distinguishes the direction of energy transformation in natural processes. The second law of thermodynamics can be stated in many ways, but most simply it is this: \nHeat will never of itself flow from a cold object to a hot object. \nIn winter, heat flows from inside a warm heated home to the cold air outside, In summer, heat flows from the hot air outside into the cooler interior. The direction of spontaneous heat flow is from hot to cold. Heat can be made to flow the other way, but only by putting in work or other energy from another source-as occurs with heat pumps and air conditioners, both of which cause heat to flow from a cooler to a warmer place. The huge amount of internal energy in the ocean cannot be used to light a single flashlight lamp without external effort. Energy will not of itself flow from the lower temperature ocean to the higher temperature lamp filament. Without external effort, the direction of heat flow is from hot to cold."], 
     "context": ["second law of thermodynamics_example"] 
 }, 
@@ -7691,7 +7709,7 @@
 { 
   "tag": "types_of_lens_defects", 
   "patterns": ["what are the types of lens defects?", "enumerate the types of lens defects.", "name the types of lens defects.", "provide the types of lens defects.", "give the types of lens defects."],
-  "responses": ["No lens provides a perfect image. A distortion in an image is called an aberration. By combining lenses in certain ways, aberrations can be minimized. For this reason, most optical instruments use compound lenses, each consisting of several simple lenses, instead of single lenses. \nSpherical aberration results from light that passes through the edges of a lens fo- cusing at a slightly different place from where light passing through the center of the lens focuses. This can be remedied by covering the edges of a lens, as with a diaphragm in a camera. Spherical aberration is corrected in good optical instruments by a combination of lenses.\nChromatic aberration is the result of light of different colors having different speeds and hence different refractions in the lens (Figure 27.54). In a simple lens (as in a prism), red light and blue light do not come to focus in the same place. \nAchromatic lenses, which combine simple lenses of different kinds of glass, correct this defect.. The pupil of the eye regulates the amount of light that enters the eye by changing its size. Vision is sharpest when the pupil is smallest because light then passes through only the center of the eye's lens, where spherical and chromatic aberrations are minimal. Also, the eye then acts more like a pinhole camera, so minimum focusing is required for a sharp image. You see better in bright light because your pupils are smaller. \nAstigmatism of the eye is a defect that results when the cornea is curved more in one direction than the other, somewhat like the side of a barrel. Because of this defect, the eye does not form sharp images. The remedy is eyeglasses with cylindrical lenses that have more curvature in one direction than in another."], 
+  "responses": ["No lens provides a perfect image. A distortion in an image is called an aberration. By combining lenses in certain ways, aberrations can be minimized. For this reason, most optical instruments use compound lenses, each consisting of several simple lenses, instead of single lenses. \nSpherical aberration results from light that passes through the edges of a lens fo- cusing at a slightly different place from where light passing through the center of the lens focuses. This can be remedied by covering the edges of a lens, as with a diaphragm in a camera. Spherical aberration is corrected in good optical instruments by a combination of lenses.\nChromatic aberration is the result of light of different colors having different speeds and hence different refractions in the lens. In a simple lens (as in a prism), red light and blue light do not come to focus in the same place. \nAchromatic lenses, which combine simple lenses of different kinds of glass, correct this defect.. The pupil of the eye regulates the amount of light that enters the eye by changing its size. Vision is sharpest when the pupil is smallest because light then passes through only the center of the eye's lens, where spherical and chromatic aberrations are minimal. Also, the eye then acts more like a pinhole camera, so minimum focusing is required for a sharp image. You see better in bright light because your pupils are smaller. \nAstigmatism of the eye is a defect that results when the cornea is curved more in one direction than the other, somewhat like the side of a barrel. Because of this defect, the eye does not form sharp images. The remedy is eyeglasses with cylindrical lenses that have more curvature in one direction than in another."], 
   "context": ["types_of_lens_defects"]
 }, 
 { 

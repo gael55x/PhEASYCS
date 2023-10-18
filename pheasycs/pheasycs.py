@@ -8,7 +8,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import tensorflow as tf
 import json
-import random
 
 nltk.download("punkt")
 
@@ -173,7 +172,7 @@ model = build_and_train_model(training, output)
 # Initialize TfidfVectorizer
 vectorizer = TfidfVectorizer()
 
-# Preprocess and vectorize your data during initialization
+# Preprocess and vectorize data during initialization
 corpus = [intent['patterns'] for intent in intents_data['intents']]
 X = vectorizer.fit_transform([' '.join(pattern) for pattern in corpus])
 y = np.array([intent.get('tag', 'unknown') for intent in intents_data['intents']])
@@ -190,7 +189,7 @@ def get_response(user_input, confidence_threshold=0.50):
     max_similarity = similarity_scores[0, max_similarity_index]
 
     if max_similarity < confidence_threshold:
-        return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics."]
+        return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which are from MELC. I am only designed to teach anyone Physics."]
 
     tag = y[max_similarity_index]
 
@@ -203,7 +202,7 @@ def get_response(user_input, confidence_threshold=0.50):
     if responses:
         return ["PhEASYCS: " + responses[0]]  # Return only the first response
     else:
-        return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which is from DEPED Physics modules. I am only designed to teach anyone Physics. "]
+        return ["PhEASYCS: I'm sorry, but I don't have a response for that question. As an AI language model, I am limited by my own data sets, which are from MELC. I am only designed to teach anyone Physics. "]
     
 # Create a tkinter window
 window = tk.Tk()

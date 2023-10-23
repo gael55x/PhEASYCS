@@ -2075,7 +2075,11 @@
         "what are following situations that cause the current to go through the body?", 
         "electric shock situations.", 
         "what are situatons that cause electric shocks?", 
-        "what are situations that cause arc flash?"
+        "what are situations that cause arc flash?",
+        "what can cause electrical shocks",
+        "what causes electric shocks",
+        "what cause electric shocks",
+        "what can cause electrical shocks"
      ], 
       "responses": [
           "Direct contact with live parts of the installation, accidental contact with damaged wires that are seemingly not live, and direct contact with a grounded surface." 

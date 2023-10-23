@@ -7534,25 +7534,25 @@
 {
   "tag": "radio_waves_frequency", 
   "patterns": ["what is the frequency of radio waves?",
-   "radio waves frequency.", "radio waves frequency"],
+   "radio waves frequency.", "radio waves frequency", "radiowaves frequency", "what is the frequency of radiowaves", "frequency of radiowaves"],
 "responses": ["Radio waves has a frequency of 3 Hz to 300 Hz."],
 "context": ["radio waves: frequency"]
 },
 {
   "tag": "radio_waves_prediction", 
-  "patterns": ["who made the first prediction about radio waves?"],
+  "patterns": ["who made the first prediction about radio waves?", "who made the prediction of radiowaves"],
 "responses": ["James Clerk Maxwell who made the first prediction about radio waves but itwas Heinrich Hurtz who showed that radio waves can be produced andtransmitted."],
 "context": ["radio waves: prediction"]
 },
 {
   "tag": "radio_waves_wavelength", 
-  "patterns": ["what is the wavelength of radio waves?", "radio waves wavelength"],
+  "patterns": ["what is the wavelength of radio waves?", "radio waves wavelength", "radiowaves wavelength", "wavelength of radiowaves", "what is the wavelength of radiowaves"],
 "responses": ["It has a lowest frequency and longest wavelength that makes it suitable for telecommunication."],
 "context": ["radio waves: wavelength"]
 },
 {
   "tag": "radio_waves_origination", 
-  "patterns": ["where do radio waves originate from?"],
+  "patterns": ["where do radio waves originate from?", "origin of radiowaves", "origin of radio waves", "where do radiowaves originate from"],
 "responses": ["Originates from the vibration of electrons which came from a natural phenomenon like lightning and astronomical objects. Artificial radio waves can be generated thru the use of transmitter, received by radio receiver,\nbroadcasting satellites and computer networks."],
 "context": ["radio waves: origination"]
 },

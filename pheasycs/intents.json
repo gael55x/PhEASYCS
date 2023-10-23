@@ -7534,7 +7534,7 @@
 {
   "tag": "radio_waves_frequency", 
   "patterns": ["what is the frequency of radio waves?",
-   "radio waves frequency.", "radio waves frequency", "radiowaves frequency", "what is the frequency of radiowaves", "frequency of radiowaves"],
+   "radio waves frequency.", "radio waves frequency", "radiowaves frequency", "what is the frequency of radiowaves", "frequency of radiowaves", "hertz of radiowaves", "hertz of radio waves", "hz of radiowaves", "hz of radio waves"],
 "responses": ["Radio waves has a frequency of 3 Hz to 300 Hz."],
 "context": ["radio waves: frequency"]
 },

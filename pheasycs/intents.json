@@ -7546,7 +7546,7 @@
 },
 {
   "tag": "radio_waves_wavelength", 
-  "patterns": ["what is the wavelength of radio waves?", "radio waves wavelength", "radiowaves wavelength", "wavelength of radiowaves", "what is the wavelength of radiowaves", "hertz of radiowaves", "hertz of radio waves"],
+  "patterns": ["what is the wavelength of radio waves?", "radio waves wavelength", "radiowaves wavelength", "wavelength of radiowaves", "what is the wavelength of radiowaves"],
 "responses": ["It has a lowest frequency and longest wavelength that makes it suitable for telecommunication."],
 "context": ["radio waves: wavelength"]
 },
